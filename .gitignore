@@ -15,7 +15,7 @@ cms/wp-content/uploads
 cms/wp-content/upgrade
 cms/wp-content/plugins
 !cms/wp-content/
-!cms/wp-content/themes/**
+!cms/wp-content/themes/portfolio-s.info
 !cms/wp-content/themes/portfolio-s.info/index.php
 
 replica
