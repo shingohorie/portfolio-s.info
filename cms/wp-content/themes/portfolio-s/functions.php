@@ -47,6 +47,31 @@ add_filter( 'show_admin_bar', '__return_false' );
 
 
 /*****************************************************************************************
+* UA判定
+*****************************************************************************************/
+function ch_device(){
+    
+    $ua = $_SERVER['HTTP_USER_AGENT'];
+        
+    if ((strpos($ua, 'Android') !== false) && (strpos($ua, 'Mobile') !== false) || (strpos($ua, 'iPhone') !== false) || (strpos($ua, 'Windows Phone') !== false)) {
+        // スマホからのアクセス
+        $check_device = "mobile";
+    } elseif ((strpos($ua, 'Android') !== false) || (strpos($ua, 'iPad') !== false)) {
+        // タブレットからのアクセス
+        $check_device = "tablet";
+    } elseif ((strpos($ua, 'DoCoMo') !== false) || (strpos($ua, 'KDDI') !== false) || (strpos($ua, 'SoftBank') !== false) || (strpos($ua, 'Vodafone') !== false) || (strpos($ua, 'J-PHONE') !== false)) {
+        // 携帯からのアクセス
+        $check_device = "old-phone";
+    } else {
+        // PCからのアクセス
+        $check_device = "pc";
+    }
+
+    return $check_device;
+}
+
+
+/*****************************************************************************************
 * the_date不具合対応
 *****************************************************************************************/
 function my_the_post() {
