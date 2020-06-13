@@ -211,9 +211,13 @@
 
 	figcaption {
 		margin-top: 20px;
+		display: flex;
 
 		span {
+			display: block;
+			margin-right: 0.5em;
 			font-weight: bold;
+			flex-shrink: 0;
 		}
 	}
 }

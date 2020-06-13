@@ -18,6 +18,27 @@
 ---------------------------------*/
 .p-home-mainvisual {
 	padding: 80px 0;
+
+	&__header {
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+		@include fts(18, 26);
+		font-weight: bold;
+
+		&[data-text-en] {
+			@include fts(14, 14);
+			font-weight: normal;
+
+			&:before {
+				content: attr(data-text-en);
+				display: inline-block;
+				font-weight: bold;
+				margin-right: 10px;
+				@include fts(18, 26);
+			}
+		}
+	}
 }
 
 /*  
