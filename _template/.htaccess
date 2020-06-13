@@ -1,0 +1,4 @@
+# SSI
+Options +Includes
+AddType text/html .shtml .html .php
+AddOutputFilter INCLUDES .shtml .html .php
