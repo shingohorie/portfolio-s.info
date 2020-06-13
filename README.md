@@ -1,3 +1,3 @@
 # portfolio-s.info
 
-lorem ipsum
+lorem ipsum dolor sit amet
