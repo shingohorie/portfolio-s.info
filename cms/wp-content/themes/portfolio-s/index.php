@@ -18,6 +18,7 @@ get_header();
 	<div class="l-structure__inner">
 		<div class="l-mainvisual">
 			<div class="p-home-mainvisual">
+                <p class="p-home-mainvisual__header" data-text-en="PICKUP">ピックアップ</p>
 				<?php
 				$args = array(
 					'posts_per_page' => 1,
@@ -26,7 +27,7 @@ get_header();
 				);
 				$query = new WP_Query( $args ); ?>
 
-				<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 				<div class="c-media c-media--lg">
 					<a href="<?php the_permalink() ?>">
 						<div class="c-media__body">
