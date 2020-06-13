@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <?php if (ch_device() === 'tablet' || ch_device() === 'mobile') : ?>
-<meta name="viewport" content="width=1024, initial-scale=1.0">
+<meta name="viewport" content="width=1110, initial-scale=1.0">
 <?php else : ?>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <?php endif; ?>
