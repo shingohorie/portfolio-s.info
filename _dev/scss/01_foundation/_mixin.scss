@@ -1,0 +1,65 @@
+// コンテンツ幅
+@mixin container() {
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// フォントサイズ
+@mixin fts($fontSize, $lineHeight) {
+	$rem: $fontSize / 10;
+	$linH: $lineHeight / $fontSize;
+	font-size: #{$fontSize}px;
+	font-size: #{$rem}rem;
+	line-height: $linH;
+}
+
+// 擬似要素に明示的にアイコンフォントを設定
+@mixin iconfont($icon-name) {
+	content: $icon-name;
+	display: inline-block;
+	vertical-align: baseline;
+	font-family: "iconfont";
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none;
+}
+
+// 反転
+@mixin reverse($dir) {
+	@if $dir == horizontal {
+		transform: scale(-1, 1);
+	} @else if $side == vertical {
+		transform: scale(1, -1);
+	}
+}
+
+
+// フォント正規化
+@mixin font-normalizer() {
+	font-style: normal;
+	font-family: $font-Roboto, $font-Noto, $font-general!important;
+}
+
+
+// 非表示
+@mixin visibilittyHidden() {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+}
+
+
+@mixin hoverEffect() {
+	transition: opacity .3s;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}

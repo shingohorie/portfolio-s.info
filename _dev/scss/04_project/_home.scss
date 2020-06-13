@@ -1,0 +1,208 @@
+/*---------------------------------
+
+  Home
+
+---------------------------------*/
+
+/*  
+  Override
+---------------------------------*/
+.l-siteroot {
+	a {
+		pointer-events: none;
+	}
+}
+
+/*  
+  メインビジュアル（最新または固定表示の実績）
+---------------------------------*/
+.p-home-mainvisual {
+	padding: 80px 0;
+}
+
+/*  
+  最近の実績
+---------------------------------*/
+.p-home-works {
+	margin-top: 40px;
+	
+	& + & {
+		margin-top: 90px;
+	}
+
+	&__footer {
+		margin-top: 40px;
+	}
+
+	&__toDetail {
+		text-align: right;
+
+		a {
+			@include hoverEffect;
+
+			&:after {
+				content: '\203A';
+				display: inline-block;
+				margin-left: 5px;
+				transition: transform .3s;
+			}
+
+			&:hover {
+				color: $color-black;
+
+				&:after {
+					transform: translateX(2px);
+				}
+			}
+		}
+	}
+}
+
+/*  
+  ブログの記事抜粋
+---------------------------------*/
+.p-home-journal {
+	$this: &;
+	padding: 40px 0 0;
+	color: $color-gray-dark;
+	@include fts(12, 18);
+
+	&__header {
+		margin-bottom: 30px;
+	}
+
+	&__title {
+		font-weight: normal;
+		@include fts(14, 25);
+
+		span {
+			&:before {
+				content: '';
+				display: inline-block;
+				vertical-align: bottom;
+				width: 25px;
+				height: 25px;
+				margin-right: 10px;
+				background: url(../img/logo_hatena.svg) no-repeat center;
+				background-size: contain;
+			}
+		}
+
+		a:hover {
+			color: $color-black;
+		}
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+
+		> a {
+			display: block;
+
+			&:hover {
+				color: $color-black;
+			}
+		}
+	}
+
+	&__pubdate {
+		margin-bottom: 10px;
+		@include fts(10, 10);
+	}
+
+	&__summary {
+		margin-top: 5px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		@include fts(10, 10);
+		color: $color-gray-light;
+	}
+
+	&__footer {
+		margin-top: 30px;
+	}
+
+	&__toDetail {
+		text-align: right;
+		@include fts(12, 18);
+
+		a {
+			&:after {
+				content: '\203A';
+				display: inline-block;
+				margin-left: 5px;
+				transition: transform .3s;
+			}
+
+			&:hover {
+				color: $color-black;
+
+				&:after {
+					transform: translateX(2px);
+				}
+			}
+
+			&[target="_blank"] {
+				&:after {
+					@include iconfont($c-icon--blank);
+					margin-left: 5px;
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
+
+/*  
+  自己紹介
+---------------------------------*/
+.p-home-about {
+	margin-top: 40px;
+	padding: 40px 0 0;
+	color: $color-gray-dark;
+	border-top: 1px solid $color-gray-extraLight;
+	@include fts(12, 18);
+
+	&__header {
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		font-weight: normal;
+		@include fts(14, 18);
+
+		i {
+			margin-left: 1em;
+			@include fts(10, 18);
+		}
+	}
+
+	&__footer {
+		margin-top: 20px;
+	}
+
+	&__toDetail {
+		text-align: right;
+
+		a {
+			&:after {
+				content: '\203A';
+				display: inline-block;
+				margin-left: 5px;
+				transition: transform .3s;
+			}
+
+			&:hover {
+				color: $color-black;
+
+				&:after {
+					transform: translateX(2px);
+				}
+			}
+		}
+	}
+}
+

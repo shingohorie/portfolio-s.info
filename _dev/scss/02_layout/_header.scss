@@ -1,0 +1,123 @@
+/*---------------------------------
+
+  header
+
+---------------------------------*/
+.l-header {
+	padding: 0 40px;
+	border-bottom: 1px solid $color-gray-extraLight;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		@include container;
+	}
+
+	&__rightNav {
+		order: 1;
+		margin-right: auto;
+	}
+
+	&__leftNav {
+		order: 3;
+		margin-left: auto;
+	}
+
+	&__siteroot {
+		order: 2;
+	}
+}
+
+/*  
+  siteroot
+---------------------------------*/
+.l-siteroot {
+	text-align: center;
+
+	a {
+		@include hoverEffect;
+	}
+
+	span {
+		display: inline-block;
+		vertical-align: bottom;
+		padding: 20px 0;
+		@include fts(30,40);
+		font-family: $font-Lato;
+		font-weight: bold;
+		text-align: center;
+
+		&:after {
+			content: 'Just Another Portfolio Site';
+			display: block;
+			text-align: center;
+			@include fts(10,10);
+			font-family: $font-general;
+			font-weight: normal;
+			color: $color-gray;
+		}
+	}
+}
+
+/*  
+  global navigation
+---------------------------------*/
+.l-gnav {
+	&__items {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		color: $color-gray;
+
+		&:not(:last-child) {
+			margin-right: 150px;
+		}
+
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: bottom;
+			transition: color .3s;
+
+			&:hover, &.is-active {
+				color: $color-black;
+
+				span:before {
+					width: 100%;
+					right: auto;
+					left: 0;
+				}
+			}
+
+			&[target="_blank"] {
+				span:after {
+					@include iconfont($c-icon--blank);
+					margin-left: 5px;
+					font-size: 10px;
+				}
+			}
+		}
+
+		span {
+			display: flex;
+			align-items: center;
+			height: 90px;
+			padding: 0 0 5px;
+			overflow: hidden;
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 0;
+				height: 1px;
+				background-color: $color-black;
+				transition: width 0.2s ease-in-out, right 0.2s ease-in-out, left 0.2s ease-in-out;
+			}
+		}
+	}
+}
