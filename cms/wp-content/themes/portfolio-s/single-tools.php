@@ -75,10 +75,14 @@ get_header();
 							<p>公開終了</p>
 						<?php endif; ?>
 					</div>
-					<?php if( get_field( 'work_repository' ) ): ?>
+					<?php if( have_rows('work_repositories') ): ?>
 					<div class="p-entry-info">
 						<p class="p-entry-info__title">リポジトリURL</p>
-						<p class="u-break-word"><a href="<?php the_field( 'work_repository' ); ?>" target="_blank"><?php the_field( 'work_repository' ); ?></a></p>
+						<ul class="p-entry-info__repositories">
+						<?php while ( have_rows( 'work_repositories' ) ) : the_row(); ?>
+							<li class="u-break-word"><a href="<?php the_field( 'work_repository' ); ?>" target="_blank"><?php the_sub_field( 'work_repository'); ?></a></li>
+						<?php endwhile; ?>
+						</ul>
 					</div>
 					<?php endif; ?>
 					<div class="p-entry-info">
