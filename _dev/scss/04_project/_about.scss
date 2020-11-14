@@ -13,6 +13,32 @@
 			@include fts(12,27);
 		}
 	}
+
+	&__account {
+		display: flex;
+		margin-top: 1em;
+
+		&--github {
+			&:before {
+				content: '';
+				flex-shrink: 0;
+				display: inline-block;
+				width: 25px;
+				height: 25px;
+				margin-right: 8px;
+				background: url(../img/about/icon_github.svg) no-repeat center;
+				background-size: contain;
+			}
+		}
+
+		a {
+			color: $color-link;
+
+			&:hover {
+				color: $color-link-hover;
+			}
+		}
+	}
 }
 
 
