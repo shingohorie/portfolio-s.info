@@ -77,6 +77,12 @@ get_header();
 						<p class="p-entry-info__title">公開日</p>
 						<p><?= date( "Y/m/d", strtotime( get_field('work_release') ) ); ?></p>
 					</div>
+					<?php if( get_field( 'work_repository' ) ): ?>
+					<div class="p-entry-info">
+						<p class="p-entry-info__title">リポジトリURL</p>
+						<p class="u-break-word"><a href="<?php the_field( 'work_repository' ); ?>" target="_blank"><?php the_field( 'work_repository' ); ?></a></p>
+					</div>
+					<?php endif; ?>
 					<?php if( have_rows('work_features') ): ?>
 					<div class="p-entry-info">
 						<p class="p-entry-info__title">特徴</p>
