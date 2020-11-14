@@ -254,6 +254,44 @@
 				width: 1em;
 				text-indent: 0;
 			}
+
+			a {
+				color: $color-link;
+				text-decoration: underline;
+	
+				&:hover {
+					color: $color-link-hover;
+				}
+	
+				&[target="_blank"] {
+					&:after {
+						@include iconfont($c-icon--blank);
+						margin-left: 5px;
+						font-size: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	&__repositories {
+		li {
+			a {
+				color: $color-link;
+				text-decoration: underline;
+	
+				&:hover {
+					color: $color-link-hover;
+				}
+	
+				&[target="_blank"] {
+					&:after {
+						@include iconfont($c-icon--blank);
+						margin-left: 5px;
+						font-size: 10px;
+					}
+				}
+			}
 		}
 	}
 
