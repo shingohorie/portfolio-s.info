@@ -80,7 +80,7 @@ get_header();
 						<p class="p-entry-info__title">リポジトリURL</p>
 						<ul class="p-entry-info__repositories">
 						<?php while ( have_rows( 'work_repositories' ) ) : the_row(); ?>
-							<li class="u-break-word"><a href="<?php the_field( 'work_repository' ); ?>" target="_blank"><?php the_sub_field( 'work_repository'); ?></a></li>
+							<li class="u-break-word"><a href="<?php the_sub_field( 'work_repository' ); ?>" target="_blank"><?php the_sub_field( 'work_repository'); ?></a></li>
 						<?php endwhile; ?>
 						</ul>
 					</div>
