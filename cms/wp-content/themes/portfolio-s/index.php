@@ -31,7 +31,7 @@ get_header();
 				<div class="c-media c-media--lg">
 					<a href="<?php the_permalink() ?>">
 						<div class="c-media__body">
-							<figure class="c-media__vis"><?php the_post_thumbnail(); ?></figure>
+							<figure class="c-media__vis"><?php the_post_thumbnail('', array('loading' =>'lazy')); ?></figure>
 							<div class="c-media__detail">
 								<p class="c-media__title u-weightBold"><?php the_title() ?></p>
 								<div class="c-media__tags">
@@ -73,7 +73,7 @@ get_header();
 									<div class="c-media  <?php if( get_field('is_featured')): echo "c-media--featured"; endif; ?>">
 										<a href="<?php the_permalink() ?>">
 											<div class="c-media__body">
-												<figure class="c-media__vis"><?php the_post_thumbnail(); ?></figure>
+												<figure class="c-media__vis"><?php the_post_thumbnail('', array('loading' =>'lazy')); ?></figure>
 												<div class="c-media__detail">
 													<p class="c-media__title"><?php the_title() ?></p>
 													<?php $tags = get_the_terms( get_the_id(), 'technology' ); ?>

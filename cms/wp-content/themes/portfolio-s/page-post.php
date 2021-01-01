@@ -41,7 +41,7 @@ get_header();
 								<li class="c-cardGroup__item">
 									<div class="c-card <?php if( get_field('is_featured')): echo "c-card--featured"; endif; ?>">
 										<figure class="c-card__vis">
-											<a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
+											<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('', array('loading' =>'lazy')); ?></a>
 										</figure>
 										<div class="c-card__header">
 											<p class="c-card__title"><?php the_title() ?></p>

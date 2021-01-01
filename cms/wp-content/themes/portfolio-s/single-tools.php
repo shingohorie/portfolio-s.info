@@ -29,7 +29,7 @@ get_header();
 					<h1 class="p-entry-title"><?php the_title(); ?></h1>
 
 					<div class="p-entry-eyecatch">
-						<p><img src="<?= the_field('eyecatch'); ?>" alt=""></p>
+						<p><img src="<?= the_field('eyecatch'); ?>" alt="" loading="lazy"></p>
 					</div>
 				</div>
 
@@ -58,7 +58,7 @@ get_header();
 						</figure>
 						<?php elseif( get_sub_field( 'media_switcher' ) == 'image' ) : ?>
 						<figure class="p-entry-figure js-pswp__item">
-							<a href="<?php the_sub_field( 'media_image' )?>" target="_blank" class="js-pswp__link"><img src="<?php the_sub_field( 'media_image' )?>"></a>
+							<a href="<?php the_sub_field( 'media_image' )?>" target="_blank" class="js-pswp__link"><img src="<?php the_sub_field( 'media_image' )?>" loading="lazy"></a>
 							<figcaption><span>Fig <?php echo sprintf('%02d', get_row_index()); ?>.</span> <?php the_sub_field( 'media_caption' )?></figcaption>
 						</figure>
 						<?php endif; ?>					
