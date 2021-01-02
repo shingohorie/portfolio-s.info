@@ -14,7 +14,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	.is-msie & {
+	.is-msie &,
+	.is-mobile & {
 		font-family: $font-Noto, $font-general;
 	}
 }

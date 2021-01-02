@@ -8,20 +8,26 @@ import { ua, normalizeURL, scroller } from 'util'
 
 	// viewport fix
 	const viewportfix = function(){
-		console.log(screen.availWidth)
 		if (/ipad|iphone|android|macintosh/.test(ua) && screen.availWidth <= 1024) {
 			$('meta[name="viewport"').attr('content', 'width=1110');
+			document.documentElement.classList.add('is-mobile');
 		} 
 	}
 
 	// UA fix
 	const uafix = function() {
-		if (/msie|trident\/7/.test(ua)) {
+		const insertWebFont = function(){
 			let link = document.createElement('link');
 			link.rel = 'stylesheet';
 			link.href = '//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap';
 			document.head.appendChild(link);
+		}
+
+		if (/msie|trident\/7/.test(ua)) {
+			insertWebFont()
 			document.documentElement.classList.add('is-msie');
+		} else if (document.documentElement.classList.contains('is-mobile')) {
+			insertWebFont()
 		}
 	}
 
