@@ -29,8 +29,8 @@ get_header();
 				<div class="p-entry-header">
 					<h1 class="p-entry-title"><?php the_title(); ?></h1>
 
-					<div class="p-entry-eyecatch">
-						<p><img src="<?= the_field('eyecatch'); ?>" alt=""></p>
+					<div class="p-entry-eyecatch js-pswp__item">
+						<p><a href="<?= the_field('eyecatch'); ?>" class="js-pswp__link"><img src="<?= the_field('eyecatch'); ?>" alt=""></a></p>
 					</div>
 				</div>
 
