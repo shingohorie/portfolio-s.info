@@ -7,11 +7,12 @@ import { ua, normalizeURL, scroller } from 'util'
 ;(function(){
 
 	// viewport fix
-	// const viewportfix = function(){
-	// 	if (/ipad|iphone|android/.test(ua) && screen.availWidth < 1024) {
-	// 		$('meta[name="viewport"').attr('content', 'width=1110');
-	// 	} 
-	// }
+	const viewportfix = function(){
+		console.log(screen.availWidth)
+		if (/ipad|iphone|android|macintosh/.test(ua) && screen.availWidth <= 1024) {
+			$('meta[name="viewport"').attr('content', 'width=1110');
+		} 
+	}
 
 	// UA fix
 	const uafix = function() {
@@ -55,7 +56,7 @@ import { ua, normalizeURL, scroller } from 'util'
 		}
 	}
 
-	//viewportfix();
+	viewportfix();
 	uafix();
 	stylefix();
 	activateGnav();
