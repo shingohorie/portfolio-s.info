@@ -72,7 +72,7 @@ get_header();
 
                                 <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 								<li class="c-mediaGroup__item">
-									<div class="c-media  <?php if( get_field('is_featured')): echo "c-media--featured"; endif; ?>">
+									<div class="c-media">
 										<a href="<?php the_permalink() ?>">
 											<div class="c-media__body">
 												<figure class="c-media__vis"><?php the_post_thumbnail('', array('loading' =>'lazy')); ?></figure>
@@ -121,7 +121,7 @@ get_header();
 
                                 <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 								<li class="c-mediaGroup__item">
-									<div class="c-media  <?php if( get_field('is_featured')): echo "c-media--featured"; endif; ?>">
+									<div class="c-media">
 										<a href="<?php the_permalink() ?>">
 											<div class="c-media__body">
 												<figure class="c-media__vis"><?php the_post_thumbnail(); ?></figure>
