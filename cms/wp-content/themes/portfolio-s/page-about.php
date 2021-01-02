@@ -249,8 +249,9 @@ get_header();
 												</li>
 												
 												<li class="p-about-skill__item">
-													タスクランナーによる開発
+													タスクランナー等による開発
 													<ul class="p-about-skill__example">
+														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_npm.svg" alt="npm scripts"></i></li>
 														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_gulp.svg" alt="gulp"></i></li>
 														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_grunt.svg" alt="Grunt"></i></li>
 													</ul>
