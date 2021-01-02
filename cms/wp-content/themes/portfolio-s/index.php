@@ -26,7 +26,7 @@ get_header();
 			$query = new WP_Query( $args ); ?>
 
 			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-			<div class="c-media c-media--lg">
+			<div class="c-media c-media--lg c-media--reverse">
 				<a href="<?php the_permalink() ?>">
 					<div class="c-media__body">
 						<figure class="c-media__vis"><?php the_post_thumbnail('', array('loading' =>'lazy')); ?></figure>
