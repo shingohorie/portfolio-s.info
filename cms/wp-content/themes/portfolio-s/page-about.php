@@ -48,9 +48,11 @@ get_header();
 													大規模 / 中規模サイトの新規開発
 													
 													<ul class="p-about-skill__example">
+														<li><a href="<?= get_permalink(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('tif', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('tif', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('tome', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('tome', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('shintaku', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('shintaku', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
@@ -84,17 +86,18 @@ get_header();
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
-													CSS3・SVGによるアニメーションの実装
+													SVGによるアニメーションの実装
 													<ul class="p-about-skill__example">
+														<li><a href="<?= get_permalink(get_page_by_path('cheeseday', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('cheeseday', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('rj-web', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-web', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('vogue-tiffany', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('vogue-tiffany', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
-													BEM・FLOCSS・AtomicDesignによるモジュール設計
+													CSS設計手法を採用したモジュール開発
 													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('shintaku', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('shintaku', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('shintaku', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('shintaku', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('rj-web', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-web', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
@@ -113,6 +116,7 @@ get_header();
 												<li class="p-about-skill__item">
 													ガイドライン策定・テンプレート設計・量産者や外部作業者への品質管理
 													<ul class="p-about-skill__example">
+														<li><a href="<?= get_permalink(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('tif', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('tif', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
@@ -131,19 +135,27 @@ get_header();
 												<li class="p-about-skill__item">jQueryによる基本的なプログラミング</li>
 												<li class="p-about-skill__item">ES6によるオブジェクト指向プログラミング</li>
 												<li class="p-about-skill__item">
+													CSSと連携した演出・インタラクションの実装
+													<ul class="p-about-skill__example">
+														<li><a href="<?= get_permalink(get_page_by_path('menu', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('menu', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('vogue-tiffany', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('vogue-tiffany', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('pentax', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('pentax', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+													</ul>
+												</li>
+												<li class="p-about-skill__item">
 													JSフレームワークによる開発経験
 													<ul class="p-about-skill__example">
 														<li><a href="<?= get_term_link('vuejs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_vue.svg" alt="Vue.js"></i></a></li>
 														<li><a href="<?= get_term_link('nuxtjs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_nuxt.svg" alt="Nuxt.js"></i></a></li>
 														<li><a href="<?= get_term_link('angularjs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_angular.svg" alt="AngularJS"></i></a></li>
-														<li><a href="<?= get_term_link('backbonejs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_backbone.svg" alt="Backbone.js"></i></a></li>
+														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_backbone.svg" alt="Backbone.js"></i></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
 													モジュールバンドラによるモジュール管理
 													<ul class="p-about-skill__example">
 														<li><a href="<?= get_term_link('webpack', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_webpack.svg" alt="webpack"></i></a></li>
-														<li><a href="<?= get_term_link('browserify', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_browserify.svg" alt="Browserify"></i></a></li>
+														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_browserify.svg" alt="Browserify"></i></li>
 														<li><a href="<?= get_term_link('requirejs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_require.svg" alt="RequireJS"></i></a></li>
 													</ul>
 												</li>
@@ -225,6 +237,7 @@ get_header();
 														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_svn.svg" alt="Subversion"></i></li>
 													</ul>
 												</li>
+
 												<li class="p-about-skill__item">
 													開発環境の仮想化と構成管理
 													<ul class="p-about-skill__example">
