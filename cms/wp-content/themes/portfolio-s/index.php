@@ -13,44 +13,46 @@
 get_header();
 
 ?>
+<div class="l-mainvisual">
+	<div class="p-home-mainvisual">
+		<div class="p-home-mainvisual__inner">
+			<!-- <p class="p-home-mainvisual__header" data-text-en="PICKUP">ピックアップ</p> -->
+			<?php
+			$args = array(
+				'posts_per_page' => 1,
+				'post_type' => 'post',
+				'post__in' => get_option( 'sticky_posts' )
+			);
+			$query = new WP_Query( $args ); ?>
 
+			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+			<div class="c-media c-media--lg">
+				<a href="<?php the_permalink() ?>">
+					<div class="c-media__body">
+						<figure class="c-media__vis"><?php the_post_thumbnail('', array('loading' =>'lazy')); ?></figure>
+						<div class="c-media__detail">
+							<p class="c-media__title u-weightBold"><?php the_title() ?></p>
+							<div class="c-media__tags">
+								<ul class="c-tagGroup">
+									<?php $tags = get_the_terms( get_the_id(), 'technology' ); ?>
+									<?php foreach($tags as $tag) : ?>
+									<li class="c-tagGroup__item"><span class="c-tag"><?= $tag->name; ?></span></li>
+									<?php endforeach; ?>
+								</ul>
+							</div>
+							<p class="c-media__note"><?= date("Y/m", strtotime(get_field('work_release'))); ?></p>
+							<!-- <p class="c-media__toDetail">詳細をみる</p> -->
+						</div>
+					</div>
+				</a>
+			</div>
+			<?php endwhile; ?>
+		</div>
+	</div>
+</div>
 <div class="l-structure l-structure--home">
 	<div class="l-structure__inner">
-		<div class="l-mainvisual">
-			<div class="p-home-mainvisual">
-                <p class="p-home-mainvisual__header" data-text-en="PICKUP">ピックアップ</p>
-				<?php
-				$args = array(
-					'posts_per_page' => 1,
-					'post_type' => 'post',
-					'post__in' => get_option( 'sticky_posts' )
-				);
-				$query = new WP_Query( $args ); ?>
-
-                <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-				<div class="c-media c-media--lg">
-					<a href="<?php the_permalink() ?>">
-						<div class="c-media__body">
-							<figure class="c-media__vis"><?php the_post_thumbnail('', array('loading' =>'lazy')); ?></figure>
-							<div class="c-media__detail">
-								<p class="c-media__title u-weightBold"><?php the_title() ?></p>
-								<div class="c-media__tags">
-									<ul class="c-tagGroup">
-										<?php $tags = get_the_terms( get_the_id(), 'technology' ); ?>
-										<?php foreach($tags as $tag) : ?>
-										<li class="c-tagGroup__item"><span class="c-tag"><?= $tag->name; ?></span></li>
-										<?php endforeach; ?>
-									</ul>
-								</div>
-								<p class="c-media__note"><?= date("Y/m", strtotime(get_field('work_release'))); ?></p>
-								<p class="c-media__toDetail">詳細をみる</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<?php endwhile; ?>
-			</div>
-		</div>
+		
 		<div class="l-main">
 			<div class="p-home-works">
 				<div class="p-home-works__header">

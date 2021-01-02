@@ -18,6 +18,13 @@
 ---------------------------------*/
 .p-home-mainvisual {
 	padding: 80px 0;
+	border-bottom: 1px solid $color-gray-extraLight;
+
+	&__inner {
+		max-width: 1050px;
+		margin: auto;
+	}
+
 
 	&__header {
 		display: flex;

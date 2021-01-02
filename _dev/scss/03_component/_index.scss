@@ -68,6 +68,17 @@
 		}
 	}
 
+	&#{&}--reverse {
+		#{$this}__body {
+			flex-direction: row-reverse
+		}
+
+		#{$this}__vis {
+			margin-right: 0!important;
+			margin-left: 50px;
+		}
+	}
+
 	&#{&}--lg {
 		> a {
 			&:hover {
@@ -88,7 +99,7 @@
 
 		#{$this}__title {
 			margin-bottom: 20px;
-			@include fts(28,42);
+			@include fts(34,42);
 		}
 
 		#{$this}__note {
@@ -134,6 +145,10 @@
 		width: 180px;
 		margin-right: 30px;
 		border: 1px solid $color-gray-extraLight;
+	}
+
+	&__detail {
+		flex: 1;
 	}
 
 	&__title {
