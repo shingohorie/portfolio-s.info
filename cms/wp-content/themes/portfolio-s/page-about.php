@@ -45,6 +45,13 @@ get_header();
 											<ul class="p-about-skill__items">
 												<li class="p-about-skill__item">HTML5 / CSS3による基本的なコーディング</li>
 												<li class="p-about-skill__item">
+													メタ言語による開発
+													<ul class="p-about-skill__example">
+														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_sass.svg" alt="Sass"></i></li>
+														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_pug.svg" alt="Pug"></i></li>
+													</ul>
+												</li>
+												<li class="p-about-skill__item">
 													大規模 / 中規模サイトの新規開発
 													
 													<ul class="p-about-skill__example">
@@ -135,6 +142,12 @@ get_header();
 												<li class="p-about-skill__item">jQueryによる基本的なプログラミング</li>
 												<li class="p-about-skill__item">ES6によるオブジェクト指向プログラミング</li>
 												<li class="p-about-skill__item">
+													AltJSによる開発
+													<ul class="p-about-skill__example">
+														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_coffeescript.svg" alt="CoffeeScript"></i></li>
+													</ul>
+												</li>
+												<li class="p-about-skill__item">
 													CSSと連携した演出・インタラクションの実装
 													<ul class="p-about-skill__example">
 														<li><a href="<?= get_permalink(get_page_by_path('menu', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('menu', OBJECT, 'post')->ID); ?>">[事例]</a></li>
@@ -201,14 +214,6 @@ get_header();
 														<li><a href="<?= get_term_link('php', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_php.svg" alt="PHP"></i></a></li>
 														<li><a href="<?= get_term_link('nodejs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_nodejs.svg" alt="Node.js"></i></a></li>
 														<li><a href="<?= get_term_link('gas', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_gas.svg" alt="Google App Script"></i></a></li>
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													メタ言語による開発
-													<ul class="p-about-skill__example">
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_sass.svg" alt="Sass"></i></li>
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_pug.svg" alt="Pug"></i></li>
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_coffeescript.svg" alt="CoffeeScript"></i></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
