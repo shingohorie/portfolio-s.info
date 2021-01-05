@@ -43,7 +43,8 @@ get_header();
 										</div>
 										<div class="p-about-skill__body">
 											<ul class="p-about-skill__items">
-												<li class="p-about-skill__item">HTML5 / CSS3による基本的なコーディング</li>
+												<li class="p-about-skill__item">
+													HTML5 / CSS3による基本的なコーディング</li>
 												<li class="p-about-skill__item">
 													メタ言語による開発
 													<ul class="p-about-skill__example">
@@ -142,12 +143,6 @@ get_header();
 												<li class="p-about-skill__item">jQueryによる基本的なプログラミング</li>
 												<li class="p-about-skill__item">ES6によるオブジェクト指向プログラミング</li>
 												<li class="p-about-skill__item">
-													AltJSによる開発
-													<ul class="p-about-skill__example">
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_coffeescript.svg" alt="CoffeeScript"></i></li>
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
 													CSSと連携した演出・インタラクションの実装
 													<ul class="p-about-skill__example">
 														<li><a href="<?= get_permalink(get_page_by_path('menu', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('menu', OBJECT, 'post')->ID); ?>">[事例]</a></li>
@@ -156,7 +151,15 @@ get_header();
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
-													JSフレームワークによる開発経験
+													AltJSによる開発
+													<ul class="p-about-skill__example">
+														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_typescript.svg" alt="TypeScript"></i></li>
+														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_coffeescript.svg" alt="CoffeeScript"></i></li>
+													</ul>
+												</li>
+
+												<li class="p-about-skill__item">
+													JSフレームワークによる開発
 													<ul class="p-about-skill__example">
 														<li><a href="<?= get_term_link('vuejs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_vue.svg" alt="Vue.js"></i></a></li>
 														<li><a href="<?= get_term_link('nuxtjs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_nuxt.svg" alt="Nuxt.js"></i></a></li>
@@ -217,6 +220,14 @@ get_header();
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
+													タスクランナー等による開発
+													<ul class="p-about-skill__example">
+														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_npm.svg" alt="npm scripts"></i></li>
+														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_gulp.svg" alt="gulp"></i></li>
+														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_grunt.svg" alt="Grunt"></i></li>
+													</ul>
+												</li>
+												<li class="p-about-skill__item">
 													ジェネレータによるスタイルガイドの作成
 													<ul class="p-about-skill__example">
 														<li><a href="<?= get_term_link('kss', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_kss.png" alt="KSS"></i></a></li>
@@ -253,15 +264,6 @@ get_header();
 													</ul>
 												</li>
 												
-												<li class="p-about-skill__item">
-													タスクランナー等による開発
-													<ul class="p-about-skill__example">
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_npm.svg" alt="npm scripts"></i></li>
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_gulp.svg" alt="gulp"></i></li>
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_grunt.svg" alt="Grunt"></i></li>
-													</ul>
-												</li>
-
 												<li class="p-about-skill__item">
 													PaaS / BaaS サービスの利用
 													<ul class="p-about-skill__example">
