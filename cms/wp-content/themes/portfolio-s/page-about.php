@@ -94,14 +94,6 @@ get_header();
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
-													SVGによるアニメーションの実装
-													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('cheeseday', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('cheeseday', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('rj-web', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-web', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
 													CSS設計手法を採用したモジュール開発
 													<ul class="p-about-skill__example">
 														<li><a href="<?= get_permalink(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>">[事例]</a></li>
@@ -176,9 +168,11 @@ get_header();
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
-													D3.jsによるデータビジュアライゼーションの実装
+													SVGによるアニメーションの実装<br>D3.jsによるデータビジュアライゼーションの実装
 													<ul class="p-about-skill__example">
+														<li><a href="<?= get_permalink(get_page_by_path('cheeseday', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('cheeseday', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('rj-web', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-web', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
