@@ -46,7 +46,7 @@ get_header();
 												<li class="p-about-skill__item">
 													HTML5 / CSS3による基本的なコーディング</li>
 												<li class="p-about-skill__item">
-													メタ言語による開発
+													メタ言語を使用した開発経験
 													<ul class="p-about-skill__example">
 														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_sass.svg" alt="Sass"></i></li>
 														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_pug.svg" alt="Pug"></i></li>
@@ -143,7 +143,7 @@ get_header();
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
-													AltJSによる開発
+													AltJSを使用した開発経験
 													<ul class="p-about-skill__example">
 														<li><a href="<?= get_term_link('typescript', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_typescript.svg" alt="TypeScript"></i></a></li>
 														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_coffeescript.svg" alt="CoffeeScript"></i></li>
@@ -151,7 +151,7 @@ get_header();
 												</li>
 
 												<li class="p-about-skill__item">
-													フレームワークによる開発
+													フレームワークを使用した開発経験
 													<ul class="p-about-skill__example">
 														<li><a href="<?= get_term_link('electron', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_electron.svg" alt="Electron"></i></a></li>
 														<li><a href="<?= get_term_link('vuejs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_vue.svg" alt="Vue.js"></i></a></li>
