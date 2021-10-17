@@ -151,7 +151,7 @@ get_header();
 												</li>
 
 												<li class="p-about-skill__item">
-													JSフレームワーク / ソフトウェアフレームワークによる開発
+													フレームワークによる開発
 													<ul class="p-about-skill__example">
 														<li><a href="<?= get_term_link('electron', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_electron.svg" alt="Electron"></i></a></li>
 														<li><a href="<?= get_term_link('vuejs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_vue.svg" alt="Vue.js"></i></a></li>
