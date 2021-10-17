@@ -145,14 +145,15 @@ get_header();
 												<li class="p-about-skill__item">
 													AltJSによる開発
 													<ul class="p-about-skill__example">
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_typescript.svg" alt="TypeScript"></i></li>
+														<li><a href="<?= get_term_link('typescript', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_typescript.svg" alt="TypeScript"></i></a></li>
 														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_coffeescript.svg" alt="CoffeeScript"></i></li>
 													</ul>
 												</li>
 
 												<li class="p-about-skill__item">
-													JSフレームワークによる開発
+													JSフレームワーク / ソフトウェアフレームワークによる開発
 													<ul class="p-about-skill__example">
+														<li><a href="<?= get_term_link('electron', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_electron.svg" alt="Electron"></i></a></li>
 														<li><a href="<?= get_term_link('vuejs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_vue.svg" alt="Vue.js"></i></a></li>
 														<li><a href="<?= get_term_link('nuxtjs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_nuxt.svg" alt="Nuxt.js"></i></a></li>
 														<li><a href="<?= get_term_link('angularjs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_angular.svg" alt="AngularJS"></i></a></li>
@@ -179,6 +180,12 @@ get_header();
 													PWAの実装（キャッシュ制御・プッシュ通知）
 													<ul class="p-about-skill__example">
 														<li><a href="<?= get_permalink(get_page_by_path('rj-pwa', OBJECT, 'tools')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-pwa', OBJECT, 'tools')->ID); ?>">[事例]</a></li>
+													</ul>
+												</li>
+												<li class="p-about-skill__item">
+													Electronによるデスクトップアプリの開発
+													<ul class="p-about-skill__example">
+														<li><a href="<?= get_permalink(get_page_by_path('rj-metatool', OBJECT, 'tools')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-metatool', OBJECT, 'tools')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
