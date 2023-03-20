@@ -66,11 +66,11 @@ get_header();
 												<li class="p-about-skill__item">
 													大規模 / 中規模サイトの保守運用 
 													<ul class="p-about-skill__example">
+														<li><a href="<?= get_permalink(get_page_by_path('megsnow', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('megsnow', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('mizkan', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('mizkan', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('nabco', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('nabco', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('sony', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('sony', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('sonydi-acos', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('sonydi-acos', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('sony', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('megsnow', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('sony', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('mizkan', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('sony', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('nabco', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
