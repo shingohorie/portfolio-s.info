@@ -68,6 +68,9 @@ get_header();
 													<ul class="p-about-skill__example">
 														<li><a href="<?= get_permalink(get_page_by_path('sony', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('sony', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('sonydi-acos', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('sonydi-acos', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('sony', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('megsnow', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('sony', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('mizkan', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('sony', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('nabco', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
@@ -171,15 +174,17 @@ get_header();
 												<li class="p-about-skill__item">
 													SVGによるアニメーションの実装<br>D3.jsによるデータビジュアライゼーションの実装
 													<ul class="p-about-skill__example">
+														<li><a href="<?= get_permalink(get_page_by_path('tokyoink', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('cheeseday', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('cheeseday', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('cheeseday', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('rj-web', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-web', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
-													PWAの実装（キャッシュ制御・プッシュ通知）
+													PWAの実装
 													<ul class="p-about-skill__example">
 														<li><a href="<?= get_permalink(get_page_by_path('rj-pwa', OBJECT, 'tools')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-pwa', OBJECT, 'tools')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('odakyuop-pwa', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('odakyuop-pwa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
