@@ -57,8 +57,8 @@ get_header();
 												<li class="p-about-skill__item">
 													大量生産の仕組みづくり
 													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('cesar', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('cesar', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('cesar', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
