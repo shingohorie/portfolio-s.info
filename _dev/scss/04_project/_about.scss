@@ -99,6 +99,12 @@
 		}
 	}
 
+	&#{&}--coordination {
+		#{$this}__header {
+			background-image: url(../img/about/bg_skill_title_05.jpg);
+		}
+	}
+
 	&__header {
 		position: relative;
 		display: flex;

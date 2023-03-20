@@ -29,6 +29,7 @@ get_header();
 					<div class="p-about-introduction">
 						<p class="p-about-introduction__title">堀江真悟  <i>Shingo Horie</i></p>
 						<p>マークアップならびにフロントエンドエンジニアとして、新規開発から保守運用、小規模案件から大規模案件まで多数の案件を担当してきました。<br>コーポレートサイトやキャンペーンサイトなどの一般的なサイト制作をはじめ、JSフレームワークを用いたインタラクティブなコンテンツ開発、時にはレスポン<br>シブメールマガジン・他言語対応のグローバルサイト・CMS管理画面のカスタマイズなど、幅広く手がけています。</p>
+						<p>最近では、開発のコーディネート（ディレクターとエンジニアの間に立ってガイドラインを策定したり、品質管理・進行管理・工程の再定義など）や、大量生産の仕組みづくり、外部協力会社へのディレクションを行っています。</p>
 						<p>1985年生 群馬県出身 / 東京都在住</p>
 						<p class="p-about-introduction__account p-about-introduction__account--github"><a href="https://github.com/shingohorie" target="_blank">shingohorie</a></p>
 					</div>
@@ -36,6 +37,41 @@ get_header();
 					<div class="p-about-skillGroup p-about-skillGroup--twoUp">
 						<div class="p-about-skillGroup__inner">
 							<ul class="p-about-skillGroup__items">
+							<li class="p-about-skillGroup__item">
+									<div class="p-about-skill p-about-skill--coordination">
+										<div class="p-about-skill__header">
+											<p class="p-about-skill__title">Coordination</p>
+										</div>
+										<div class="p-about-skill__body">
+											<ul class="p-about-skill__items">
+												<li class="p-about-skill__item">
+													開発のコーディネート・外部協力作業者へのディレクション
+													<ul class="p-about-skill__example">
+														<li><a href="<?= get_permalink(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('psup', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('psup', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('alfresa', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('alfresa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('rj-package', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-package', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+													</ul>
+												</li>
+												<li class="p-about-skill__item">
+													大量生産の仕組みづくり
+													<ul class="p-about-skill__example">
+														<li><a href="<?= get_permalink(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('cesar', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+													</ul>
+												</li>
+												<li class="p-about-skill__item">
+													工程の再定義
+													<ul class="p-about-skill__example">
+														<li><a href="<?= get_permalink(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('cesar', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('cesar', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
 								<li class="p-about-skillGroup__item">
 									<div class="p-about-skill p-about-skill--html">
 										<div class="p-about-skill__header">
@@ -116,14 +152,7 @@ get_header();
 														<li><a href="<?= get_permalink(get_page_by_path('reazon', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('reazon', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
-												<li class="p-about-skill__item">
-													ガイドライン策定・テンプレート設計・量産者や外部作業者への品質管理
-													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('tif', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('tif', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-													</ul>
-												</li>
+												
 											</ul>
 										</div>
 									</div>
@@ -149,7 +178,6 @@ get_header();
 													AltJSを使用した開発経験
 													<ul class="p-about-skill__example">
 														<li><a href="<?= get_term_link('typescript', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_typescript.svg" alt="TypeScript"></i></a></li>
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_coffeescript.svg" alt="CoffeeScript"></i></li>
 													</ul>
 												</li>
 
@@ -207,7 +235,7 @@ get_header();
 								<li class="p-about-skillGroup__item">
 									<div class="p-about-skill p-about-skill--prog">
 										<div class="p-about-skill__header">
-											<p class="p-about-skill__title">CMS / PHP / Node.js / ...</p>
+											<p class="p-about-skill__title">CMS / PHP / Node.js ...</p>
 										</div>
 										<div class="p-about-skill__body">
 											<ul class="p-about-skill__items">
