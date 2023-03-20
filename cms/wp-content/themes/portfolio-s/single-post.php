@@ -70,7 +70,7 @@ get_header();
 						<?php if( get_field( 'work_url' ) ): ?>
 							<p class="u-break-word"><a href="<?php the_field( 'work_url' ); ?>" target="_blank"><?php the_field( 'work_url' ); ?></a></p>
 						<?php else: ?>
-							<p>公開終了（またはリニューアル）</p>
+							<p>公開終了（または非公開・再リニューアルなど）</p>
 						<?php endif; ?>
 					</div>
 					<?php if( get_field('work_release') ): ?>
