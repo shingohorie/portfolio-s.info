@@ -85,10 +85,12 @@ get_header();
 						</ul>
 					</div>
 					<?php endif; ?>
+					<?php if( get_field('work_release') ): ?>
 					<div class="p-entry-info">
 						<p class="p-entry-info__title">公開日</p>
 						<p><?= date( "Y/m/d", strtotime( get_field('work_release') ) ); ?></p>
 					</div>
+					<?php endif; ?>
 					<?php if( have_rows('work_features') ): ?>
 					<div class="p-entry-info">
 						<p class="p-entry-info__title">特徴</p>
