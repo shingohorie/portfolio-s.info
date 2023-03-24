@@ -88,7 +88,9 @@ get_header();
 														</ul>
 													</div>
 													<?php endif; ?>
+													<?php if(get_field('work_release')) : ?>
 													<p class="c-media__note"><?= date("Y/m", strtotime(get_field('work_release'))); ?></p>
+													<?php endif; ?>
 												</div>
 											</div>
 										</a>
@@ -135,7 +137,9 @@ get_header();
 														<?php endforeach; ?>
 														</ul>
 													</div>
+													<?php if(get_field('work_release')) : ?>
 													<p class="c-media__note"><?= date("Y/m", strtotime(get_field('work_release'))); ?></p>
+													<?php endif; ?>
 												</div>
 											</div>
 										</a>

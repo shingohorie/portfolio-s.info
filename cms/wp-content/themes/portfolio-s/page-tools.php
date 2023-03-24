@@ -58,9 +58,11 @@ get_header();
 											</ul>
 											<?php endif; ?>
 										</div>
+										<?php if(get_field('work_release')) : ?>
 										<div class="c-card__footer">
 											<p class="c-card__note"><?= date("Y/m", strtotime(get_field('work_release'))); ?></p>
 										</div>
+										<?php endif; ?>
 									</div>
 								</li>
 
