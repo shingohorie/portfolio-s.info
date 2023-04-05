@@ -32,6 +32,7 @@ get_header();
 						<p class="u-mtOneLine">最近では、開発のコーディネート（ディレクターとエンジニアの間に立ち、ガイドライン策定・ソースレビュー・進行管理・工程の再定義などを行います）や、大量生産の仕組みづくり、外部協力会社へのディレクションを行っています。</p>
 						<p class="u-mtOneLine">1985年生 群馬県出身 / 東京都在住</p>
 						<p class="p-about-introduction__account p-about-introduction__account--github"><a href="https://github.com/shingohorie" target="_blank">shingohorie</a></p>
+						<p class="p-about-introduction__account p-about-introduction__account--hatena"><a href="https://shinimae.hatenablog.com/" target="_blank">knowledge base</a></p>
 					</div>
 
 					<div class="p-about-skillGroup p-about-skillGroup--twoUp">
@@ -45,26 +46,18 @@ get_header();
 										<div class="p-about-skill__body">
 											<ul class="p-about-skill__items">
 												<li class="p-about-skill__item">
-													<p>開発のコーディネート</p>
-													<p>外部協力作業者へのディレクション</p>
-													<p>ドキュメンテーションなど</p>
-													<ul class="p-about-skill__example">
+													<p>開発のコーディネート<br>外部協力作業者へのディレクション / ドキュメンテーション / 大量生産の仕組みづくり / 工程の再定義 など</p>
+													<ul class="p-about-skill__example u-mtOneLine">
 														<li><a href="<?= get_permalink(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('cesar', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('cesar', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('psup', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('psup', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('alfresa', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('alfresa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('rj-package', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-package', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('tif', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('tif', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('rj-sg', OBJECT, 'tools')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-sg', OBJECT, 'tools')->ID); ?>">[事例]</a></li>
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>大量生産の仕組みづくり</p>
-													<p>工程の再定義</p>
-													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('cesar', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('cesar', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														<li><a href="<?= get_permalink(get_page_by_path('cosmedicsjp', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('cosmedicsjp', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 											</ul>
