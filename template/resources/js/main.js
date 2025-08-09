@@ -42,16 +42,18 @@ const scrollerfix = function () {
 
 // photoSwipe setu
 const setPhotoSwipe = function () {
-  document.querySelectorAll('a[data-pswp-src]').forEach((anchor) => {
-    const img = anchor.querySelector('img');
-    if (img) {
+  $('a[data-pswp-src]').each((i, ele) => {
+    const $anchor = $(ele);
+    const $img = $(ele).find('img');
+    const img = $img[0];
+    if ($img.length) {
       if (img.complete) {
-        anchor.setAttribute('data-pswp-width', img.naturalWidth);
-        anchor.setAttribute('data-pswp-height', img.naturalHeight);
+        $anchor.attr('data-pswp-width', img.naturalWidth);
+        $anchor.attr('data-pswp-height', img.naturalHeight);
       } else {
-        img.addEventListener('load', () => {
-          anchor.setAttribute('data-pswp-width', img.naturalWidth);
-          anchor.setAttribute('data-pswp-height', img.naturalHeight);
+        $img.on('load', function () {
+          $anchor.attr('data-pswp-width', img.naturalWidth);
+          $anchor.attr('data-pswp-height', img.naturalHeight);
         });
       }
     }
