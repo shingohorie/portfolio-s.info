@@ -1,4 +1,4 @@
-@use "vars-general";
+@use 'vars-general' as *;
 
 // コンテンツ幅
 @mixin container() {
@@ -9,7 +9,7 @@
 
 // フォントサイズ
 @mixin fts($fontSize, $lineHeight) {
-  $rem: calc($fontSize / 100);
+  $rem: calc($fontSize / 10);
   $linH: calc($lineHeight / $fontSize);
   font-size: #{$fontSize}px;
   font-size: #{$rem}rem;

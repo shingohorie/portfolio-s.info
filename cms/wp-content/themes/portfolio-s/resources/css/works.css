@@ -26,7 +26,7 @@
 .p-entry-title {
   padding-bottom: 10px;
   font-size: 28px;
-  font-size: 0.28rem;
+  font-size: 2.8rem;
   line-height: 1.5;
   font-weight: bold;
   background: linear-gradient(to right, #000 0%, #000 100%) no-repeat left bottom;
@@ -66,7 +66,7 @@
 .p-entry-position {
   margin-bottom: 30px;
   font-size: 12px;
-  font-size: 0.12rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   color: #999;
   overflow: hidden;
@@ -93,7 +93,7 @@
 .p-entry-overview {
   margin-bottom: 40px;
   font-size: 12px;
-  font-size: 0.12rem;
+  font-size: 1.2rem;
   line-height: 1.8;
 }
 .p-entry-overview > *:last-child {
@@ -124,7 +124,7 @@
   width: 12px;
   text-indent: 0;
   font-size: 16px;
-  font-size: 0.16rem;
+  font-size: 1.6rem;
   line-height: 1.125;
 }
 .p-entry-overview ol {
@@ -190,7 +190,7 @@
   padding: 20px;
   border: 1px solid #e8e7e7;
   font-size: 12px;
-  font-size: 0.12rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 .p-entry-figure video,
@@ -217,13 +217,13 @@
   padding: 40px 0 0;
   color: #555;
   font-size: 12px;
-  font-size: 0.12rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 .p-entry-info__title {
   margin-bottom: 10px;
   font-size: 16px;
-  font-size: 0.16rem;
+  font-size: 1.6rem;
   line-height: 1.5;
 }
 .p-entry-info__list li {
@@ -299,7 +299,7 @@
   margin-bottom: 10px;
   font-weight: normal;
   font-size: 12px;
-  font-size: 0.12rem;
+  font-size: 1.2rem;
   line-height: 1;
   color: #999;
   white-space: nowrap;
@@ -344,7 +344,7 @@
   margin-bottom: 10px;
   font-weight: normal;
   font-size: 12px;
-  font-size: 0.12rem;
+  font-size: 1.2rem;
   line-height: 1;
   color: #999;
   white-space: nowrap;

@@ -9,13 +9,13 @@
 .p-about-introduction {
   margin-bottom: 50px;
   font-size: 14px;
-  font-size: 0.14rem;
+  font-size: 1.4rem;
   line-height: 2;
 }
 .p-about-introduction__title {
   margin-bottom: 20px;
   font-size: 18px;
-  font-size: 0.18rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   font-weight: bold;
 }
@@ -23,7 +23,7 @@
   margin-left: 10px;
   font-weight: normal;
   font-size: 12px;
-  font-size: 0.12rem;
+  font-size: 1.2rem;
   line-height: 2.25;
 }
 .p-about-introduction__account {
@@ -113,14 +113,14 @@ d .p-about-skill__title {
   text-align: center;
   font-weight: bold;
   font-size: 24px;
-  font-size: 0.24rem;
+  font-size: 2.4rem;
   line-height: 1;
   color: #fff;
 }
 d .p-about-skill__body {
   padding: 30px 30px;
   font-size: 14px;
-  font-size: 0.14rem;
+  font-size: 1.4rem;
   line-height: 1.5;
 }
 d .p-about-skill__item:not(:last-child) {
@@ -131,7 +131,7 @@ d .p-about-skill__example {
   align-items: center;
   margin-top: 3px;
   font-size: 12px;
-  font-size: 0.12rem;
+  font-size: 1.2rem;
   line-height: 1;
 }
 d .p-about-skill__example li {
@@ -177,6 +177,6 @@ d .p-about-skill__example li .c-tooltip {
   padding: 5px 8px;
   white-space: nowrap;
   font-size: 12px;
-  font-size: 0.12rem;
+  font-size: 1.2rem;
   line-height: 1;
 }

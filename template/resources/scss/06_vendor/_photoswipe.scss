@@ -1,3 +1,4 @@
+@use '../01_foundation/mixin' as *;
 @use 'photoswipe/dist/photoswipe.css';
 
 .pswp__counter,
@@ -9,9 +10,5 @@
 a[data-pswp-src] {
   cursor: pointer;
   cursor: zoom-in;
-  transition: opacity 0.3s;
-
-  &:hover {
-    opacity: 0.7;
-  }
+   @include hoverEffect();
 }
