@@ -1,3 +1,182 @@
-@charset "UTF-8";
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./template/resources/scss/about.scss ***!
+  \*********************************************************************************************************************************************************/
+/*---------------------------------
 
-.p-about-introduction{margin-bottom:50px;font-size:14px;font-size:1.4rem;line-height:2}.p-about-introduction__title{margin-bottom:20px;font-size:18px;font-size:1.8rem;line-height:1.5;font-weight:700}.p-about-introduction__title i{margin-left:10px;font-weight:400;font-size:12px;font-size:1.2rem;line-height:2.25}.p-about-introduction__account{display:-webkit-box;display:-ms-flexbox;display:flex;margin-top:1em}.p-about-introduction__account--github:before{content:"";-ms-flex-negative:0;flex-shrink:0;display:inline-block;width:25px;height:25px;margin-right:8px;background:url(../img/about/icon_github.svg) no-repeat 50%;background-size:contain}.p-about-introduction__account--hatena:before{content:"";-ms-flex-negative:0;flex-shrink:0;display:inline-block;width:25px;height:25px;margin-right:8px;background:url(../img/about/icon_hatena.svg) no-repeat 50%;background-size:36px auto;}.p-about-introduction__account a{color:#759dc9}.p-about-introduction__account a:hover{color:#378cea}.p-about-skillGroup{overflow:hidden}.p-about-skillGroup.p-about-skillGroup--twoUp .p-about-skillGroup__item{width:calc(50% - 30px);flex: 1 0 auto;}.p-about-skillGroup__inner{margin-left:-15px;margin-right:-15px;margin-bottom:-30px}.p-about-skillGroup__items{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}.p-about-skillGroup__item{border:1px solid #e8e7e7;margin-left:15px;margin-right:15px;margin-bottom:30px}.p-about-skill.p-about-skill--html .p-about-skill__header{background-image:url(../img/about/bg_skill_title_01.jpg)}.p-about-skill.p-about-skill--js .p-about-skill__header{background-image:url(../img/about/bg_skill_title_02.jpg)}.p-about-skill.p-about-skill--prog .p-about-skill__header{background-image:url(../img/about/bg_skill_title_03.jpg)}.p-about-skill.p-about-skill--dev .p-about-skill__header{background-image:url(../img/about/bg_skill_title_04.jpg)}.p-about-skill.p-about-skill--coordination .p-about-skill__header{background-image:url(../img/about/bg_skill_title_05.jpg)}.p-about-skill__header{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:110px;margin:-1px -1px 0;padding:20px;background-color:#000;background-repeat:no-repeat;background-position:0;background-size:100% auto}.p-about-skill__header:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5)}.p-about-skill__title{position:relative;-webkit-box-flex:1;-ms-flex:1;flex:1;text-align:center;font-weight:700;font-size:24px;font-size:2.4rem;line-height:1;color:#fff}.p-about-skill__body{padding:30px;font-size:14px;font-size:1.4rem;line-height:1.5}.p-about-skill__item:not(:last-child){margin-bottom:20px}.p-about-skill__example{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:3px;font-size:12px;font-size:1.2rem;line-height:1}.p-about-skill__example li{margin-right:5px}.p-about-skill__example li a{position:relative;color:#759dc9}.p-about-skill__example li a:hover{color:#378cea}.p-about-skill__example li a:hover img{opacity:.7}.p-about-skill__example li i{position:relative;display:inline-block;vertical-align:bottom;width:25px;height:25px}.p-about-skill__example li i img{display:block;position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%;-o-object-fit:contain;object-fit:contain;-o-object-position:center;object-position:center}.p-about-skill__example li .c-tooltip{position:absolute;bottom:100%;left:0;z-index:1;background:rgba(0,0,0,.8);color:#fff;margin-bottom:5px;padding:5px 8px;white-space:nowrap;font-size:12px;font-size:1.2rem;line-height:1}
+  About
+
+---------------------------------*/
+.p-about-introduction {
+  margin-bottom: 50px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+.p-about-introduction__title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.p-about-introduction__title i {
+  margin-left: 10px;
+  font-weight: normal;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 2.25;
+}
+.p-about-introduction__account {
+  display: flex;
+  margin-top: 1em;
+}
+.p-about-introduction__account--github:before {
+  content: "";
+  flex-shrink: 0;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+  background: url(/cms/wp-content/themes/portfolio-s/resources/img/about/icon_github.svg) no-repeat center;
+  background-size: contain;
+}
+.p-about-introduction__account a {
+  color: #759dc9;
+}
+.p-about-introduction__account a:hover {
+  color: #378cea;
+}
+
+.p-about-skillGroup {
+  overflow: hidden;
+}
+.p-about-skillGroup.p-about-skillGroup--twoUp .p-about-skillGroup__item {
+  width: calc(50% - 30px);
+}
+.p-about-skillGroup__inner {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: -30px;
+}
+.p-about-skillGroup__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.p-about-skillGroup__item {
+  border: 1px solid #e8e7e7;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+
+.p-about-skill.p-about-skill--html .p-about-skill__header {
+  background-image: url(/cms/wp-content/themes/portfolio-s/resources/img/about/bg_skill_title_01.jpg);
+}
+.p-about-skill.p-about-skill--js .p-about-skill__header {
+  background-image: url(/cms/wp-content/themes/portfolio-s/resources/img/about/bg_skill_title_02.jpg);
+}
+.p-about-skill.p-about-skill--prog .p-about-skill__header {
+  background-image: url(/cms/wp-content/themes/portfolio-s/resources/img/about/bg_skill_title_03.jpg);
+}
+.p-about-skill.p-about-skill--dev .p-about-skill__header {
+  background-image: url(/cms/wp-content/themes/portfolio-s/resources/img/about/bg_skill_title_04.jpg);
+}
+.p-about-skill.p-about-skill--coordination .p-about-skill__header {
+  background-image: url(/cms/wp-content/themes/portfolio-s/resources/img/about/bg_skill_title_05.jpg);
+}
+.p-about-skill__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 110px;
+  margin: -1px -1px 0;
+  padding: 20px;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100% auto;
+}
+.p-about-skill__header:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.p-about-skill__title {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: #fff;
+}
+.p-about-skill__body {
+  padding: 30px 30px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.p-about-skill__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.p-about-skill__example {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+.p-about-skill__example li {
+  margin-right: 5px;
+}
+.p-about-skill__example li a {
+  position: relative;
+  color: #759dc9;
+}
+.p-about-skill__example li a:hover {
+  color: #378cea;
+}
+.p-about-skill__example li a:hover img {
+  opacity: 0.7;
+}
+.p-about-skill__example li i {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 25px;
+  height: 25px;
+}
+.p-about-skill__example li i img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.p-about-skill__example li .c-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  margin-bottom: 5px;
+  padding: 5px 8px;
+  white-space: nowrap;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1;
+}

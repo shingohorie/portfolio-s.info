@@ -1,0 +1,98 @@
+@use '../01_foundation/mixin' as *;
+@use '../01_foundation/vars-general' as *;
+
+/*---------------------------------
+
+  footer
+
+---------------------------------*/
+.l-footer {
+  margin-top: 80px;
+  padding: 0 40px;
+  background: linear-gradient(to bottom, $color-white 0%, #e8e7e7 100%);
+
+  &__inner {
+    @include container;
+    padding: 45px 0;
+  }
+
+  &__fnav {
+    margin-top: 45px;
+  }
+
+  &__copyright {
+    margin-top: 45px;
+  }
+}
+
+/*  
+  footer navigation
+---------------------------------*/
+.l-fnav {
+  &__primaryItems {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__primaryItem {
+    color: $color-gray-dark;
+
+    > a {
+      position: relative;
+      display: inline-block;
+      vertical-align: bottom;
+      overflow: hidden;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 1px;
+        background-color: $color-black;
+        transition:
+          width 0.2s ease-in-out,
+          right 0.2s ease-in-out,
+          left 0.2s ease-in-out;
+      }
+
+      &:hover {
+        color: $color-black;
+
+        &:before {
+          width: 100%;
+          right: auto;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &__secondaryItems {
+    margin-top: 15px;
+  }
+
+  &__secondaryItem {
+    color: #777;
+    @include fts(10, 10);
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    a:hover {
+      color: $color-gray-dark;
+    }
+  }
+}
+
+/*  
+  copyright
+---------------------------------*/
+.l-copyright {
+  text-align: center;
+  @include fts(10, 10);
+  color: $color-gray;
+}

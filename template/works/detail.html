@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex nofollow noarchive" />
+    <title>東京メトロ To Me CARD | 実績一覧 | PORTFOLIO-S</title>
+    <meta name="description" content="Just Another Portfolio Site" />
+    <meta name="author" content="Shingo Horie" />
+    <!--#include virtual="/template/resources/include/style.html" -->
+
+    <link
+      rel="stylesheet"
+      href="/cms/wp-content/themes/portfolio-s/resources/css/works.css"
+    />
+  </head>
+  <body>
+    <!--#include virtual="/template/resources/include/header.html" -->
+
+    <div class="l-breadcrumbs">
+      <div class="l-breadcrumbs__inner">
+        <ol class="l-breadcrumbs__items">
+          <li class="l-breadcrumbs__item">
+            <a href="/"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li class="l-breadcrumbs__item">
+            <a href="/template/works/">Works</a>
+          </li>
+          <li class="l-breadcrumbs__item">東京メトロ To Me CARD</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="l-structure l-structure--double">
+      <div class="l-structure__inner">
+        <div class="l-main js-pswp">
+          <div class="p-entry-header">
+            <h1 class="p-entry-title">東京メトロ To Me CARD</h1>
+
+            <div class="p-entry-eyecatch">
+              <p>
+                <a data-pswp-src="/template/resources/_dummy/img/tome-1.png"
+                  ><img
+                    src="/template/resources/_dummy/img/tome-1.png"
+                    alt=""
+                    loading="lazy"
+                /></a>
+              </p>
+            </div>
+          </div>
+
+          <dl class="p-entry-position">
+            <dt class="p-entry-position__term">担当</dt>
+            <dd class="p-entry-position__detail">設計構築 / HTML / CSS / JS</dd>
+            <dt class="p-entry-position__term">対応環境</dt>
+            <dd class="p-entry-position__detail">RWD</dd>
+          </dl>
+
+          <div class="p-entry-overview">
+            <p>
+              WordPressで構築したサイトの新規開発を担当しました。自身はフロントエンドの設計を行い、組み込みは社外のビジネスパートナーが担当しました。<br />
+              ソースコード管理にGitHubを利用することになったため、ソースレビューの効率化と品質のコントロールのために、Pull
+              Request × Fork × GitFlow
+              を組み合わせたワークフローを考案・実施しました。
+            </p>
+            <p class="font--120">■ 概要</p>
+            <ul>
+              <li>
+                リモートリポジトリのホスティングサービスにGitHubを利用。Organizationを作成した上で専用のTeamを作成。外部ビジネスパートナーは外部コラボレータとして招待
+              </li>
+              <li>
+                専用リポジトリは、紐づいたTeamまたは作業者のみさわれるプライベートリポジトリ
+              </li>
+              <li>
+                運用はPull Request × Fork ×
+                GitFlowを前提としたものとする（後述）
+              </li>
+              <li>
+                devブランチから、確認用サーバー（AWS
+                EC2）へはWebhookによる自動デプロイを行う
+              </li>
+              <li>
+                管理対象は静的テンプレート・アセット類・WPテーマファイルを管理。WPコアファイルやプラグイン・メディアにアップロードされた画像・Webhook用のプログラムなどは管理しない。gitignoreを作成する
+              </li>
+            </ul>
+
+            <hr />
+
+            <blockquote>
+              <p>
+                Lottieは、Android、iOS、Web、Windows用アニメーションライブラリで、Airbnbが開発しています。拡張プラグインBodymovinを使用すれば、Adobe
+                After
+                Effectsで作成したアニメーションをjsonとしてエクスポートでき、モバイルおよびWeb上でアニメーションをレンダリングできます。<br />
+                <cite
+                  ><a href="https://photoshopvip.net/121220" target="_blank"
+                    >https://photoshopvip.net/121220</a
+                  ></cite
+                >
+              </p>
+            </blockquote>
+
+            <p class="font--120">■ 運用方法</p>
+            <p>
+              作業者は、各自 origin となるリポジトリをForkし、Pull
+              Requestを送ることで確認用サーバーにソースが反映されるようにする。
+            </p>
+            <p>– 手順（作業者）</p>
+            <ol>
+              <li>
+                作業者はGitHub上でリポジトリをForkする（Forkされたリポジトリもプライベートリポジトリになります）
+              </li>
+              <li>上記１のリポジトリを手元の環境にcloneする</li>
+              <li>手元の環境でdevブランチからfeatureブランチを作成する</li>
+              <li>featureブランチに対してコードを変更し、コミットする</li>
+              <li>
+                featureブランチを手元の環境のdevブランチにマージしてpushする
+              </li>
+              <li>
+                GitHub上でFork元のdevブランチに対してPull Requestを作成して送る
+              </li>
+            </ol>
+            <p>– 手順（レビュワー）</p>
+            <ol>
+              <li>
+                レビュワーは、手元の環境に動作確認用のブランチを作成し、作業者がForkしたリポジトリから変更内容を取り込む
+              </li>
+              <li>
+                動作確認・またコードレビューをし、修正が必要であればPull
+                Requestを閉じる
+              </li>
+              <li>問題なければ、GitHub上でPull Requestをマージする</li>
+            </ol>
+            <dl>
+              <dt>2014年以前</dt>
+              <dd>
+                総合サポートの保守運用のみ行っていました。対象環境はIE6以降／モダンブラウザはレスポンシブ対応でした。<br />期間としては約半年ほどですが、この時期にレガシー環境やレスポンシブ、各種ブラウザでの挙動の「くせ」に対するコーディング技術を習得し、サイト全体の仕様に添って運用するスキルを身につけることができました。
+              </dd>
+              <dt>2014年春の大改修</dt>
+              <dd>
+                総合サポートのテンプレートを一斉改修するプロジェクトを担当しました。<br />
+                ヘッダー、フッター、ナビなどの共通部分をAjax（のちのQA検索システム改修を見据えてJSONP仕様）で取得するよう改修しました。<br />
+                モバイルに最適化するため、ボタンなどこれまで画像で済ませていたモジュールをすべてテキストベースに変更したり、最適化されていないページをレスポンシブ化しました。<br />
+                一眼レフやビデオカメラなど、これまで別サーバーで異なる仕様のもと作られていたコンテンツの移植も行いました。
+                <p></p>
+                <ul style="margin-top: 0.5em; padding-left: 1.5em">
+                  <li style="margin-bottom: 5px">
+                    Ajaxによる共通部分の読み込みに関して：異なるドメインで同一のファイルを読み込むという仕様が、レギュレーションとバッティングしてしまい、工数を抑えつつ最適な対応策を提案する必要がありました。何度も検証を重ね、お客様の要望と技術的な障壁とのあいだの最適解を提案するため制作者は何を考えなければいけないか意識するようになりました。
+                  </li>
+                  <li style="margin-bottom: 5px">
+                    モバイル最適化に関して：対象となるページ数が膨大なため、現行のHTMLの構造を維持したままレスポンシブ化を行う必要がありました。この経験がのちに、モバイル用のコンテンツ制作の際に工数を削減するノウハウとなりました。
+                  </li>
+                  <li style="margin-bottom: 5px">
+                    別ドメインからのコンテンツ移植に関して：読み込まれている複数の仕様を読み解き、理解し、崩れの起きないよう移植する必要がありました。この経験以後、最適なCSS設計を求めてBEMやSMACCSなどを研究するようになりました。
+                  </li>
+                </ul>
+              </dd>
+              <dt>2015年春の大改修</dt>
+              <dd>
+                製品情報ページとSonyストアページが統合されるにあたり、コーディング規約ならびにデザインが一新されました。<br />
+                それに合わせて、旧来のコンテンツすべてを新仕様に置き換えることになり、総合サポートおよび製品ページのリニューアルを担当しました。<br />
+                このとき、自身が考案したモジュール（下記ページの表組モジュール）がスタイルガイドに正式に採用・追加されました。<br />
+                <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                <a
+                  href="http://www.sony.jp/CorporateCruise/privacy/smoj_privacy.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >ソニーマーケティング株式会社「個人情報の保護に関する法律」に基づく公表等の対象事項
+                  | ソニー</a
+                >
+              </dd>
+              <dt>2015年以降</dt>
+              <dd>
+                総合サポートの保守運用をはじめ、QA検索システムのテンプレート改修、本体アップデート情報検索システムの構築、レスポンシブメールマガジンの制作などを請け負っています。
+              </dd>
+            </dl>
+            <p>– その他</p>
+            <ul>
+              <li>
+                ローンチしたら、リポジトリから外部コラボレータは削除。Forkされたリポジトリも合わせて削除される
+              </li>
+              <li>
+                Fork元の内容の変更を作業者に伝える際は、Backlogの連絡用タスクにて連絡する
+              </li>
+              <li>
+                ブランチの切り方は社内ドラフトに準拠する。Git
+                Flowにもとづいて、master &gt; dev &gt; featute/xxxx
+                というブランチにする。Webhookと紐づいているのがdevブランチのため、devブランチを常に最新の状態にする
+              </li>
+              <li>コミット時のコメントルールは社内のGit運用ルールに準拠する</li>
+              <li>
+                Pull
+                Request作成時のコメントには、レビュワーへのメンションをつける
+              </li>
+              <li>
+                タスク管理はBacklogで行い、GitHubのIssueは利用しない。GitHubはソース管理を行うツールとして棲み分けをする。
+              </li>
+            </ul>
+          </div>
+
+          <figure class="p-entry-figure">
+            <a
+              data-pswp-src="/template/resources/_dummy/img/odakyusc-img-01.png"
+              ><img
+                src="/template/resources/_dummy/img/odakyusc-img-01.png"
+                alt=""
+                loading="lazy"
+            /></a>
+            <figcaption>
+              <span>Fig 01.</span>
+              カード一覧比較表。同じカードを選択した際はカラムが入れ替わる。
+            </figcaption>
+          </figure>
+
+          <figure class="p-entry-figure">
+            <a
+              data-pswp-src="/template/resources/_dummy/img/odakyusc-img-01.png"
+              ><img
+                src="/template/resources/_dummy/img/odakyusc-img-01.png"
+                alt=""
+                loading="lazy"
+            /></a>
+            <figcaption>
+              <span>Fig 01.</span>
+              カード一覧比較表。同じカードを選択した際はカラムが入れ替わる。
+            </figcaption>
+          </figure>
+        </div>
+        <div class="l-sidebar">
+          <div class="p-entry-lnav u-sticky">
+            <div class="p-entry-info">
+              <p class="p-entry-info__title">URL</p>
+              <p class="u-break-word">
+                <a href="" target="_blank">https://www.to-me-card.jp/</a>
+              </p>
+              <!-- <p>公開終了</p> -->
+            </div>
+            <div class="p-entry-info">
+              <p class="p-entry-info__title">リポジトリURL</p>
+              <ul class="p-entry-info__repositories">
+                <li class="u-break-word">
+                  <a href="" target="_blank">https://www.to-me-card.jp/</a>
+                </li>
+                <li class="u-break-word">
+                  <a href="" target="_blank">https://www.to-me-card.jp/</a>
+                </li>
+              </ul>
+            </div>
+            <div class="p-entry-info">
+              <p class="p-entry-info__title">公開日</p>
+              <p>2020/02/28</p>
+            </div>
+            <div class="p-entry-info">
+              <p class="p-entry-info__title">特徴</p>
+              <ul class="p-entry-info__list">
+                <li>Vue.jsによるカード比較表の構築</li>
+                <li>
+                  アクセシビリティ（JIS X 8341-3 レベルAA
+                  一部準拠）を意識したモジュール設計と検査・レビュー
+                </li>
+                <li>多様なファイル形式に対応したフォームの実装</li>
+                <li>Git Flow による複数名での開発</li>
+              </ul>
+            </div>
+            <div class="p-entry-info">
+              <ul class="c-tagGroup">
+                <li class="c-tagGroup__item">
+                  <span class="c-tag"><a href="">Vue.js</a></span>
+                </li>
+                <li class="c-tagGroup__item">
+                  <span class="c-tag"><a href="">中規模サイト</a></span>
+                </li>
+                <li class="c-tagGroup__item">
+                  <span class="c-tag"><a href="">外部指示</a></span>
+                </li>
+                <li class="c-tagGroup__item">
+                  <span class="c-tag"><a href="">Vue.js</a></span>
+                </li>
+                <li class="c-tagGroup__item">
+                  <span class="c-tag"><a href="">中規模サイト</a></span>
+                </li>
+                <li class="c-tagGroup__item">
+                  <span class="c-tag"><a href="">外部指示</a></span>
+                </li>
+                <li class="c-tagGroup__item">
+                  <span class="c-tag"><a href="">Vue.js</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="l-pager">
+          <div class="p-entry-pager">
+            <p class="p-entry-pager__item p-entry-pager__item--prev">
+              <a href=""
+                ><span
+                  ><i></i>日本損害保険協会 - 全国交通事故多発交差点マップ</span
+                ></a
+              >
+            </p>
+            <p class="p-entry-pager__item p-entry-pager__item--next">
+              <a href=""
+                ><span><i></i>小田急SCディベロップメント</span></a
+              >
+            </p>
+            <p class="p-entry-pager__item p-entry-pager__item--archive">
+              <a href="/template/works/"><span></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="/template/resources/include/footer.html" -->
+    <!--#include virtual="/template/resources/include/script.html" -->
+  </body>
+</html>

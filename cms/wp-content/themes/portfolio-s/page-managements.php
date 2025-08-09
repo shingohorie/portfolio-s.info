@@ -32,7 +32,7 @@ get_header();
 
 								$args = array(
 									'posts_per_page' => -1,
-									'post_type' => array('post', 'tools'),
+									'post_type' => 'post',
 									'ignore_sticky_posts' => true,
 									'tax_query' => array(
 										array(
@@ -40,7 +40,9 @@ get_header();
 											'field' => 'slug',
 											'terms' => 'pl'
 										)
-									)
+									),
+									'order' => 'ASC', 
+									'orderby' => 'menu_order', 
 								);
 								$query = new WP_Query( $args ); ?>
 

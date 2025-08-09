@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-s",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "watch": "webpack -w --mode development"
+  },
+  "keywords": [],
+  "author": "Shingo Horie",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "browser-sync-webpack-plugin": "^2.4.0",
+    "browsersync-ssi": "^0.2.4",
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^7.1.2",
+    "glob": "^11.0.3",
+    "mini-css-extract-plugin": "^2.9.3",
+    "sass": "^1.90.0",
+    "sass-loader": "^16.0.5",
+    "webpack": "^5.101.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-remove-empty-scripts": "^1.1.1"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "photoswipe": "^5.4.4"
+  }
+}

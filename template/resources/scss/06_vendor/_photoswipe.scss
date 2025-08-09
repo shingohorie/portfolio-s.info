@@ -1,0 +1,17 @@
+@use 'photoswipe/dist/photoswipe.css';
+
+.pswp__counter,
+.pswp__button[aria-label='Previous'],
+.pswp__button[aria-label='Next'] {
+  display: none;
+}
+
+a[data-pswp-src] {
+  cursor: pointer;
+  cursor: zoom-in;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

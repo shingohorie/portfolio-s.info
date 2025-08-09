@@ -23,6 +23,31 @@
 						</ul>
 					</li>
 					<li class="l-fnav__primaryItem">
+						<a href="<?= get_permalink( get_page_by_path('managements')->ID );?>"><?= get_the_title( get_page_by_path('managements')->ID );?></a>
+						<ul class="l-fnav__secondaryItems">
+							<?php
+							$args = array(
+								'posts_per_page' => 5,
+								'post_type' => 'post',
+								'ignore_sticky_posts' => true,
+								'tax_query' => array(
+									array(
+										'taxonomy' => 'technology',
+										'field' => 'slug',
+										'terms' => 'pl'
+									)
+								),
+								'order' => 'ASC', 
+								'orderby' => 'menu_order', 
+							);
+							$query = new WP_Query( $args ); ?>
+
+							<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+							<li class="l-fnav__secondaryItem"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></li>
+							<?php endwhile; ?>
+						</ul>
+					</li>
+					<li class="l-fnav__primaryItem">
 						<a href="<?= get_permalink( get_page_by_path('tools')->ID );?>"><?= get_the_title( get_page_by_path('tools')->ID );?></a>
 						<ul class="l-fnav__secondaryItems">
 							<?php

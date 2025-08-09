@@ -1,0 +1,473 @@
+@use '../01_foundation/mixin' as *;
+@use '../01_foundation/vars-general' as *;
+
+/*---------------------------------
+
+  Works Entry
+
+---------------------------------*/
+/*  
+  Override
+---------------------------------*/
+.l-footer {
+  margin-top: 0;
+}
+
+/*  
+  ヘッダー
+---------------------------------*/
+.p-entry-header {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 30px;
+}
+
+.p-entry-title {
+  padding-bottom: 10px;
+  @include fts(28, 42);
+  font-weight: bold;
+  background: linear-gradient(to right, $color-black 0%, $color-black 100%)
+    no-repeat left bottom;
+  background-size: 1em 1px;
+}
+
+.p-entry-eyecatch {
+  position: relative;
+  margin-bottom: 40px;
+  border: 2px solid $color-gray-extraLight;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-top: (600 / 980) * 100%;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    object-position: center;
+    object-fit: contain;
+    font-family: 'object-position: center; object-fit: contain;';
+  }
+
+  a {
+    @include hoverEffect;
+  }
+}
+
+/*  
+  担当範囲・対応環境
+---------------------------------*/
+.p-entry-position {
+  margin-bottom: 30px;
+  @include fts(12, 18);
+  color: $color-gray;
+  overflow: hidden;
+
+  &__term {
+    clear: both;
+    float: left;
+    width: 5em;
+    margin-right: 1em;
+
+    &:not(:first-of-type) {
+      margin-top: 5px;
+    }
+  }
+
+  &__detail {
+    margin-left: 6em;
+
+    &:not(:first-of-type) {
+      margin-top: 5px;
+    }
+  }
+}
+
+/*  
+  概要
+---------------------------------*/
+.p-entry-overview {
+  margin-bottom: 40px;
+  @include fts(12, 21.6);
+  //@include fts(12, 24);
+
+  > *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  code {
+    display: block;
+    margin: 1em auto 1em;
+    padding: 10px;
+  }
+
+  p {
+    margin: 0 auto 1em;
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  ul {
+    margin: 1em auto 1em;
+
+    li {
+      text-indent: -1em;
+      margin-left: 1em;
+      margin-bottom: 5px;
+
+      &:before {
+        content: '\2022';
+        display: inline-block;
+        width: 12px;
+        text-indent: 0;
+        @include fts(16, 18);
+      }
+    }
+  }
+
+  ol {
+    margin: 1em auto 1em;
+
+    li {
+      display: flex;
+      counter-increment: order;
+      margin-bottom: 5px;
+
+      &:before {
+        content: counter(order) '.';
+        margin-right: 0.5em;
+      }
+    }
+  }
+
+  dl {
+    margin: 0 auto 1em;
+
+    dt {
+      font-size: 1.2em;
+    }
+
+    dd {
+      margin: 0.5em 0 0;
+
+      > *:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    dd + dt {
+      margin: 1em 0 0;
+    }
+  }
+
+  hr {
+    background-image: linear-gradient(
+      $color-gray-extraLight,
+      $color-gray-extraLight 33.33%,
+      hsla(0, 0%, 100%, 0) 33.33%,
+      hsla(0, 0%, 100%, 0) 100%
+    );
+    background-size: 100% 3px;
+    background-repeat: repeat-y;
+    border: none;
+    display: block;
+    width: 40px;
+    height: 20px;
+    margin: 2em auto;
+  }
+
+  a {
+    color: $color-link;
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+  }
+
+  blockquote {
+    margin: 4em auto;
+    padding-left: 20px;
+    color: $color-gray-dark;
+    border-left: 5px solid $color-gray-light;
+  }
+
+  cite {
+    font-style: normal;
+    font-size: 80%;
+  }
+}
+
+/*  
+  詳細（静止画・動画）
+---------------------------------*/
+.p-entry-figure {
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid $color-gray-extraLight;
+  @include fts(12, 18);
+
+  video,
+  img {
+    display: block;
+    width: 100%;
+    border: 1px solid $color-gray-extraLight;
+  }
+
+  figcaption {
+    margin-top: 20px;
+    display: flex;
+
+    span {
+      display: block;
+      margin-right: 0.5em;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+  }
+}
+
+/*  
+  サイドナビ（実績メタ情報）
+---------------------------------*/
+.p-entry-info {
+  padding: 40px 0 0;
+  color: $color-gray-dark;
+  @include fts(12, 18);
+
+  // & + & {
+  // 	margin-top: 40px;
+  // }
+
+  &__title {
+    margin-bottom: 10px;
+    @include fts(16, 24);
+  }
+
+  &__list {
+    li {
+      text-indent: -1em;
+      margin-left: 1em;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+
+      &:before {
+        content: '\2022';
+        display: inline-block;
+        width: 1em;
+        text-indent: 0;
+      }
+
+      a {
+        color: $color-link;
+        text-decoration: underline;
+
+        &:hover {
+          color: $color-link-hover;
+        }
+      }
+    }
+  }
+
+  &__repositories {
+    li {
+      a {
+        color: $color-link;
+        text-decoration: underline;
+
+        &:hover {
+          color: $color-link-hover;
+        }
+      }
+    }
+  }
+
+  p {
+    a {
+      color: $color-link;
+      text-decoration: underline;
+
+      &:hover {
+        color: $color-link-hover;
+      }
+    }
+  }
+}
+
+/*  
+  ページャー
+---------------------------------*/
+.p-entry-pager {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  padding: 20px 0;
+
+  &__item {
+    &--prev {
+      order: 1;
+      flex: 1;
+      margin-right: auto;
+      max-width: calc(50% - 60px);
+
+      > a {
+        display: block;
+        height: 100%;
+        padding: 20px 0;
+
+        &:hover {
+          color: $color-gray;
+
+          span {
+            i:before {
+              transform: translateX(-3px);
+            }
+          }
+        }
+      }
+
+      span {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100%;
+        font-weight: bold;
+
+        i {
+          display: block;
+          margin-bottom: 10px;
+          font-weight: normal;
+          @include fts(12, 12);
+          color: $color-gray;
+          white-space: nowrap;
+
+          &:before {
+            content: '\2039';
+            display: inline-block;
+            transition: transform 0.3s;
+          }
+
+          &:after {
+            content: 'Previous Works';
+            display: inline-block;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    &--next {
+      order: 3;
+      flex: 1;
+      margin-left: auto;
+      text-align: right;
+      max-width: calc(50% - 60px);
+
+      > a {
+        display: block;
+        height: 100%;
+        padding: 20px 0;
+
+        &:hover {
+          color: $color-gray;
+
+          span {
+            i:after {
+              transform: translateX(3px);
+            }
+          }
+        }
+      }
+
+      span {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        height: 100%;
+        font-weight: bold;
+
+        i {
+          display: block;
+          margin-bottom: 10px;
+          font-weight: normal;
+          @include fts(12, 12);
+          color: $color-gray;
+          white-space: nowrap;
+
+          &:before {
+            content: 'Next Works';
+            display: inline-block;
+            margin-right: 10px;
+          }
+
+          &:after {
+            content: '\203A';
+            display: inline-block;
+            transition: transform 0.3s;
+          }
+        }
+      }
+    }
+
+    &--archive {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 38px;
+      margin: auto;
+
+      > a {
+        display: block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        @include hoverEffect;
+      }
+
+      span {
+        display: block;
+
+        &:before {
+          content: '';
+          display: block;
+          padding-top: 100%;
+          background:
+            linear-gradient(
+                to right,
+                $color-black 0,
+                $color-black 18px,
+                $color-white 18px,
+                $color-white 20px,
+                $color-black 20px,
+                $color-black 38px
+              )
+              no-repeat left top,
+            linear-gradient(
+                to right,
+                $color-black 0,
+                $color-black 18px,
+                $color-white 18px,
+                $color-white 20px,
+                $color-black 20px,
+                $color-black 38px
+              )
+              no-repeat left bottom;
+          background-size:
+            38px 18px,
+            38px 18px;
+        }
+      }
+    }
+  }
+}
