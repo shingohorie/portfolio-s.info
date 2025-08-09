@@ -16,7 +16,6 @@ get_header();
 <div class="l-mainvisual">
 	<div class="p-home-mainvisual">
 		<div class="p-home-mainvisual__inner">
-			<!-- <p class="p-home-mainvisual__header" data-text-en="PICKUP">ピックアップ</p> -->
 			<?php
 			$args = array(
 				'posts_per_page' => 1,
@@ -41,7 +40,6 @@ get_header();
 								</ul>
 							</div>
 							<p class="c-media__note"><?= date("Y/m", strtotime(get_field('work_release'))); ?></p>
-							<!-- <p class="c-media__toDetail">詳細をみる</p> -->
 						</div>
 					</div>
 				</a>
@@ -157,42 +155,6 @@ get_header();
 		</div>
 		<div class="l-sidebar">
 			<div class="p-home-lnav u-sticky">
-				<div class="p-home-journal">
-					<div class="p-home-journal__header">
-						<h2 class="p-home-journal__title"><a href="http://shinimae.hatenablog.com/" target="_blank"><span>Journal</span></a></h2>
-					</div>
-					<div class="p-home-journal__body">
-						<ul class="p-home-journal__items">
-							<?php
-							$rss = simplexml_load_file('http://shinimae.hatenablog.com/feed');
-							$html = '';
-							$i = 0;
-							foreach($rss->entry as $item){
-								if($i < 3){
-									$title = $item->title;
-									$date = date("Y/m/d", strtotime($item->published));
-									$link = $item->link['href'];
-									$summary = strip_tags($item->summary);
-									$html .= '<li class="p-home-journal__item">';
-									$html .= '<a href="'.$link.'" target="_blank">';
-									$html .= '<p class="p-home-journal__pubdate">'.$date.'</p>';
-									$html .= '<p class="p-home-journal__detail">'.$title.'</p>';
-									$html .= '<p class="p-home-journal__summary">'.$summary.'</p>';
-									$html .= '</a>';
-									$html .= '</li>';
-									$i++;
-								}else{
-									break;
-								}
-							}
-							echo $html;
-							?>
-						</ul>
-					</div>
-					<div class="p-home-journal__footer">
-						<p class="p-home-journal__toDetail"><a href="http://shinimae.hatenablog.com/" target="_blank">記事一覧へ</a></p>
-					</div>
-				</div>
 				<div class="p-home-about">
 					<div class="p-home-about__header">
 						<h2 class="p-home-about__title">堀江 真悟  <i>Shingo Horie</i></h2>

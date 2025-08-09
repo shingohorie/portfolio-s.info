@@ -44,7 +44,6 @@
 				<nav class="l-gnav">
 					<ul class="l-gnav__items">
 						<li class="l-gnav__item"><a href="<?= get_permalink( get_page_by_path('about')->ID );?>"><span><?= get_the_title( get_page_by_path('about')->ID );?></span></a></li>
-						<li class="l-gnav__item"><a href="http://shinimae.hatenablog.com/" target="_blank"><span>Journal</span></a></li>
 					</ul>
 				</nav>
 			</div>

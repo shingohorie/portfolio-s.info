@@ -41,12 +41,11 @@
 					<li class="l-fnav__primaryItem">
 						<a href="<?= get_permalink( get_page_by_path('about')->ID );?>"><?= get_the_title( get_page_by_path('about')->ID );?></a>
 					</li>
-					<li class="l-fnav__primaryItem"><a href="http://shinimae.hatenablog.com/" target="_blank">Journal</a></li>
 				</ul>
 			</nav>
 		</div>
 		<div class="l-footer__copyright">
-			<p class="l-copyright"><small>copyright 2020 Shingo Horie</small></p>
+			<p class="l-copyright"><small>copyright 2025 Shingo Horie</small></p>
 		</div>
 	</div>
 </footer>	
