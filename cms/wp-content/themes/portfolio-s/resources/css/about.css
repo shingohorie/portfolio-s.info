@@ -70,22 +70,22 @@
   margin-bottom: 30px;
 }
 
-d .p-about-skilld .p-about-skill--html d .p-about-skill__header {
+.p-about-skill.p-about-skill--html .p-about-skill__header {
   background-image: url(/cms/wp-content/themes/portfolio-s/resources/img/about/bg_skill_title_01.jpg);
 }
-d .p-about-skilld .p-about-skill--js d .p-about-skill__header {
+.p-about-skill.p-about-skill--js .p-about-skill__header {
   background-image: url(/cms/wp-content/themes/portfolio-s/resources/img/about/bg_skill_title_02.jpg);
 }
-d .p-about-skilld .p-about-skill--prog d .p-about-skill__header {
+.p-about-skill.p-about-skill--prog .p-about-skill__header {
   background-image: url(/cms/wp-content/themes/portfolio-s/resources/img/about/bg_skill_title_03.jpg);
 }
-d .p-about-skilld .p-about-skill--dev d .p-about-skill__header {
+.p-about-skill.p-about-skill--dev .p-about-skill__header {
   background-image: url(/cms/wp-content/themes/portfolio-s/resources/img/about/bg_skill_title_04.jpg);
 }
-d .p-about-skilld .p-about-skill--coordination d .p-about-skill__header {
+.p-about-skill.p-about-skill--coordination .p-about-skill__header {
   background-image: url(/cms/wp-content/themes/portfolio-s/resources/img/about/bg_skill_title_05.jpg);
 }
-d .p-about-skill__header {
+.p-about-skill__header {
   position: relative;
   display: flex;
   align-items: center;
@@ -97,7 +97,7 @@ d .p-about-skill__header {
   background-position: left center;
   background-size: 100% auto;
 }
-d .p-about-skill__header:before {
+.p-about-skill__header:before {
   content: "";
   display: block;
   position: absolute;
@@ -107,7 +107,7 @@ d .p-about-skill__header:before {
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
 }
-d .p-about-skill__title {
+.p-about-skill__title {
   position: relative;
   flex: 1;
   text-align: center;
@@ -117,16 +117,16 @@ d .p-about-skill__title {
   line-height: 1;
   color: #fff;
 }
-d .p-about-skill__body {
+.p-about-skill__body {
   padding: 30px 30px;
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 1.5;
 }
-d .p-about-skill__item:not(:last-child) {
+.p-about-skill__item:not(:last-child) {
   margin-bottom: 20px;
 }
-d .p-about-skill__example {
+.p-about-skill__example {
   display: flex;
   align-items: center;
   margin-top: 3px;
@@ -134,27 +134,27 @@ d .p-about-skill__example {
   font-size: 1.2rem;
   line-height: 1;
 }
-d .p-about-skill__example li {
+.p-about-skill__example li {
   margin-right: 5px;
 }
-d .p-about-skill__example li a {
+.p-about-skill__example li a {
   position: relative;
   color: #759dc9;
 }
-d .p-about-skill__example li a:hover {
+.p-about-skill__example li a:hover {
   color: #378cea;
 }
-d .p-about-skill__example li a:hover img {
+.p-about-skill__example li a:hover img {
   opacity: 0.7;
 }
-d .p-about-skill__example li i {
+.p-about-skill__example li i {
   position: relative;
   display: inline-block;
   vertical-align: bottom;
   width: 25px;
   height: 25px;
 }
-d .p-about-skill__example li i img {
+.p-about-skill__example li i img {
   display: block;
   position: absolute;
   top: 0;
@@ -166,7 +166,7 @@ d .p-about-skill__example li i img {
   object-fit: contain;
   object-position: center;
 }
-d .p-about-skill__example li .c-tooltip {
+.p-about-skill__example li .c-tooltip {
   position: absolute;
   bottom: 100%;
   left: 0;
