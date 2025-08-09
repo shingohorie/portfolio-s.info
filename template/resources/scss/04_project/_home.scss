@@ -113,7 +113,7 @@
         width: 25px;
         height: 25px;
         margin-right: 10px;
-        background: url(/cms/wp-content/themes/portfolio-s/resources/img/logo_hatena.svg)
+        background: url(#{$img-path}/logo_hatena.svg)
           no-repeat center;
         background-size: contain;
       }

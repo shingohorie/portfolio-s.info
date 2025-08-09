@@ -30,13 +30,13 @@
   align-items: center;
   margin-bottom: 30px;
   font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 0.18rem;
   line-height: 1.4444444444;
   font-weight: bold;
 }
 .p-home-mainvisual__header[data-text-en] {
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.14rem;
   line-height: 1;
   font-weight: normal;
 }
@@ -46,7 +46,7 @@
   font-weight: bold;
   margin-right: 10px;
   font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 0.18rem;
   line-height: 1.4444444444;
 }
 
@@ -91,7 +91,7 @@
   padding: 40px 0 0;
   color: #555;
   font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 0.12rem;
   line-height: 1.5;
 }
 .p-home-journal__header {
@@ -100,7 +100,7 @@
 .p-home-journal__title {
   font-weight: normal;
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.14rem;
   line-height: 1.7857142857;
 }
 .p-home-journal__title span:before {
@@ -128,7 +128,7 @@
 .p-home-journal__pubdate {
   margin-bottom: 10px;
   font-size: 10px;
-  font-size: 1rem;
+  font-size: 0.1rem;
   line-height: 1;
 }
 .p-home-journal__summary {
@@ -137,7 +137,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 10px;
-  font-size: 1rem;
+  font-size: 0.1rem;
   line-height: 1;
   color: #bbb;
 }
@@ -147,7 +147,7 @@
 .p-home-journal__toDetail {
   text-align: right;
   font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 0.12rem;
   line-height: 1.5;
 }
 .p-home-journal__toDetail a:after {
@@ -172,7 +172,7 @@
   color: #555;
   border-top: 1px solid #e8e7e7;
   font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 0.12rem;
   line-height: 1.5;
 }
 .p-home-about__header {
@@ -181,13 +181,13 @@
 .p-home-about__title {
   font-weight: normal;
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.14rem;
   line-height: 1.2857142857;
 }
 .p-home-about__title i {
   margin-left: 1em;
   font-size: 10px;
-  font-size: 1rem;
+  font-size: 0.1rem;
   line-height: 1.8;
 }
 .p-home-about__footer {

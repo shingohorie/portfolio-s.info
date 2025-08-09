@@ -39,7 +39,7 @@
   &:before {
     content: '';
     display: block;
-    padding-top: (600 / 980) * 100%;
+    padding-top: calc(600 / 980) * 100%;
   }
 
   img {

@@ -35,7 +35,7 @@
         width: 25px;
         height: 25px;
         margin-right: 8px;
-        background: url(/cms/wp-content/themes/portfolio-s/resources/img/about/icon_github.svg)
+        background: url(#{$img-path}/about/icon_github.svg)
           no-repeat center;
         background-size: contain;
       }
@@ -79,38 +79,38 @@
     margin-right: 15px;
     margin-bottom: 30px;
   }
-}
+}d
 
 .p-about-skill {
   $this: &;
 
   &#{&}--html {
     #{$this}__header {
-      background-image: url(/cms/wp-content/themes/portfolio-s/resources/img/about/bg_skill_title_01.jpg);
+      background-image: url(#{$img-path}/about/bg_skill_title_01.jpg);
     }
   }
 
   &#{&}--js {
     #{$this}__header {
-      background-image: url(/cms/wp-content/themes/portfolio-s/resources/img/about/bg_skill_title_02.jpg);
+      background-image: url(#{$img-path}/about/bg_skill_title_02.jpg);
     }
   }
 
   &#{&}--prog {
     #{$this}__header {
-      background-image: url(/cms/wp-content/themes/portfolio-s/resources/img/about/bg_skill_title_03.jpg);
+      background-image: url(#{$img-path}/about/bg_skill_title_03.jpg);
     }
   }
 
   &#{&}--dev {
     #{$this}__header {
-      background-image: url(/cms/wp-content/themes/portfolio-s/resources/img/about/bg_skill_title_04.jpg);
+      background-image: url(#{$img-path}/about/bg_skill_title_04.jpg);
     }
   }
 
   &#{&}--coordination {
     #{$this}__header {
-      background-image: url(/cms/wp-content/themes/portfolio-s/resources/img/about/bg_skill_title_05.jpg);
+      background-image: url(#{$img-path}/about/bg_skill_title_05.jpg);
     }
   }
 
