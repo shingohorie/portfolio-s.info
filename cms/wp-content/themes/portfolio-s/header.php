@@ -36,13 +36,14 @@
 				<nav class="l-gnav">
 					<ul class="l-gnav__items">
 						<li class="l-gnav__item"><a href="<?= get_permalink( get_page_by_path('works')->ID );?>"><span><?= get_the_title( get_page_by_path('works')->ID );?></span></a></li>
-						<li class="l-gnav__item"><a href="<?= get_permalink( get_page_by_path('tools')->ID );?>"><span><?= get_the_title( get_page_by_path('tools')->ID );?></span></a></li>
+						<li class="l-gnav__item"><a href="<?= get_permalink( get_page_by_path('managements')->ID );?>"><span>Managements</span></a></li>
 					</ul>
 				</nav>
 			</div>
 			<div class="l-header__leftNav">
 				<nav class="l-gnav">
 					<ul class="l-gnav__items">
+						<li class="l-gnav__item"><a href="<?= get_permalink( get_page_by_path('tools')->ID );?>"><span><?= get_the_title( get_page_by_path('tools')->ID );?></span></a></li>
 						<li class="l-gnav__item"><a href="<?= get_permalink( get_page_by_path('about')->ID );?>"><span><?= get_the_title( get_page_by_path('about')->ID );?></span></a></li>
 					</ul>
 				</nav>

@@ -41,12 +41,12 @@ get_header();
 								<li class="p-about-skillGroup__item">
 									<div class="p-about-skill p-about-skill--coordination">
 										<div class="p-about-skill__header">
-											<p class="p-about-skill__title">Coordination</p>
+											<p class="p-about-skill__title">Project Managements</p>
 										</div>
 										<div class="p-about-skill__body">
 											<ul class="p-about-skill__items">
 												<li class="p-about-skill__item">
-													<p>開発のコーディネート<br>外部協力作業者へのディレクション / ドキュメンテーション / 大量生産の仕組みづくり / 工程の再定義 など</p>
+													<p>PL（Project Leader）としての実績。要件定義・進行管理・複数チームの連携・品質管理・工程の再定義 など</p>
 													<ul class="p-about-skill__example u-mtOneLine">
 														<li><a href="<?= get_permalink(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 														<li><a href="<?= get_permalink(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>">[事例]</a></li>
@@ -167,13 +167,6 @@ get_header();
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
-													<p>AltJSを使用した開発経験</p>
-													<ul class="p-about-skill__example">
-														<li><a href="<?= get_term_link('typescript', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_typescript.svg" alt="TypeScript"></i></a></li>
-													</ul>
-												</li>
-
-												<li class="p-about-skill__item">
 													<p>フレームワークを使用した開発経験</p>
 													<ul class="p-about-skill__example">
 														<li><a href="<?= get_term_link('electron', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_electron.svg" alt="Electron"></i></a></li>
@@ -181,14 +174,6 @@ get_header();
 														<li><a href="<?= get_term_link('nuxtjs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_nuxt.svg" alt="Nuxt.js"></i></a></li>
 														<li><a href="<?= get_term_link('angularjs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_angular.svg" alt="AngularJS"></i></a></li>
 														<li><a href="<?= get_term_link('backbonejs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_backbone.svg" alt="Backbone.js"></i></a></li>
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>モジュールバンドラによるモジュール管理</p>
-													<ul class="p-about-skill__example">
-														<li><a href="<?= get_term_link('webpack', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_webpack.svg" alt="webpack"></i></a></li>
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_browserify.svg" alt="Browserify"></i></li>
-														<li><a href="<?= get_term_link('requirejs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_require.svg" alt="RequireJS"></i></a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
@@ -214,13 +199,6 @@ get_header();
 														<li><a href="<?= get_permalink(get_page_by_path('rj-metatool', OBJECT, 'tools')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-metatool', OBJECT, 'tools')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
-												<li class="p-about-skill__item">
-													<p>テスティングフレームワークによるユニットテストの作成</p>
-													<ul class="p-about-skill__example">
-														<li><a href="<?= get_term_link('jest', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_jest.svg" alt="Jest"></i></a></li>
-														<li><a href="<?= get_term_link('mocha', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_mocha.svg" alt="Mocha"></i></a></li>
-													</ul>
-												</li>
 											</ul>
 										</div>
 									</div>
@@ -231,37 +209,6 @@ get_header();
 											<p class="p-about-skill__title">CMS / PHP / Node.js ...</p>
 										</div>
 										<div class="p-about-skill__body">
-											<ul class="p-about-skill__items">
-												<li class="p-about-skill__item">
-													<p>CMSによるサイト構築（管理画面のカスタマイズ含む）</p>
-													<ul class="p-about-skill__example">
-														<li><a href="<?= get_term_link('wordpress', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_wordpress.svg" alt="WordPress"></i></a></li>
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>基本的なプログラミング</p>
-													<ul class="p-about-skill__example">
-														<li><a href="<?= get_term_link('php', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_php.svg" alt="PHP"></i></a></li>
-														<li><a href="<?= get_term_link('nodejs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_nodejs.svg" alt="Node.js"></i></a></li>
-														<li><a href="<?= get_term_link('gas', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_gas.svg" alt="Google App Script"></i></a></li>
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>タスクランナー等による開発</p>
-													<ul class="p-about-skill__example">
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_npm.svg" alt="npm scripts"></i></li>
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_gulp.svg" alt="gulp"></i></li>
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_grunt.svg" alt="Grunt"></i></li>
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>ジェネレータによるスタイルガイドの作成</p>
-													<ul class="p-about-skill__example">
-														<li><a href="<?= get_term_link('kss', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_kss.png" alt="KSS"></i></a></li>
-														<li><a href="<?= get_term_link('astrum', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_astrum.png" alt="Astrum"></i></a></li>
-													</ul>
-												</li>
-											</ul>
 										</div>
 									</div>
 								</li>
@@ -292,13 +239,6 @@ get_header();
 													</ul>
 												</li>
 												
-												<li class="p-about-skill__item">
-													<p>PaaS / BaaS サービスの利用</p>
-													<ul class="p-about-skill__example">
-														<li><a href="<?= get_term_link('heroku', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_heroku.svg" alt="Heroku"></i></a></li>
-														<li><a href="<?= get_term_link('firebase', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_firebase.svg" alt="Firebase"></i></a></li>
-													</ul>
-												</li>
 												
 												<li class="p-about-skill__item">CUIでの基本的なLinuxマシンのオペレーション</li>
 											</ul>
