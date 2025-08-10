@@ -29,8 +29,8 @@ get_header();
 				<div class="p-entry-header">
 					<h1 class="p-entry-title"><?php the_title(); ?></h1>
 
-					<div class="p-entry-eyecatch js-pswp__item">
-						<p><a href="<?= the_field('eyecatch'); ?>" class="js-pswp__link"><img src="<?= the_field('eyecatch'); ?>" alt=""></a></p>
+					<div class="p-entry-eyecatch">
+						<p><a data-pswp-src="<?= the_field('eyecatch'); ?>"><img src="<?= the_field('eyecatch'); ?>" alt=""></a></p>
 					</div>
 				</div>
 
@@ -55,8 +55,8 @@ get_header();
 							<figcaption><span>Fig <?php echo sprintf('%02d', get_row_index()); ?>.</span> <?php the_sub_field( 'media_caption' )?></figcaption>
 						</figure>
 						<?php elseif( get_sub_field( 'media_switcher' ) == 'image' ) : ?>
-						<figure class="p-entry-figure js-pswp__item">
-							<a href="<?php the_sub_field( 'media_image' )?>" target="_blank" class="js-pswp__link"><img src="<?php the_sub_field( 'media_image' )?>"></a>
+						<figure class="p-entry-figure">
+							<a data-pswp-src="<?php the_sub_field( 'media_image' )?>" target="_blank"><img src="<?php the_sub_field( 'media_image' )?>"></a>
 							<figcaption><span>Fig <?php echo sprintf('%02d', get_row_index()); ?>.</span> <?php the_sub_field( 'media_caption' )?></figcaption>
 						</figure>
 						<?php endif; ?>					
@@ -77,16 +77,6 @@ get_header();
 					<div class="p-entry-info">
 						<p class="p-entry-info__title">公開日</p>
 						<p><?= date( "Y/m/d", strtotime( get_field('work_release') ) ); ?></p>
-					</div>
-					<?php endif; ?>
-					<?php if( have_rows('work_repositories') ): ?>
-					<div class="p-entry-info">
-						<p class="p-entry-info__title">リポジトリURL</p>
-						<ul class="p-entry-info__repositories">
-						<?php while ( have_rows( 'work_repositories' ) ) : the_row(); ?>
-							<li class="u-break-word"><a href="<?php the_sub_field( 'work_repository' ); ?>" target="_blank"><?php the_sub_field( 'work_repository'); ?></a></li>
-						<?php endwhile; ?>
-						</ul>
 					</div>
 					<?php endif; ?>
 					<?php if( have_rows('work_features') ): ?>

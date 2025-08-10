@@ -73,13 +73,9 @@
 			<p class="l-copyright"><small>copyright 2025 Shingo Horie</small></p>
 		</div>
 	</div>
-</footer>	
-<script src="<?=get_template_directory_uri()?>/resources/js/vendor.js" defer></script>
-<script src="<?=get_template_directory_uri()?>/resources/js/common.js" defer></script>
-<?php if ( is_page('about') ): ?>
-<script src="<?=get_template_directory_uri()?>/resources/js/about.js" defer></script>
+</footer>
+<script src="<?=get_template_directory_uri()?>/resources/js/main.js" defer></script>
 <?php elseif ( is_single() || is_single('tools') ): ?>
-<script src="<?=get_template_directory_uri()?>/resources/js/works.js" defer></script>
 <script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst" defer></script>
 <?php endif; ?>
 </body>

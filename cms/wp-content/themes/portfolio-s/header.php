@@ -2,7 +2,6 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=1110, initial-scale=1.0">
 <meta name="robots" content="noindex nofollow noarchive">
 <title><?php wp_title( '|', true, 'right' ); ?><?= get_bloginfo( 'name' ) . ' - ' . get_bloginfo( 'description' ); ?></title>
@@ -19,7 +18,7 @@
 <?php elseif ( is_single() || is_single('tools') ): ?>
 <link rel="stylesheet" href="<?=get_template_directory_uri()?>/resources/css/works.css">
 <?php endif; ?>
-<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Lato:wght@400;700&display=swap">
 <link rel="shortcut icon" href="<?=get_template_directory_uri()?>/resources/icon/favicon.png" type="image/vnd.microsoft.icon">
 </head>
 <body>
