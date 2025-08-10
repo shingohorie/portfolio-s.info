@@ -62,6 +62,25 @@
 }
 
 /*  
+  区切り線
+---------------------------------*/
+.c-separator {
+  background-image: linear-gradient(
+    $color-gray-extraLight,
+    $color-gray-extraLight 33.33%,
+    hsla(0, 0%, 100%, 0) 33.33%,
+    hsla(0, 0%, 100%, 0) 100%
+  );
+  background-size: 100% 3px;
+  background-repeat: repeat-y;
+  border: none;
+  display: block;
+  width: 40px;
+  height: 20px;
+  margin: 4em auto;
+}
+
+/*  
   メディア型レイアウト
 ---------------------------------*/
 .c-mediaGroup {
@@ -244,7 +263,7 @@
   }
 
   &__note {
-    @include fts(10, 10);
+    @include fts(12, 12);
   }
 }
 

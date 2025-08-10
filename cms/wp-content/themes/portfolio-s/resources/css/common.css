@@ -378,6 +378,20 @@
 }
 
 /*  
+  区切り線
+---------------------------------*/
+.c-separator {
+  background-image: linear-gradient(#e8e7e7, #e8e7e7 33.33%, hsla(0, 0%, 100%, 0) 33.33%, hsla(0, 0%, 100%, 0) 100%);
+  background-size: 100% 3px;
+  background-repeat: repeat-y;
+  border: none;
+  display: block;
+  width: 40px;
+  height: 20px;
+  margin: 4em auto;
+}
+
+/*  
   メディア型レイアウト
 ---------------------------------*/
 .c-mediaGroup.c-mediaGroup--underlined .c-mediaGroup__item {
@@ -524,8 +538,8 @@
   margin-top: 20px;
 }
 .c-card__note {
-  font-size: 10px;
-  font-size: 1rem;
+  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 1;
 }
 
