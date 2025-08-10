@@ -11,14 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      # 同期のための rsync コマンド。後ほど詳述
       - name: Deploy by rsync
-        uses: trendyminds/github-actions-rsync@master
+        uses: Burnett01/rsync-deploy@v2.0.0
         with:
-          RSYNC_OPTIONS: -avzr --delete --exclude-from=.rsyncignore
-          RSYNC_TARGET: cms/wp-content/themes/portfolio-s
-          RSYNC_SOURCE: ./cms/wp-content/themes/portfolio-s
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
-          SSH_HOSTNAME: ${{ secrets.SSH_HOSTNAME }}
+          switches: -avzr --delete
+          path: ./cms/wp-content/themes/portfolio-s/
+          remote_path: ${{ secrets.FTP_SERVER_DIR }}
+          remote_host: ${{ secrets.SSH_HOSTNAME }}
+          remote_user: ${{ secrets.SSH_USERNAME }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
