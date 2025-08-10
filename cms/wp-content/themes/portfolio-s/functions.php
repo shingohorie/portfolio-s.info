@@ -118,7 +118,11 @@ function my_posts_custom_column( $column, $post_id ) {
         switch ( $column ) {
             case 'era':
                 $terms = get_the_terms($post_id, 'era');
-                echo  $term[0]->name;
+                $str = array();
+                foreach( $terms as $term ){
+                    array_push($str, $term->name);
+                }
+                echo implode(", ", $str);
                 break;
             case 'ID':
                 the_id();
