@@ -99,14 +99,16 @@ function day_diff($date1, $date2){
 
 
 /*****************************************************************************************
-* 投稿一覧画面にIDとFEATUREDの値を表示
+* 投稿一覧画面にIDやタクソノミーの値を表示
 *****************************************************************************************/
 function manage_posts_columns($columns) {
     $posttype = get_post_type();
     if($posttype == 'post' || $posttype == 'tools'){
-        $columns['is_featured'] = "FEATURED";
         $columns['technologys'] = "使用技術タグ";
         $columns['ID'] = "投稿ID";
+    }
+    if($posttype == 'post'){
+        $columns['era'] = "年代";
     }
     return $columns;
 }
@@ -114,14 +116,9 @@ function my_posts_custom_column( $column, $post_id ) {
     $posttype = get_post_type();
     if($posttype == 'post' || $posttype == 'tools'){
         switch ( $column ) {
-            case 'is_featured':
-                //チェックボックスの場合
-                if ( !!get_post_meta( $post_id , 'is_featured' , true ) ) {
-                    $checked = 'checked';
-                } else {
-                    $checked = '';
-                }
-                echo "<input type='checkbox' readonly $checked onclick='return false;' onfocus='this.blur();' style='cursor:default; '/>";
+            case 'era':
+                $terms = get_the_terms($post_id, 'era');
+                echo  $term[0]->name
                 break;
             case 'ID':
                 the_id();
@@ -139,38 +136,6 @@ function my_posts_custom_column( $column, $post_id ) {
 }
 add_filter( 'manage_posts_columns', 'manage_posts_columns' );
 add_action( 'manage_posts_custom_column' , 'my_posts_custom_column', 10, 2 );
-
-
-/*****************************************************************************************
-* クイック編集にFEATUREDの入力欄を追加
-*****************************************************************************************/
-function display_my_custom_quickedit( $column_name, $post_type ) {
-    static $print_nonce = TRUE;
-    $posttype = get_post_type();
-    if($posttype == 'post'){
-        if ( $print_nonce ) {
-            $print_nonce = FALSE;
-            wp_nonce_field( 'quick_edit_action', $post_type . '_edit_nonce' ); //CSRF対策
-        }
-            
-    ?>
-        <fieldset class="inline-edit-col-right inline-custom-meta edit-pickup">
-            <div class="inline-edit-col column-<?php echo $column_name ?>">
-                <label class="inline-edit-group">
-                    <?php
-                    switch ( $column_name ) {
-                        case 'is_featured':
-                            ?><span class="title">FEATURED</span><input name="is_featured" type="checkbox"/><?php
-                            break;
-                    }
-                    ?>
-                </label>
-            </div>
-        </fieldset>
-<?php
-    }
-}
-add_action( 'quick_edit_custom_box', 'display_my_custom_quickedit', 10, 2 );
 
 
 /*****************************************************************************************
