@@ -15,8 +15,9 @@ jobs:
         uses: burnett01/rsync-deployments@7.0.2
         with:
           switches: -avzr --delete
-          path: ./cms/wp-content/themes/portfolio-s/
+          path: ${{ secrets.FTP_SERVER_DIR }}
           remote_path: ${{ secrets.FTP_SERVER_DIR }}
           remote_host: ${{ secrets.SSH_HOSTNAME }}
           remote_user: ${{ secrets.SSH_USERNAME }}
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          remote_port: ${{ secrets.SSH_PORT }}
