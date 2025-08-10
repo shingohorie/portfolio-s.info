@@ -72,7 +72,7 @@ get_header();
 					</div>
 				</div>
 				<div class="l-section">
-					<h2 class="c-primaryHeader c-primaryHeader--md" data-text-en="See Other Tags"><span>タグ一覧</span></h2>
+					<h2 class="c-primaryHeader c-primaryHeader--md" data-text-en="See All Tags"><span>タグ一覧</span></h2>
 
 					<ul class="c-tagGroup">
 						<?php

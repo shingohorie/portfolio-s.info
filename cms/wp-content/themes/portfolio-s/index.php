@@ -30,7 +30,7 @@ get_header();
 					<div class="c-media__body">
 						<figure class="c-media__vis"><?php the_post_thumbnail('', array('loading' =>'lazy')); ?></figure>
 						<div class="c-media__detail">
-							<p class="c-media__title u-weightBold"><?php the_title() ?></p>
+							<p class="c-media__title u-weightSemiBold"><?php the_title() ?></p>
 							<div class="c-media__tags">
 								<ul class="c-tagGroup">
 									<?php $tags = get_the_terms( get_the_id(), 'technology' ); ?>

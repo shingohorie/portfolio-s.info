@@ -15,7 +15,7 @@
   align-items: center;
   margin-bottom: 60px;
   @include fts(36, 36);
-  font-weight: bold;
+  // font-weight: bold;
 
   &[data-text-en] {
     @include fts(16, 16);
@@ -24,7 +24,7 @@
     &:before {
       content: attr(data-text-en);
       display: inline-block;
-      font-weight: bold;
+      // font-weight: bold;
       margin-right: 30px;
       @include fts(36, 36);
     }
@@ -44,6 +44,23 @@
   }
 }
 
+.c-secopndaryHeader {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  @include fts(24, 24);
+  padding-bottom: 20px;
+  background: linear-gradient(to right, $color-black 0%, $color-black 100%)
+    no-repeat left bottom;
+  background-size: 1em 1px;
+}
+
+.c-heading-annotation {
+  margin: 30px auto;
+  color: $color-gray;
+  @include fts(12, 20);
+}
+
 /*  
   メディア型レイアウト
 ---------------------------------*/
@@ -60,16 +77,6 @@
 
 .c-media {
   $this: &;
-
-  &#{&}--featured {
-    #{$this}__title {
-      &:before {
-        content: '\002605';
-        margin-right: 5px;
-        color: #0d7d00;
-      }
-    }
-  }
 
   &#{&}--reverse {
     #{$this}__body {
@@ -161,7 +168,7 @@
 
   &__note {
     margin-top: 30px;
-    @include fts(10, 10);
+    @include fts(12, 12);
   }
 }
 
