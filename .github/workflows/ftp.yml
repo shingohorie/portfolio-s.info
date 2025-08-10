@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Deploy by rsync
-        uses: Burnett01/rsync-deploy@v7.0.2
+        uses: burnett01/rsync-deployments@7.0.2
         with:
           switches: -avzr --delete
           path: ./cms/wp-content/themes/portfolio-s/
