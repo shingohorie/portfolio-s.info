@@ -25,6 +25,16 @@ get_header();
 			<div class="l-main">
 				<div class="l-section">
 					<h1 class="c-primaryHeader" data-text-en="<?= get_the_title() ?>"><span><?= get_post_meta(get_the_id() , 'title_ja' ,true); ?></span></h1>
+
+					<h2 class="c-secopndaryHeader">
+						<span>2017〜2024</span>
+					</h2>
+					<p class="c-heading-annotation">
+					株式会社プロネクサス（恵比寿Web事業所）にて管理を行なったプロジェクト一覧。<br />
+					プロジェクトリーダーとして、主に要件定義や設計を行い、外注先の選定から、量産管理を行うことで、開発の効率化を図りました（自身もまた基本設計やコンポーネント設計を行なっております）。<br>
+					また、工程の再定義を行うことで生産性向上に寄与したり、複数チームや複数社の取りまとめを行っておりました。
+					</p>
+
 					<div class="c-cardGroup c-cardGroup--threeUp">
 						<div class="c-cardGroup__inner">
 							<ul class="c-cardGroup__items">
@@ -39,6 +49,11 @@ get_header();
 											'taxonomy' => 'technology',
 											'field' => 'slug',
 											'terms' => 'pl'
+										),
+										array(
+											'taxonomy' => 'era',
+											'field' => 'slug',
+											'terms' => 'era2'
 										)
 									),
 									'order' => 'ASC', 
@@ -79,6 +94,8 @@ get_header();
 							</ul>
 						</div>
 					</div>
+
+					
 				</div>
 			</div>
 		</div>
