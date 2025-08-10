@@ -11,11 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      # 同期のための rsync コマンド。後ほど詳述
+      - name: Deploy by rsync
+        uses: trendyminds/github-actions-rsync@master
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
-          local-dir: ./cms/wp-content/themes/portfolio-s/
+          RSYNC_OPTIONS: -avzr --delete --exclude-from=.rsyncignore
+          RSYNC_TARGET: cms/wp-content/themes/portfolio-s
+          RSYNC_SOURCE: ./cms/wp-content/themes/portfolio-s
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+          SSH_HOSTNAME: ${{ secrets.SSH_HOSTNAME }}
