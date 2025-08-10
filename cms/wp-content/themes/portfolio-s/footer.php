@@ -74,9 +74,6 @@
 		</div>
 	</div>
 </footer>
-<script src="<?=get_template_directory_uri()?>/resources/js/main.js" defer></script>
-<?php elseif ( is_single() || is_single('tools') ): ?>
-<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst" defer></script>
-<?php endif; ?>
+<script src="<?=get_template_directory_uri()?>/resources/js/main.js"></script>
 </body>
 </html>
