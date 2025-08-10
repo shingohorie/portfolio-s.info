@@ -71,7 +71,7 @@ get_header();
 						foreach ( $tags as $tag ) {
 							array_push($str, '<li class="c-tagGroup__item"><span class="c-tag"><a href="'.get_term_link($tag).'">'. esc_html($tag->name). '</a></span></li>');
 						}
-						echo implode($str, '');
+						echo implode('', $str);
 						?>
 					</ul>
 				</div>
