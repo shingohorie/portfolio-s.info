@@ -87,6 +87,8 @@ get_header();
 						</div>
 					</div>
 
+					<hr class="c-separator" />
+
 					<h2 class="c-secopndaryHeader">
 						<span>2014〜2017</span>
 					</h2>
