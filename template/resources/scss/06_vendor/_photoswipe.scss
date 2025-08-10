@@ -1,14 +1,23 @@
-@use '../01_foundation/mixin' as *;
+@use '../01_foundation/_mixin' as *;
+@use '../01_foundation/_vars-general' as *;
 @use 'photoswipe/dist/photoswipe.css';
 
-.pswp__counter,
-.pswp__button[aria-label='Previous'],
-.pswp__button[aria-label='Next'] {
-  display: none;
+// .pswp__counter,
+// .pswp__button[aria-label='Previous'],
+// .pswp__button[aria-label='Next'] {
+//   display: none;
+// }
+.pswp {
+  --pswp-icon-color-secondary: $color-white;
+  --pswp-icon-stroke-color: $color-white;
+
+  svg:not([fill]) {
+    fill: $color-white;
+  }
 }
 
 a[data-pswp-src] {
   cursor: pointer;
   cursor: zoom-in;
-   @include hoverEffect();
+  @include hoverEffect();
 }

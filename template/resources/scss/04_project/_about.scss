@@ -35,8 +35,7 @@
         width: 25px;
         height: 25px;
         margin-right: 8px;
-        background: url(#{$img-path}/about/icon_github.svg)
-          no-repeat center;
+        background: url(#{$img-path}/about/icon_github.svg) no-repeat center;
         background-size: contain;
       }
     }
@@ -56,8 +55,13 @@
   overflow: hidden;
 
   &#{&}--twoUp {
+    #{$this}__items {
+      flex-wrap: wrap;
+    }
+
     #{$this}__item {
       width: calc(50% - 30px);
+      flex: 1 0 auto;
     }
   }
 

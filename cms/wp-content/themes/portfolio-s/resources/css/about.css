@@ -50,8 +50,12 @@
 .p-about-skillGroup {
   overflow: hidden;
 }
+.p-about-skillGroup.p-about-skillGroup--twoUp .p-about-skillGroup__items {
+  flex-wrap: wrap;
+}
 .p-about-skillGroup.p-about-skillGroup--twoUp .p-about-skillGroup__item {
   width: calc(50% - 30px);
+  flex: 1 0 auto;
 }
 .p-about-skillGroup__inner {
   margin-left: -15px;

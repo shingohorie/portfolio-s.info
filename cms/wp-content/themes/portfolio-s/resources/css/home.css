@@ -85,92 +85,11 @@
 }
 
 /*  
-  ブログの記事抜粋
----------------------------------*/
-.p-home-journal {
-  padding: 40px 0 0;
-  color: #555;
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-.p-home-journal__header {
-  margin-bottom: 30px;
-}
-.p-home-journal__title {
-  font-weight: normal;
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 1.7857142857;
-}
-.p-home-journal__title span:before {
-  content: "";
-  display: inline-block;
-  vertical-align: bottom;
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
-  background: url(/cms/wp-content/themes/portfolio-s/resources/img/logo_hatena.svg) no-repeat center;
-  background-size: contain;
-}
-.p-home-journal__title a:hover {
-  color: #000;
-}
-.p-home-journal__item:not(:last-child) {
-  margin-bottom: 20px;
-}
-.p-home-journal__item > a {
-  display: block;
-}
-.p-home-journal__item > a:hover {
-  color: #000;
-}
-.p-home-journal__pubdate {
-  margin-bottom: 10px;
-  font-size: 10px;
-  font-size: 1rem;
-  line-height: 1;
-}
-.p-home-journal__summary {
-  margin-top: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 10px;
-  font-size: 1rem;
-  line-height: 1;
-  color: #bbb;
-}
-.p-home-journal__footer {
-  margin-top: 30px;
-}
-.p-home-journal__toDetail {
-  text-align: right;
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-.p-home-journal__toDetail a:after {
-  content: "›";
-  display: inline-block;
-  margin-left: 5px;
-  transition: transform 0.3s;
-}
-.p-home-journal__toDetail a:hover {
-  color: #000;
-}
-.p-home-journal__toDetail a:hover:after {
-  transform: translateX(2px);
-}
-
-/*  
   自己紹介
 ---------------------------------*/
 .p-home-about {
-  margin-top: 40px;
   padding: 40px 0 0;
   color: #555;
-  border-top: 1px solid #e8e7e7;
   font-size: 12px;
   font-size: 1.2rem;
   line-height: 1.5;
