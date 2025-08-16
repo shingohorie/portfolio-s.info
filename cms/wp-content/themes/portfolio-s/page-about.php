@@ -48,16 +48,7 @@ get_header();
 												<li class="p-about-skill__item">
 													<p>PL（Project Leader）としての実績。要件定義・進行管理・複数チームの連携・品質管理・工程の再定義 など</p>
 													<ul class="p-about-skill__example u-mtOneLine">
-														<li><a href="<?= get_permalink(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('cesar', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('cesar', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('psup', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('psup', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('alfresa', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('alfresa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('rj-package', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-package', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('tif', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('tif', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('rj-sg', OBJECT, 'tools')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-sg', OBJECT, 'tools')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('cosmedicsjp', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('cosmedicsjp', OBJECT, 'post')->ID); ?>">[事例]</a></li>
+														
 													</ul>
 												</li>
 											</ul>
@@ -77,72 +68,46 @@ get_header();
 												<li class="p-about-skill__item">
 													<p>メタ言語を使用した開発経験</p>
 													<ul class="p-about-skill__example">
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_sass.svg" alt="Sass"></i></li>
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_pug.svg" alt="Pug"></i></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
 													<p>大規模 / 中規模サイトの新規開発</p>
 													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('tif', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('tif', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('tome', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('tome', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('shintaku', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('shintaku', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
 													<p>大規模 / 中規模サイトの保守運用</p>
 													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('megsnow', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('megsnow', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('mizkan', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('mizkan', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('nabco', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('nabco', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('sony', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('sony', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('sonydi-acos', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('sonydi-acos', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
 													<p>レスポンシブメールマガジンの制作</p>
 													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('sony-mail-mysony', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('sony-mail-mysony', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('sony-mail-retension', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('sony-mail-retension', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
 													<p>CMS管理画面のテンプレート開発</p>
 													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('fureai', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('fureai', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('audi', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('audi', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('rj-sg', OBJECT, 'tools')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-sg', OBJECT, 'tools')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('wizonline', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('wizonline', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
 													<p>CSS設計思想を採用したモジュール開発</p>
 													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('psup', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('psup', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('shintaku', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('shintaku', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('rj-web', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-web', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
 													<p>アクセシビリティ対応（JIS X 8341-3 レベルAA 一部準拠）</p>
 													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('tif', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('tif', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
 													<p>サイト高速化対応（Lighthouseで計測）</p>
 													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('reazon', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('reazon', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
 													<p>レガシーブラウザ対応（IE 6-8 / Android 2-4）</p>
 													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('sony', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('sony', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('peachjohn', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('peachjohn', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 											</ul>
@@ -161,42 +126,27 @@ get_header();
 												<li class="p-about-skill__item">
 													<p>CSSと連携した演出・インタラクションの実装</p>
 													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('menu', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('menu', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('vogue-tiffany', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('vogue-tiffany', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('pentax', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('pentax', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
 													<p>フレームワークを使用した開発経験</p>
 													<ul class="p-about-skill__example">
-														<li><a href="<?= get_term_link('electron', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_electron.svg" alt="Electron"></i></a></li>
-														<li><a href="<?= get_term_link('vuejs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_vue.svg" alt="Vue.js"></i></a></li>
-														<li><a href="<?= get_term_link('nuxtjs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_nuxt.svg" alt="Nuxt.js"></i></a></li>
-														<li><a href="<?= get_term_link('angularjs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_angular.svg" alt="AngularJS"></i></a></li>
-														<li><a href="<?= get_term_link('backbonejs', 'technology'); ?>"><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_backbone.svg" alt="Backbone.js"></i></a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
 													<p>SVGアニメーションの実装（スクラッチまたはLottie.webを使用）</p>
 													<p>データビジュアライゼーションの実装（D3.jsを使用）</p>
 													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('tokyoink', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('tokyoink', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('cheeseday', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('cheeseday', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('segasammy', OBJECT, 'post')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('rj-web', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-web', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
 													<p>PWAの実装</p>
 													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('rj-pwa', OBJECT, 'tools')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-pwa', OBJECT, 'tools')->ID); ?>">[事例]</a></li>
-														<li><a href="<?= get_permalink(get_page_by_path('odakyuop-pwa', OBJECT, 'post')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('odakyuop-pwa', OBJECT, 'post')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 												<li class="p-about-skill__item">
 													<p>Electronによるデスクトップアプリの開発</p>
 													<ul class="p-about-skill__example">
-														<li><a href="<?= get_permalink(get_page_by_path('rj-metatool', OBJECT, 'tools')->ID); ?>" data-title="<?= get_the_title(get_page_by_path('rj-metatool', OBJECT, 'tools')->ID); ?>">[事例]</a></li>
 													</ul>
 												</li>
 											</ul>
@@ -223,19 +173,12 @@ get_header();
 													<p>バージョン管理システムを利用したチーム開発経験</p>
 													<p>GitHubを利用した Git Flow / Pull Request / Fork による開発経験</p>
 													<ul class="p-about-skill__example">
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_git.svg" alt="Git"></i></li>
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_github.svg" alt="GitHub"></i></li>
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_svn.svg" alt="Subversion"></i></li>
 													</ul>
 												</li>
 
 												<li class="p-about-skill__item">
 													<p>開発環境の仮想化と構成管理</p>
 													<ul class="p-about-skill__example">
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_docker.svg" alt="Docker"></i></li>
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_docker_compose.png" alt="Docker Compose"></i></li>
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_vagrant.svg" alt="Vagrant"></i></li>
-														<li><i class="hover"><img src="<?=get_template_directory_uri()?>/resources/img/about/icon_ansible.svg" alt="Ansible"></i></li>
 													</ul>
 												</li>
 												
