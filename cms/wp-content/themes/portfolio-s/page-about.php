@@ -106,7 +106,7 @@ get_header();
 													部署間連携
 													<div class="c-barometer c-barometer--80"></div>
 												</li>
-												<li class="p-about-skill__barometerItem p-about-skill__barometerItem--inexperience">
+												<li class="p-about-skill__barometerItem p-about-skill__barometerItem--inexperienced">
 													経験のないもの
 													<span>予算管理・企画・顧客対応・効果測定</span>
 												</li>
@@ -251,7 +251,7 @@ get_header();
 													データビジュアライゼーションなどの実装経験あり<br />モダンフレームワークはBackbone.jsやAngularJS（1系）の実装経験もあり</span
 													>
 												</li>
-												<li class="p-about-skill__barometerItem p-about-skill__barometerItem--inexperience">
+												<li class="p-about-skill__barometerItem p-about-skill__barometerItem--inexperienced">
 													経験のないもの
 													<span
 													>Canvas（WebGL）による演出の実装・VRTやE2Eテストの実装・既存プロダクトのパフォーマンスチューニング</span
@@ -332,7 +332,7 @@ get_header();
 													>
 													<div class="c-barometer c-barometer--40"></div>
 												</li>
-												<li class="p-about-skill__barometerItem p-about-skill__barometerItem--inexperience">
+												<li class="p-about-skill__barometerItem p-about-skill__barometerItem--inexperienced">
 													経験のないもの
 													<span
 													>システム監視・AWSの各種製品を組み合わせた設計構築・GitHub
