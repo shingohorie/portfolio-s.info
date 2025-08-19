@@ -28,7 +28,7 @@ get_header();
 
 					<div class="p-about-introduction">
 						<p class="p-about-introduction__title">
-							堀江真悟 <i>Shingo Horie</i>
+							堀江 真悟 <i>Shingo Horie</i>
 						</p>
 						<figure class="p-about-introduction__portrait">
 							<img
@@ -40,7 +40,7 @@ get_header();
 
 						<div class="p-about-introduction__body">
 							<p>
-							フロントエンドエンジニアとしてwebのキャリアを開始。9年ほど開発の第一線に立っておりました。基本設計・コンポーネント設計をはじめ、リッチな演出の実装、CMSの設計構築、保守運用など業務範囲は多岐にわたりました。
+							フロントエンドエンジニアとしてwebのキャリアを開始。9年ほど開発の第一線に立っておりました。大規模なコーポレートサイトやブランドサイトを担当することが多く、基本設計・コンポーネント設計をはじめ、リッチな演出の実装、CMSの設計構築、保守運用など業務範囲は多岐にわたりました。
 							</p>
 
 							<p class="u-mtOneLine">
@@ -244,7 +244,7 @@ get_header();
 												<li class="p-about-skill__barometerItem">
 													経験のないもの
 													<span
-													>Canva（WebGL）による演出の実装・VRTやE2Eテストの実装・既存プロダクトのパフォーマンスチューニング</span
+													>Canvas（WebGL）による演出の実装・VRTやE2Eテストの実装・既存プロダクトのパフォーマンスチューニング</span
 													>
 												</li>
 											</ul>
