@@ -66,101 +66,101 @@ get_header();
 											<p class="p-about-skill__title">Project Managements</p>
 										</div>
 										<div class="p-about-skill__body">
-											<ul class="p-about-skill__items">
-												<li class="p-about-skill__item">
-													<p>
-													PL（Project
-													Leader）として、要件定義・進行管理・品質管理・開発ディレクション・部署間の合意形成・開発スキームの再定義など
-													</p>
-													<hr class="p-about-skill__separator" />
-													<ul class="p-about-skill__barometer">
-													<li class="p-about-skill__barometerItem">
-														進行管理・開発ディレクション
-														<div class="c-barometer c-barometer--100"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														外注先管理・外注先評価
-														<div class="c-barometer c-barometer--90"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														品質管理
-														<div class="c-barometer c-barometer--90"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														要件定義
-														<div class="c-barometer c-barometer--70"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														開発スキームの再定義
-														<div class="c-barometer c-barometer--80"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														部署間連携
-														<div class="c-barometer c-barometer--80"></div>
-													</li>
-													</ul>
-													<hr class="p-about-skill__separator" />
-													<ul class="p-about-skill__example">
-													<li>はたらこマガジン</li>
-													<li>はたらこねっと 脱スケルトンプロジェクト</li>
-													</ul>
-													<ul class="p-about-skill__example">
-													<li>
-														<a
-														href="<?= get_permalink(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>"
-														><?= get_the_title(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?></a
-														>
-													</li>
-													<li>
-														<a
-														href="<?= get_permalink(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>"
-														><?= get_the_title(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?></a
-														>
-													</li>
-													<li>
-														<a
-														href="<?= get_permalink(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?>"
-														><?= get_the_title(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?></a
-														>
-													</li>
-													<li>
-														<a
-														href="<?= get_permalink(get_page_by_path('cesar', OBJECT, 'post')->ID); ?>"
-														><?= get_the_title(get_page_by_path('cesar', OBJECT, 'post')->ID); ?></a
-														>
-													</li>
-													<li>
-														<a
-														href="<?= get_permalink(get_page_by_path('psup', OBJECT, 'post')->ID); ?>"
-														><?= get_the_title(get_page_by_path('psup', OBJECT, 'post')->ID); ?></a
-														>
-													</li>
-													<li>
-														<a
-														href="<?= get_permalink(get_page_by_path('alfresa', OBJECT, 'post')->ID); ?>"
-														><?= get_the_title(get_page_by_path('alfresa', OBJECT, 'post')->ID); ?></a
-														>
-													</li>
-													<li><a href="<?= get_permalink(get_page_by_path('tif', OBJECT, 'post')->ID); ?>"><?= get_the_title(get_page_by_path('tif', OBJECT, 'post')->ID); ?></a></li>
-													<li>
-														<a
-														href="<?= get_permalink(get_page_by_path('rj-package', OBJECT, 'post')->ID); ?>"
-														><?= get_the_title(get_page_by_path('rj-package', OBJECT, 'post')->ID); ?></a
-														>
-													</li>
-													<li>
-														<a
-														href="<?= get_permalink(get_page_by_path('rj-sg', OBJECT, 'tools')->ID); ?>"
-														><?= get_the_title(get_page_by_path('rj-sg', OBJECT, 'tools')->ID); ?></a
-														>
-													</li>
-													<li>
-														<a
-														href="<?= get_permalink(get_page_by_path('cosmedicsjp', OBJECT, 'post')->ID); ?>"
-														><?= get_the_title(get_page_by_path('cosmedicsjp', OBJECT, 'post')->ID); ?></a
-														>
-													</li>
-													</ul>
+											<p>
+											PL（Project
+											Leader）として、要件定義・進行管理・品質管理・開発ディレクション・部署間の合意形成・開発スキームの再定義など
+											</p>
+											<hr class="p-about-skill__separator" />
+											<ul class="p-about-skill__barometer">
+												<li class="p-about-skill__barometerItem">
+													進行管理・開発ディレクション
+													<div class="c-barometer c-barometer--100"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													外注先管理・外注先評価
+													<div class="c-barometer c-barometer--90"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													品質管理
+													<div class="c-barometer c-barometer--90"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													要件定義
+													<div class="c-barometer c-barometer--70"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													開発スキームの再定義
+													<div class="c-barometer c-barometer--80"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													部署間連携
+													<div class="c-barometer c-barometer--80"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													経験のないもの
+													<span>予算管理・企画・顧客対応・効果測定</span>
+												</li>
+											</ul>
+											<hr class="p-about-skill__separator" />
+											<ul class="p-about-skill__example">
+												<li>はたらこマガジン</li>
+												<li>はたらこねっと 脱スケルトンプロジェクト</li>
+											</ul>
+											<ul class="p-about-skill__example">
+												<li>
+													<a
+													href="<?= get_permalink(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>"
+													><?= get_the_title(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?></a
+													>
+												</li>
+												<li>
+													<a
+													href="<?= get_permalink(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>"
+													><?= get_the_title(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?></a
+													>
+												</li>
+												<li>
+													<a
+													href="<?= get_permalink(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?>"
+													><?= get_the_title(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?></a
+													>
+												</li>
+												<li>
+													<a
+													href="<?= get_permalink(get_page_by_path('cesar', OBJECT, 'post')->ID); ?>"
+													><?= get_the_title(get_page_by_path('cesar', OBJECT, 'post')->ID); ?></a
+													>
+												</li>
+												<li>
+													<a
+													href="<?= get_permalink(get_page_by_path('psup', OBJECT, 'post')->ID); ?>"
+													><?= get_the_title(get_page_by_path('psup', OBJECT, 'post')->ID); ?></a
+													>
+												</li>
+												<li>
+													<a
+													href="<?= get_permalink(get_page_by_path('alfresa', OBJECT, 'post')->ID); ?>"
+													><?= get_the_title(get_page_by_path('alfresa', OBJECT, 'post')->ID); ?></a
+													>
+												</li>
+												<li><a href="<?= get_permalink(get_page_by_path('tif', OBJECT, 'post')->ID); ?>"><?= get_the_title(get_page_by_path('tif', OBJECT, 'post')->ID); ?></a></li>
+												<li>
+													<a
+													href="<?= get_permalink(get_page_by_path('rj-package', OBJECT, 'post')->ID); ?>"
+													><?= get_the_title(get_page_by_path('rj-package', OBJECT, 'post')->ID); ?></a
+													>
+												</li>
+												<li>
+													<a
+													href="<?= get_permalink(get_page_by_path('rj-sg', OBJECT, 'tools')->ID); ?>"
+													><?= get_the_title(get_page_by_path('rj-sg', OBJECT, 'tools')->ID); ?></a
+													>
+												</li>
+												<li>
+													<a
+													href="<?= get_permalink(get_page_by_path('cosmedicsjp', OBJECT, 'post')->ID); ?>"
+													><?= get_the_title(get_page_by_path('cosmedicsjp', OBJECT, 'post')->ID); ?></a
+													>
 												</li>
 											</ul>
 										</div>
@@ -172,78 +172,80 @@ get_header();
 											<p class="p-about-skill__title">Frontend Development</p>
 										</div>
 										<div class="p-about-skill__body">
-											<ul class="p-about-skill__items">
-												<li class="p-about-skill__item">
-													<ul class="p-about-skill__barometer">
-														<li class="p-about-skill__barometerItem">
-															HTML / CSS（SCSS） / JavaScript（jQuery含む）
-															<span
-															>基本設計・コンポーネント設計・演出の実装・保守運用</span
-															>
-															<div class="c-barometer c-barometer--100"></div>
-														</li>
-														<li class="p-about-skill__barometerItem">
-															アクセシビリティ対応
-															<span
-															>JIS X 8341-3 レベルAA
-															一部準拠の経験あり</span
-															>
-															<div class="c-barometer c-barometer--80"></div>
-														</li>
+											<ul class="p-about-skill__barometer">
+												<li class="p-about-skill__barometerItem">
+													HTML / CSS（SCSS） / JavaScript（jQuery含む）
+													<span
+													>基本設計・コンポーネント設計・演出の実装・保守運用</span
+													>
+													<div class="c-barometer c-barometer--100"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													アクセシビリティ対応
+													<span
+													>JIS X 8341-3 レベルAA
+													一部準拠の経験あり</span
+													>
+													<div class="c-barometer c-barometer--80"></div>
+												</li>
 
-														<li class="p-about-skill__barometerItem">
-															Next.js / React
-															<span
-															>既存の横展開・小規模なコンポーネント開発なら可能</span
-															>
-															<div class="c-barometer c-barometer--50"></div>
-														</li>
-														<li class="p-about-skill__barometerItem">
-															Nuxt / Vue.js
-															<span
-															>既存の横展開・小規模なコンポーネント開発なら可能</span
-															>
-															<div class="c-barometer c-barometer--40"></div>
-														</li>
-														<li class="p-about-skill__barometerItem">
-															TypeScript
-															<span
-															>基礎的なコーディングなら可能</span
-															>
-															<div class="c-barometer c-barometer--40"></div>
-														</li>
+												<li class="p-about-skill__barometerItem">
+													Next.js / React
+													<span
+													>既存の横展開・小規模なコンポーネント開発なら可能</span
+													>
+													<div class="c-barometer c-barometer--50"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													Nuxt / Vue.js
+													<span
+													>既存の横展開・小規模なコンポーネント開発なら可能</span
+													>
+													<div class="c-barometer c-barometer--40"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													TypeScript
+													<span
+													>基礎的なコーディングなら可能</span
+													>
+													<div class="c-barometer c-barometer--40"></div>
+												</li>
 
-														<li class="p-about-skill__barometerItem">
-															単体テスト
-															<span
-															>Vitest / testing-library
-															での実装経験あり</span
-															>
-															<div class="c-barometer c-barometer--70"></div>
-														</li>
-														<li class="p-about-skill__barometerItem">
-															webpack / npm scripts
-															<span
-															>gulpでのアセットビルド実装の経験もあり</span
-															>
-															<div class="c-barometer c-barometer--70"></div>
-														</li>
-														<li class="p-about-skill__barometerItem">
-															Storybook
-															<div class="c-barometer c-barometer--70"></div>
-														</li>
-														<li class="p-about-skill__barometerItem">
-															レガシーブラウザ・HTMLメール（レスポンシブ）
-															<div class="c-barometer c-barometer--100"></div>
-														</li>
-														<li class="p-about-skill__barometerItem">
-															その他
-															<span
-															>PWA, Eelectron,
-															データビジュアライゼーションなどの実装経験あり<br />モダンフレームワークはBackbone.jsやAngularJS（1系）の実装経験もあり</span
-															>
-														</li>
-													</ul>
+												<li class="p-about-skill__barometerItem">
+													単体テスト
+													<span
+													>Vitest / testing-library
+													での実装経験あり</span
+													>
+													<div class="c-barometer c-barometer--70"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													webpack / npm scripts
+													<span
+													>gulpでのアセットビルド実装の経験もあり</span
+													>
+													<div class="c-barometer c-barometer--70"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													Storybook
+													<div class="c-barometer c-barometer--70"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													レガシーブラウザ・HTMLメール（レスポンシブ）
+													<div class="c-barometer c-barometer--100"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													その他
+													<span
+													>PWA, Eelectron,
+													データビジュアライゼーションなどの実装経験あり<br />モダンフレームワークはBackbone.jsやAngularJS（1系）の実装経験もあり</span
+													>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													経験のないもの
+													<span
+													>Canva（WebGL）による演出の実装・VRTやE2Eテストの実装・既存プロダクトのパフォーマンスチューニング</span
+													>
 												</li>
 											</ul>
 										</div>
@@ -257,70 +259,76 @@ get_header();
 											</p>
 										</div>
 										<div class="p-about-skill__body">
-											<ul class="p-about-skill__items">
-												<li class="p-about-skill__item">
-													<ul class="p-about-skill__barometer">
-													<li>
-														PHP
-														<span>基本なコーディングは可能</span>
-														<div class="c-barometer c-barometer--60"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														WordPress
-														<span
-														>カスタムテーマ開発や管理画面のカスタマイズが可能</span
-														>
-														<div class="c-barometer c-barometer--100"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														Movable Type
-														<span>既存サイトの更新であれば可能</span>
-														<div class="c-barometer c-barometer--30"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														microCMS
-														<span>APIの設計やWebhookの設定など可能</span>
-														<div class="c-barometer c-barometer--100"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														Node.js
-														<span
-														>開発環境の構築や、簡易的なCLIアプリの実装が可能</span
-														>
-														<div class="c-barometer c-barometer--60"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														Git / GitHub
-														<span
-														>Git
-														Flowによる大規模プロダクトのリポジトリ運用<br />GitHub
-														Actionsの実装経験あり</span
-														>
-														<div class="c-barometer c-barometer--80"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														Linux / Apache
-														<span
-														>基本的なCLIオペレーションは可能<br />htaccessでの設定は可能<br />httpd.confは複雑な設定にならなければ可能</span
-														>
-														<div class="c-barometer c-barometer--80"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														Docker
-														<span
-														>既存のDockerfileの読解なら可能</span
-														>
-														<div
-														class="c-barometer c-barometer--30 u-mtOneLine"
-														></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														AWS
-														<span>Amplify Hosting, EC2 の設定は可能</span>
-														<div class="c-barometer c-barometer--40"></div>
-													</li>
-													</ul>
+											<ul class="p-about-skill__barometer">
+												<li>
+													PHP
+													<span>基本なコーディングは可能</span>
+													<div class="c-barometer c-barometer--60"></div>
 												</li>
+												<li class="p-about-skill__barometerItem">
+													WordPress
+													<span
+													>カスタムテーマ開発や管理画面のカスタマイズが可能</span
+													>
+													<div class="c-barometer c-barometer--100"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													Movable Type
+													<span>既存サイトの更新であれば可能</span>
+													<div class="c-barometer c-barometer--30"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													microCMS
+													<span>APIの設計やWebhookの設定など可能</span>
+													<div class="c-barometer c-barometer--100"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													Node.js
+													<span
+													>開発環境の構築や、簡易的なCLIアプリの実装が可能</span
+													>
+													<div class="c-barometer c-barometer--60"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													Git / GitHub
+													<span
+													>Git
+													Flowによる大規模プロダクトのリポジトリ運用<br />GitHub
+													Actionsの実装経験あり</span
+													>
+													<div class="c-barometer c-barometer--80"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													Linux / Apache
+													<span
+													>基本的なCLIオペレーションは可能<br />htaccessでの設定は可能<br />httpd.confは複雑な設定にならなければ可能</span
+													>
+													<div class="c-barometer c-barometer--80"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													Docker
+													<span
+													>既存のDockerfileの読解なら可能</span
+													>
+													<div
+													class="c-barometer c-barometer--30 u-mtOneLine"
+													></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													AWS
+													<span
+													>Amplify Hosting, EC2 の設定は可能<br />S3, VPC,
+													ECSなどは対応は難しい</span
+													>
+													<div class="c-barometer c-barometer--40"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													経験のないもの
+													<span
+													>システム監視・AWSの各種製品を組み合わせた設計構築・GitHub
+													Actions以外のCI/CDの利用・GCPの各種サービスを組み合わせた設計構築</span
+													>
+												</li>												
 											</ul>
 										</div>
 									</div>
