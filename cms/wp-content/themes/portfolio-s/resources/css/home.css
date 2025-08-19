@@ -109,6 +109,9 @@
   font-size: 1rem;
   line-height: 1.8;
 }
+.p-home-about__body p {
+  margin-top: 0.5em;
+}
 .p-home-about__footer {
   margin-top: 20px;
 }

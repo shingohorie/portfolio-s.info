@@ -27,12 +27,34 @@ get_header();
 					<h1 class="c-primaryHeader" data-text-en="<?= get_the_title() ?>"><span>スキル詳細</span></h1>
 
 					<div class="p-about-introduction">
-						<p class="p-about-introduction__title">堀江真悟  <i>Shingo Horie</i></p>
-						<p class="u-mtOneLine">マークアップならびにフロントエンドエンジニアとして、新規開発から保守運用、小規模案件から大規模案件まで多数の案件を担当してきました。<br>コーポレートサイトやキャンペーンサイトなどの一般的なサイト制作をはじめ、JSフレームワークを用いたインタラクティブなコンテンツ開発、時にはレスポン<br>シブメールマガジン・他言語対応のグローバルサイト・CMS管理画面のカスタマイズなど、幅広く手がけています。</p>
-						<p class="u-mtOneLine">最近では、開発のコーディネート（ディレクターとエンジニアの間に立ち、ガイドライン策定・ソースレビュー・進行管理・工程の再定義などを行います）や、大量生産の仕組みづくり、外部協力会社へのディレクションを行っています。</p>
-						<p class="u-mtOneLine">1985年生 群馬県出身 / 東京都在住</p>
-						<p class="p-about-introduction__account p-about-introduction__account--github"><a href="https://github.com/shingohorie" target="_blank">shingohorie</a></p>
-						<p class="p-about-introduction__account p-about-introduction__account--hatena"><a href="https://shinimae.hatenablog.com/" target="_blank">knowledge base</a></p>
+						<p class="p-about-introduction__title">
+							堀江真悟 <i>Shingo Horie</i>
+						</p>
+						<figure class="p-about-introduction__portrait">
+							<img
+							src="<?=get_template_directory_uri()?>/resources/img/about/img_portrait.jpg"
+							alt=""
+							/>
+							<figcaption>近影 (2025年撮影)</figcaption>
+						</figure>
+
+						<div class="p-about-introduction__body">
+							<p>
+							フロントエンドエンジニアとしてwebのキャリアを開始。9年ほど開発の第一線に立っておりました。基本設計・コンポーネント設計をはじめ、リッチな演出の実装、CMSの設計構築、保守運用など業務範囲は多岐にわたりました。
+							</p>
+
+							<p class="u-mtOneLine">
+							多種多様な案件を経験する中で、開発現場にとってもビジネス側にとてもやさしいプロジェクト管理とはなんだろうと考え始め、これまで培ってきた経験値をもとにPL（Project
+							Leader）に転向。「自分が思う最良のマネジメント」を実践するようになりました。それが直近の４年ほどのことになります。
+							</p>
+
+							<p class="u-mtOneLine">
+							技術者としては開発力・提案力・スピード・守備範囲の広さを持ち味としております。<br />
+							PLとしてはていねいな管理が持ち味で、複雑な案件の進行管理を成功させたり、業務モデルや開発スキームの再定義を任せていただいております。
+							</p>
+
+							<p class="u-mtOneLine">1985年生 群馬県出身 / 埼玉県在住</p>
+						</div>
 					</div>
 
 					<div class="p-about-skillGroup p-about-skillGroup--twoUp">
@@ -46,107 +68,180 @@ get_header();
 										<div class="p-about-skill__body">
 											<ul class="p-about-skill__items">
 												<li class="p-about-skill__item">
-													<p>PL（Project Leader）としての実績。要件定義・進行管理・複数チームの連携・品質管理・工程の再定義 など</p>
-													<ul class="p-about-skill__example u-mtOneLine">
-														
+													<p>
+													PL（Project
+													Leader）として、要件定義・進行管理・品質管理・開発ディレクション・部署間の合意形成・開発スキームの再定義など
+													</p>
+													<hr class="p-about-skill__separator" />
+													<ul class="p-about-skill__barometer">
+													<li class="p-about-skill__barometerItem">
+														進行管理・開発ディレクション
+														<div class="c-barometer c-barometer--100"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														外注先管理・外注先評価
+														<div class="c-barometer c-barometer--90"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														品質管理
+														<div class="c-barometer c-barometer--90"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														要件定義
+														<div class="c-barometer c-barometer--70"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														開発スキームの再定義
+														<div class="c-barometer c-barometer--80"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														部署間連携
+														<div class="c-barometer c-barometer--80"></div>
+													</li>
+													</ul>
+													<hr class="p-about-skill__separator" />
+													<ul class="p-about-skill__example">
+													<li>はたらこマガジン</li>
+													<li>はたらこねっと 脱スケルトンプロジェクト</li>
+													</ul>
+													<ul class="p-about-skill__example">
+													<li>
+														<a
+														href="https://portfolio-s.info/works/2410/"
+														data-title="前澤化成工業"
+														>前澤化成工業</a
+														>
+													</li>
+													<li>
+														<a
+														href="https://portfolio-s.info/works/1676/"
+														data-title="小田急SCディベロップメント"
+														>小田急SCディベロップメント</a
+														>
+													</li>
+													<li>
+														<a
+														href="https://portfolio-s.info/works/1492/"
+														data-title="日本損害保険協会 – 全国交通事故多発交差点マップ"
+														>日本損害保険協会 –
+														全国交通事故多発交差点マップ</a
+														>
+													</li>
+													<li>
+														<a
+														href="https://portfolio-s.info/works/1418/"
+														data-title="Cesar"
+														>Cesar</a
+														>
+													</li>
+													<li>
+														<a
+														href="https://portfolio-s.info/works/2559/"
+														data-title="PRONEXUS SUPPORT"
+														>PRONEXUS SUPPORT</a
+														>
+													</li>
+													<li>
+														<a
+														href="https://portfolio-s.info/works/2539/"
+														data-title="アルフレッサホールディングス"
+														>アルフレッサホールディングス</a
+														>
+													</li>
+													<li>
+														<a
+														href="https://portfolio-s.info/works/2614/"
+														data-title="サイトパッケージ開発プロジェクト"
+														>サイトパッケージ開発プロジェクト</a
+														>
+													</li>
+													<li>
+														<a
+														href="https://portfolio-s.info/tools/1623/"
+														data-title="Pattern Library Generator"
+														>Pattern Library Generator</a
+														>
+													</li>
+													<li>
+														<a
+														href="https://portfolio-s.info/works/2778/"
+														data-title="cosmedics.jp – 運用代行"
+														>cosmedics.jp – 運用代行</a
+														>
+													</li>
 													</ul>
 												</li>
 											</ul>
 										</div>
 									</div>
 								</li>
-							</ul>
-							<ul class="p-about-skillGroup__items">
 								<li class="p-about-skillGroup__item">
 									<div class="p-about-skill p-about-skill--html">
 										<div class="p-about-skill__header">
-											<p class="p-about-skill__title">HTML / CSS</p>
+											<p class="p-about-skill__title">Frontend Development</p>
 										</div>
 										<div class="p-about-skill__body">
 											<ul class="p-about-skill__items">
-												<li class="p-about-skill__item">HTML5 / CSS3による基本的なコーディング</li>
 												<li class="p-about-skill__item">
-													<p>メタ言語を使用した開発経験</p>
-													<ul class="p-about-skill__example">
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>大規模 / 中規模サイトの新規開発</p>
-													<ul class="p-about-skill__example">
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>大規模 / 中規模サイトの保守運用</p>
-													<ul class="p-about-skill__example">
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>レスポンシブメールマガジンの制作</p>
-													<ul class="p-about-skill__example">
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>CMS管理画面のテンプレート開発</p>
-													<ul class="p-about-skill__example">
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>CSS設計思想を採用したモジュール開発</p>
-													<ul class="p-about-skill__example">
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>アクセシビリティ対応（JIS X 8341-3 レベルAA 一部準拠）</p>
-													<ul class="p-about-skill__example">
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>サイト高速化対応（Lighthouseで計測）</p>
-													<ul class="p-about-skill__example">
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>レガシーブラウザ対応（IE 6-8 / Android 2-4）</p>
-													<ul class="p-about-skill__example">
-													</ul>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</li>
-								<li class="p-about-skillGroup__item">
-									<div class="p-about-skill p-about-skill--js">
-										<div class="p-about-skill__header">
-											<p class="p-about-skill__title">JavaScript</p>
-										</div>
-										<div class="p-about-skill__body">
-											<ul class="p-about-skill__items">
-												<li class="p-about-skill__item">jQueryによる基本的なプログラミング</li>
-												<li class="p-about-skill__item">ES6によるオブジェクト指向プログラミング</li>
-												<li class="p-about-skill__item">
-													<p>CSSと連携した演出・インタラクションの実装</p>
-													<ul class="p-about-skill__example">
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>フレームワークを使用した開発経験</p>
-													<ul class="p-about-skill__example">
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>SVGアニメーションの実装（スクラッチまたはLottie.webを使用）</p>
-													<p>データビジュアライゼーションの実装（D3.jsを使用）</p>
-													<ul class="p-about-skill__example">
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>PWAの実装</p>
-													<ul class="p-about-skill__example">
-													</ul>
-												</li>
-												<li class="p-about-skill__item">
-													<p>Electronによるデスクトップアプリの開発</p>
-													<ul class="p-about-skill__example">
+													<ul class="p-about-skill__barometer">
+													<li class="p-about-skill__barometerItem">
+														HTML / CSS（SCSS） / JavaScript（jQuery含む）
+														<span
+														>基本設計・コンポーネント設計・演出の実装・保守運用</span
+														>
+														<div class="c-barometer c-barometer--100"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														アクセシビリティ対応
+														<span
+														>JIS X 8341-3 レベルAA
+														一部準拠の経験あり</span
+														>
+														<div class="c-barometer c-barometer--80"></div>
+													</li>
+
+													<li class="p-about-skill__barometerItem">
+														Next.js / React
+														<span
+														>既存の横展開・小規模なコンポーネント開発なら可能</span
+														>
+														<div class="c-barometer c-barometer--50"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														Nuxt / Vue.js
+														<span
+														>既存の横展開・小規模なコンポーネント開発なら可能</span
+														>
+														<div class="c-barometer c-barometer--40"></div>
+													</li>
+
+													<li class="p-about-skill__barometerItem">
+														単体テスト
+														<span
+														>Vitest / testing-library
+														での実装経験あり</span
+														>
+														<div class="c-barometer c-barometer--70"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														webpack
+														<div class="c-barometer c-barometer--70"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														Storybook
+														<div class="c-barometer c-barometer--70"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														レガシーブラウザ・HTMLメール（レスポンシブ）
+														<div class="c-barometer c-barometer--100"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														その他
+														<span
+														>PWA, Eelectron,
+														データビジュアライゼーションなどの実装経験あり</span
+														>
+													</li>
 													</ul>
 												</li>
 											</ul>
@@ -156,34 +251,76 @@ get_header();
 								<li class="p-about-skillGroup__item">
 									<div class="p-about-skill p-about-skill--prog">
 										<div class="p-about-skill__header">
-											<p class="p-about-skill__title">CMS / PHP / Node.js ...</p>
-										</div>
-										<div class="p-about-skill__body">
-										</div>
-									</div>
-								</li>
-								<li class="p-about-skillGroup__item">
-									<div class="p-about-skill p-about-skill--dev">
-										<div class="p-about-skill__header">
-											<p class="p-about-skill__title">Develop Environment</p>
+											<p class="p-about-skill__title">
+											Backend Development, <br />Infrastructure
+											</p>
 										</div>
 										<div class="p-about-skill__body">
 											<ul class="p-about-skill__items">
 												<li class="p-about-skill__item">
-													<p>バージョン管理システムを利用したチーム開発経験</p>
-													<p>GitHubを利用した Git Flow / Pull Request / Fork による開発経験</p>
-													<ul class="p-about-skill__example">
+													<ul class="p-about-skill__barometer">
+													<li>
+														PHP
+														<span>基本なコーディングは可能</span>
+														<div class="c-barometer c-barometer--60"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														WordPress
+														<span
+														>カスタムテーマ開発や管理画面のカスタマイズが可能</span
+														>
+														<div class="c-barometer c-barometer--100"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														Movable Type
+														<span>既存サイトの更新であれば可能</span>
+														<div class="c-barometer c-barometer--30"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														microCMS
+														<span>APIの設計やWebhookの設定など可能</span>
+														<div class="c-barometer c-barometer--100"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														Node.js
+														<span
+														>開発環境の構築や、簡易的なCLIアプリの実装が可能</span
+														>
+														<div class="c-barometer c-barometer--60"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														Git / GitHub
+														<span
+														>Git
+														Flowによる大規模プロダクトのリポジトリ運用<br />GitHub
+														Actionsの実装経験あり</span
+														>
+														<div class="c-barometer c-barometer--80"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														Linux / Apache
+														<span
+														>基本的なCLIオペレーションは可能<br />htaccessでの設定は可能<br />httpd.confは複雑な設定にならなければ可能</span
+														>
+														<div class="c-barometer c-barometer--80"></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														Docker
+														<span
+														>既存のDockerfile, docker-compose.yml
+														の読解なら可能</span
+														>
+														<div
+														class="c-barometer c-barometer--30 u-mtOneLine"
+														></div>
+													</li>
+													<li class="p-about-skill__barometerItem">
+														AWS
+														<span>Amplify Hosting, EC2 の設定は可能</span>
+														<div class="c-barometer c-barometer--40"></div>
+													</li>
 													</ul>
 												</li>
-
-												<li class="p-about-skill__item">
-													<p>開発環境の仮想化と構成管理</p>
-													<ul class="p-about-skill__example">
-													</ul>
-												</li>
-												
-												
-												<li class="p-about-skill__item">CUIでの基本的なLinuxマシンのオペレーション</li>
 											</ul>
 										</div>
 									</div>
@@ -195,7 +332,7 @@ get_header();
 				<div class="l-section">
 					<h2 class="c-primaryHeader c-primaryHeader--md" data-text-en="Certification"><span>資格</span></h2>
 
-					<ul>
+					<ul class="p-about-certs">
 						<li>Microsoft Office Specialist (MOS)　[Word, Excel]</li>
 						<li>基本情報技術者試験</li>
 						<li>Oracle Master [Bronze]</li>

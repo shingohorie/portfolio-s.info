@@ -160,7 +160,14 @@ get_header();
 						<h2 class="p-home-about__title">堀江 真悟  <i>Shingo Horie</i></h2>
 					</div>
 					<div class="p-home-about__body">
-						<p>マークアップならびにフロントエンドエンジニアとして、新規開発から保守運用、小規模案件から大規模案件まで多数の案件を担当してきました。</p>
+						<p>フロントエンドエンジニアとしてwebのキャリアを開始。</p>
+						<p>
+						多種多様な案件を経験する中で、開発者として培ってきた経験値をもとにPL（Project
+						Leader）に転向。
+						</p>
+						<p>
+						ていねいな管理が持ち味で、複雑な案件の進行管理を成功させたり、業務モデルや開発スキームの再定義を任せていただいております。
+						</p>
 					</div>
 					<div class="p-home-about__footer">
 						<p class="p-home-about__toDetail"><a href="<?= get_permalink( get_page_by_path('about')->ID );?>">スキル詳細へ</a></p>

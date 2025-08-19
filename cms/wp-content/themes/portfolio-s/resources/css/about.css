@@ -1,18 +1,22 @@
 /*!*********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./template/resources/scss/about.scss ***!
   \*********************************************************************************************************************************************************/
+@charset "UTF-8";
 /*---------------------------------
 
   About
 
 ---------------------------------*/
 .p-about-introduction {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 50px;
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 2;
 }
 .p-about-introduction__title {
+  width: 100%;
   margin-bottom: 20px;
   font-size: 18px;
   font-size: 1.8rem;
@@ -26,25 +30,28 @@
   font-size: 1.2rem;
   line-height: 2.25;
 }
-.p-about-introduction__account {
-  display: flex;
-  margin-top: 1em;
+.p-about-introduction__portrait {
+  flex: 0 0 auto;
+  width: 100px;
+  margin-right: 30px;
+  margin-bottom: 8px;
 }
-.p-about-introduction__account--github:before {
-  content: "";
-  flex-shrink: 0;
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  margin-right: 8px;
-  background: url(/cms/wp-content/themes/portfolio-s/resources/img/about/icon_github.svg) no-repeat center;
-  background-size: contain;
+.p-about-introduction__portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
-.p-about-introduction__account a {
-  color: #759dc9;
+.p-about-introduction__portrait figcaption {
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 10px;
+  color: #999;
+  text-align: center;
 }
-.p-about-introduction__account a:hover {
-  color: #378cea;
+.p-about-introduction__body {
+  flex: 1;
 }
 
 .p-about-skillGroup {
@@ -55,7 +62,6 @@
 }
 .p-about-skillGroup.p-about-skillGroup--twoUp .p-about-skillGroup__item {
   width: calc(50% - 30px);
-  flex: 1 0 auto;
 }
 .p-about-skillGroup__inner {
   margin-left: -15px;
@@ -118,7 +124,7 @@
   font-weight: bold;
   font-size: 24px;
   font-size: 2.4rem;
-  line-height: 1;
+  line-height: 1.25;
   color: #fff;
 }
 .p-about-skill__body {
@@ -130,15 +136,27 @@
 .p-about-skill__item:not(:last-child) {
   margin-bottom: 20px;
 }
+.p-about-skill__separator {
+  display: block;
+  height: 1px;
+  margin: 2em 0;
+  padding: 0;
+  border: none;
+  background: #e8e7e7;
+}
 .p-about-skill__example {
-  display: flex;
-  align-items: center;
-  margin-top: 3px;
+  margin-top: 12px;
   font-size: 12px;
   font-size: 1.2rem;
   line-height: 1;
 }
 .p-about-skill__example li {
+  margin-top: 8px;
+  margin-right: 5px;
+}
+.p-about-skill__example li:before {
+  content: "›";
+  display: inline-block;
   margin-right: 5px;
 }
 .p-about-skill__example li a {
@@ -170,17 +188,69 @@
   object-fit: contain;
   object-position: center;
 }
-.p-about-skill__example li .c-tooltip {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  margin-bottom: 5px;
-  padding: 5px 8px;
-  white-space: nowrap;
+* + .p-about-skill__barometer {
+  margin-top: 1em;
+}
+.p-about-skill__barometer li:not(:first-child) {
+  margin-top: 1em;
+}
+.p-about-skill__barometer span {
+  display: block;
+  margin-top: 4px;
+  color: #999;
   font-size: 12px;
   font-size: 1.2rem;
-  line-height: 1;
+  line-height: 1.3333333333;
+}
+
+.p-about-certs li {
+  margin-top: 8px;
+}
+
+.c-barometer {
+  height: 8px;
+  background: #e8e7e7;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) inset;
+  margin-top: 8px;
+  overflow: hidden;
+}
+.c-barometer::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: 8px;
+  background: #555;
+  background: linear-gradient(90deg, #4cd964 0%, #5ac8fa 100%);
+}
+.c-barometer.c-barometer--10::after {
+  width: 10%;
+}
+.c-barometer.c-barometer--20::after {
+  width: 20%;
+}
+.c-barometer.c-barometer--30::after {
+  width: 30%;
+}
+.c-barometer.c-barometer--40::after {
+  width: 40%;
+}
+.c-barometer.c-barometer--50::after {
+  width: 50%;
+}
+.c-barometer.c-barometer--60::after {
+  width: 60%;
+}
+.c-barometer.c-barometer--70::after {
+  width: 70%;
+}
+.c-barometer.c-barometer--80::after {
+  width: 80%;
+}
+.c-barometer.c-barometer--90::after {
+  width: 90%;
+}
+.c-barometer.c-barometer--100::after {
+  width: 100%;
 }
