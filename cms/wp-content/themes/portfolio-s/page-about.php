@@ -222,7 +222,7 @@ get_header();
 															<div class="c-barometer c-barometer--70"></div>
 														</li>
 														<li class="p-about-skill__barometerItem">
-															webpack, npm scripts
+															webpack / npm scripts
 															<span
 															>gulpでのアセットビルド実装の経験もあり</span
 															>
