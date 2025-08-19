@@ -107,66 +107,57 @@ get_header();
 													<ul class="p-about-skill__example">
 													<li>
 														<a
-														href="https://portfolio-s.info/works/2410/"
-														data-title="前澤化成工業"
-														>前澤化成工業</a
+														href="<?= get_permalink(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?>"
+														><?= get_the_title(get_page_by_path('maezawa', OBJECT, 'post')->ID); ?></a
 														>
 													</li>
 													<li>
 														<a
-														href="https://portfolio-s.info/works/1676/"
-														data-title="小田急SCディベロップメント"
-														>小田急SCディベロップメント</a
+														href="<?= get_permalink(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?>"
+														><?= get_the_title(get_page_by_path('odakyusc', OBJECT, 'post')->ID); ?></a
 														>
 													</li>
 													<li>
 														<a
-														href="https://portfolio-s.info/works/1492/"
-														data-title="日本損害保険協会 – 全国交通事故多発交差点マップ"
-														>日本損害保険協会 –
-														全国交通事故多発交差点マップ</a
+														href="<?= get_permalink(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?>"
+														><?= get_the_title(get_page_by_path('sonpo-kousaten', OBJECT, 'post')->ID); ?></a
 														>
 													</li>
 													<li>
 														<a
-														href="https://portfolio-s.info/works/1418/"
-														data-title="Cesar"
-														>Cesar</a
+														href="<?= get_permalink(get_page_by_path('cesar', OBJECT, 'post')->ID); ?>"
+														><?= get_the_title(get_page_by_path('cesar', OBJECT, 'post')->ID); ?></a
 														>
 													</li>
 													<li>
 														<a
-														href="https://portfolio-s.info/works/2559/"
-														data-title="PRONEXUS SUPPORT"
-														>PRONEXUS SUPPORT</a
+														href="<?= get_permalink(get_page_by_path('psup', OBJECT, 'post')->ID); ?>"
+														><?= get_the_title(get_page_by_path('psup', OBJECT, 'post')->ID); ?></a
 														>
 													</li>
 													<li>
 														<a
-														href="https://portfolio-s.info/works/2539/"
-														data-title="アルフレッサホールディングス"
-														>アルフレッサホールディングス</a
+														href="<?= get_permalink(get_page_by_path('alfresa', OBJECT, 'post')->ID); ?>"
+														><?= get_the_title(get_page_by_path('alfresa', OBJECT, 'post')->ID); ?></a
+														>
+													</li>
+													<li><a href="<?= get_permalink(get_page_by_path('tif', OBJECT, 'post')->ID); ?>"><?= get_the_title(get_page_by_path('tif', OBJECT, 'post')->ID); ?></a></li>
+													<li>
+														<a
+														href="<?= get_permalink(get_page_by_path('rj-package', OBJECT, 'post')->ID); ?>"
+														><?= get_the_title(get_page_by_path('rj-package', OBJECT, 'post')->ID); ?></a
 														>
 													</li>
 													<li>
 														<a
-														href="https://portfolio-s.info/works/2614/"
-														data-title="サイトパッケージ開発プロジェクト"
-														>サイトパッケージ開発プロジェクト</a
+														href="<?= get_permalink(get_page_by_path('rj-sg', OBJECT, 'tools')->ID); ?>"
+														><?= get_the_title(get_page_by_path('rj-sg', OBJECT, 'post')->ID); ?></a
 														>
 													</li>
 													<li>
 														<a
-														href="https://portfolio-s.info/tools/1623/"
-														data-title="Pattern Library Generator"
-														>Pattern Library Generator</a
-														>
-													</li>
-													<li>
-														<a
-														href="https://portfolio-s.info/works/2778/"
-														data-title="cosmedics.jp – 運用代行"
-														>cosmedics.jp – 運用代行</a
+														href="<?= get_permalink(get_page_by_path('cosmedicsjp', OBJECT, 'post')->ID); ?>"
+														><?= get_the_title(get_page_by_path('cosmedicsjp', OBJECT, 'post')->ID); ?></a
 														>
 													</li>
 													</ul>
