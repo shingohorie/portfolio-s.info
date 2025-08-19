@@ -35,7 +35,9 @@ get_header();
 							src="<?=get_template_directory_uri()?>/resources/img/about/img_portrait.jpg"
 							alt=""
 							/>
-							<figcaption>近影 (2025年撮影)</figcaption>
+							<figcaption>
+							近影 (2025年撮影)<br />1985年生・群馬県出身
+							</figcaption>
 						</figure>
 
 						<div class="p-about-introduction__body">
@@ -53,7 +55,15 @@ get_header();
 							PLとしてはていねいな管理が持ち味で、複雑な案件の進行管理を成功させたり、業務モデルや開発スキームの再定義を任せていただいております。
 							</p>
 
-							<p class="u-mtOneLine">1985年生 群馬県出身 / 埼玉県在住</p>
+							<p class="u-mtOneLine">
+							事業会社にてメディアサイトの立ち上げを担当した際に、CMSベンダーよりインタビューを受けました<br />
+							<a
+								href="https://microcms.io/interviews/dip"
+								target="_blank"
+								class="p-about-introduction__link-block"
+								>導入事例インタビュー【ディップ株式会社様】従来の約3分の1の期間でサイト公開が実現。記事公開までの期間も1か月→翌日に短縮</a
+							>
+							</p>
 						</div>
 					</div>
 
@@ -96,7 +106,7 @@ get_header();
 													部署間連携
 													<div class="c-barometer c-barometer--80"></div>
 												</li>
-												<li class="p-about-skill__barometerItem">
+												<li class="p-about-skill__barometerItem p-about-skill__barometerItem--inexperience">
 													経験のないもの
 													<span>予算管理・企画・顧客対応・効果測定</span>
 												</li>
@@ -241,7 +251,7 @@ get_header();
 													データビジュアライゼーションなどの実装経験あり<br />モダンフレームワークはBackbone.jsやAngularJS（1系）の実装経験もあり</span
 													>
 												</li>
-												<li class="p-about-skill__barometerItem">
+												<li class="p-about-skill__barometerItem p-about-skill__barometerItem--inexperience">
 													経験のないもの
 													<span
 													>Canvas（WebGL）による演出の実装・VRTやE2Eテストの実装・既存プロダクトのパフォーマンスチューニング</span
@@ -322,11 +332,11 @@ get_header();
 													>
 													<div class="c-barometer c-barometer--40"></div>
 												</li>
-												<li class="p-about-skill__barometerItem">
+												<li class="p-about-skill__barometerItem p-about-skill__barometerItem--inexperience">
 													経験のないもの
 													<span
 													>システム監視・AWSの各種製品を組み合わせた設計構築・GitHub
-													Actions以外のCI/CDの利用・GCPの各種サービスを組み合わせた設計構築</span
+													Actions以外のCI/CDの構築・GCPの各種サービスを組み合わせた設計構築</span
 													>
 												</li>												
 											</ul>

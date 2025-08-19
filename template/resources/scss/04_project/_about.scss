@@ -40,7 +40,7 @@
     }
 
     figcaption {
-      @include fts(12, 18);
+      @include fts(11, 16);
       margin-top: 10px;
       color: $color-gray;
       text-align: center;
@@ -49,6 +49,22 @@
 
   &__body {
     flex: 1;
+
+    a {
+      color: $color-link;
+
+      &:hover {
+        color: $color-link-hover;
+      }
+    }
+  }
+
+  &__link-block {
+    &::before {
+      content: '\203A';
+      display: inline-block;
+      margin-right: 5px;
+    }
   }
 }
 
@@ -231,11 +247,21 @@
     li:not(:first-child) {
       margin-top: 1em;
     }
+
     span {
       display: block;
       margin-top: 4px;
       color: $color-gray;
       @include fts(12, 16);
+    }
+
+    &Item {
+      &--inexperienced {
+        margin-top: 2em !important;
+        padding: 20px;
+        border-radius: 8px;
+        background: #f2f2f2;
+      }
     }
   }
 }

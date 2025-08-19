@@ -43,15 +43,26 @@
   border-radius: 50%;
 }
 .p-about-introduction__portrait figcaption {
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: 11px;
+  font-size: 1.1rem;
+  line-height: 1.4545454545;
   margin-top: 10px;
   color: #999;
   text-align: center;
 }
 .p-about-introduction__body {
   flex: 1;
+}
+.p-about-introduction__body a {
+  color: #759dc9;
+}
+.p-about-introduction__body a:hover {
+  color: #378cea;
+}
+.p-about-introduction__link-block::before {
+  content: "›";
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .p-about-skillGroup {
@@ -201,6 +212,12 @@
   font-size: 12px;
   font-size: 1.2rem;
   line-height: 1.3333333333;
+}
+.p-about-skill__barometerItem--inexperienced {
+  margin-top: 2em !important;
+  padding: 20px;
+  border-radius: 8px;
+  background: #f2f2f2;
 }
 
 .p-about-certs li {
