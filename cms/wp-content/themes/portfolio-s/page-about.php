@@ -151,7 +151,7 @@ get_header();
 													<li>
 														<a
 														href="<?= get_permalink(get_page_by_path('rj-sg', OBJECT, 'tools')->ID); ?>"
-														><?= get_the_title(get_page_by_path('rj-sg', OBJECT, 'post')->ID); ?></a
+														><?= get_the_title(get_page_by_path('rj-sg', OBJECT, 'tools')->ID); ?></a
 														>
 													</li>
 													<li>
@@ -175,64 +175,74 @@ get_header();
 											<ul class="p-about-skill__items">
 												<li class="p-about-skill__item">
 													<ul class="p-about-skill__barometer">
-													<li class="p-about-skill__barometerItem">
-														HTML / CSS（SCSS） / JavaScript（jQuery含む）
-														<span
-														>基本設計・コンポーネント設計・演出の実装・保守運用</span
-														>
-														<div class="c-barometer c-barometer--100"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														アクセシビリティ対応
-														<span
-														>JIS X 8341-3 レベルAA
-														一部準拠の経験あり</span
-														>
-														<div class="c-barometer c-barometer--80"></div>
-													</li>
+														<li class="p-about-skill__barometerItem">
+															HTML / CSS（SCSS） / JavaScript（jQuery含む）
+															<span
+															>基本設計・コンポーネント設計・演出の実装・保守運用</span
+															>
+															<div class="c-barometer c-barometer--100"></div>
+														</li>
+														<li class="p-about-skill__barometerItem">
+															アクセシビリティ対応
+															<span
+															>JIS X 8341-3 レベルAA
+															一部準拠の経験あり</span
+															>
+															<div class="c-barometer c-barometer--80"></div>
+														</li>
 
-													<li class="p-about-skill__barometerItem">
-														Next.js / React
-														<span
-														>既存の横展開・小規模なコンポーネント開発なら可能</span
-														>
-														<div class="c-barometer c-barometer--50"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														Nuxt / Vue.js
-														<span
-														>既存の横展開・小規模なコンポーネント開発なら可能</span
-														>
-														<div class="c-barometer c-barometer--40"></div>
-													</li>
+														<li class="p-about-skill__barometerItem">
+															Next.js / React
+															<span
+															>既存の横展開・小規模なコンポーネント開発なら可能</span
+															>
+															<div class="c-barometer c-barometer--50"></div>
+														</li>
+														<li class="p-about-skill__barometerItem">
+															Nuxt / Vue.js
+															<span
+															>既存の横展開・小規模なコンポーネント開発なら可能</span
+															>
+															<div class="c-barometer c-barometer--40"></div>
+														</li>
+														<li class="p-about-skill__barometerItem">
+															TypeScript
+															<span
+															>基礎的なコーディングなら可能</span
+															>
+															<div class="c-barometer c-barometer--40"></div>
+														</li>
 
-													<li class="p-about-skill__barometerItem">
-														単体テスト
-														<span
-														>Vitest / testing-library
-														での実装経験あり</span
-														>
-														<div class="c-barometer c-barometer--70"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														webpack
-														<div class="c-barometer c-barometer--70"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														Storybook
-														<div class="c-barometer c-barometer--70"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														レガシーブラウザ・HTMLメール（レスポンシブ）
-														<div class="c-barometer c-barometer--100"></div>
-													</li>
-													<li class="p-about-skill__barometerItem">
-														その他
-														<span
-														>PWA, Eelectron,
-														データビジュアライゼーションなどの実装経験あり</span
-														>
-													</li>
+														<li class="p-about-skill__barometerItem">
+															単体テスト
+															<span
+															>Vitest / testing-library
+															での実装経験あり</span
+															>
+															<div class="c-barometer c-barometer--70"></div>
+														</li>
+														<li class="p-about-skill__barometerItem">
+															webpack, npm scripts
+															<span
+															>gulpでのアセットビルド実装の経験もあり</span
+															>
+															<div class="c-barometer c-barometer--70"></div>
+														</li>
+														<li class="p-about-skill__barometerItem">
+															Storybook
+															<div class="c-barometer c-barometer--70"></div>
+														</li>
+														<li class="p-about-skill__barometerItem">
+															レガシーブラウザ・HTMLメール（レスポンシブ）
+															<div class="c-barometer c-barometer--100"></div>
+														</li>
+														<li class="p-about-skill__barometerItem">
+															その他
+															<span
+															>PWA, Eelectron,
+															データビジュアライゼーションなどの実装経験あり<br />モダンフレームワークはBackbone.jsやAngularJS（1系）の実装経験もあり</span
+															>
+														</li>
 													</ul>
 												</li>
 											</ul>
@@ -298,8 +308,7 @@ get_header();
 													<li class="p-about-skill__barometerItem">
 														Docker
 														<span
-														>既存のDockerfile, docker-compose.yml
-														の読解なら可能</span
+														>既存のDockerfileの読解なら可能</span
 														>
 														<div
 														class="c-barometer c-barometer--30 u-mtOneLine"
