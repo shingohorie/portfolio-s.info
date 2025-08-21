@@ -261,7 +261,7 @@ get_header();
 												<li class="p-about-skill__barometerItem p-about-skill__barometerItem--inexperienced">
 													経験のないもの
 													<span
-													>Canvas（WebGL）による演出の実装・VRTやE2Eテストの実装・既存プロダクトのパフォーマンスチューニング</span
+													>Canvas（WebGL）による演出の実装<br>VRTやE2Eテストの実装<br>既存プロダクトのパフォーマンスチューニング</span
 													>
 												</li>
 											</ul>
@@ -334,16 +334,15 @@ get_header();
 												<li class="p-about-skill__barometerItem">
 													AWS
 													<span
-													>Amplify Hosting, EC2 の設定は可能<br />S3, VPC,
-													ECSなどは対応は難しい</span
+													>Amplify Hosting, EC2 の設定は可能<br />ネットワーク構築・ストレージ・コンテナ化などは対応は難しい</span
 													>
 													<div class="c-barometer c-barometer--40"></div>
 												</li>
 												<li class="p-about-skill__barometerItem p-about-skill__barometerItem--inexperienced">
 													経験のないもの
 													<span
-													>システム監視・AWSの各種製品を組み合わせた設計構築・GitHub
-													Actions以外のCI/CDの構築・GCPの各種サービスを組み合わせた設計構築</span
+													>システム監視<br>AWSの各種製品を組み合わせた設計構築<br>GitHub
+													Actions以外のCI/CDの構築<br>GCPの各種サービスを組み合わせた設計構築</span
 													>
 												</li>												
 											</ul>
