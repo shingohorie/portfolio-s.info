@@ -113,7 +113,10 @@ get_header();
 											</ul>
 											<hr class="p-about-skill__separator" />
 											<ul class="p-about-skill__example">
-												<li>はたらこマガジン</li>
+												<li><a
+													href="<?= get_permalink(get_page_by_path('hatarako-magazine', OBJECT, 'post')->ID); ?>"
+													><?= get_the_title(get_page_by_path('hatarako-magazine', OBJECT, 'post')->ID); ?></a
+													></li>
 												<li>はたらこねっと 脱スケルトンプロジェクト</li>
 											</ul>
 											<ul class="p-about-skill__example">
