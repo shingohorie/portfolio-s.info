@@ -239,7 +239,7 @@ get_header();
 												<li class="p-about-skill__barometerItem">
 													webpack / npm scripts
 													<span
-													>gulpでのアセットビルド実装の経験もあり</span
+													>gulpでのビルド環境構築の経験もあり</span
 													>
 													<div class="c-barometer c-barometer--70"></div>
 												</li>
