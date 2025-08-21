@@ -237,9 +237,9 @@ get_header();
 													<div class="c-barometer c-barometer--70"></div>
 												</li>
 												<li class="p-about-skill__barometerItem">
-													webpack / npm scripts
+													ビルド環境構築
 													<span
-													>gulpでのビルド環境構築の経験もあり</span
+													>webpack, npm scripts, gulpでの構築経験あり</span
 													>
 													<div class="c-barometer c-barometer--70"></div>
 												</li>
