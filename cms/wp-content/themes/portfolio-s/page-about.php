@@ -241,7 +241,7 @@ get_header();
 													<span
 													>webpack, npm scripts, gulpでの構築経験あり</span
 													>
-													<div class="c-barometer c-barometer--70"></div>
+													<div class="c-barometer c-barometer--60"></div>
 												</li>
 												<li class="p-about-skill__barometerItem">
 													Storybook
