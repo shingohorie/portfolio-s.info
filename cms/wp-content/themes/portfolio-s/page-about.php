@@ -83,11 +83,15 @@ get_header();
 											<hr class="p-about-skill__separator" />
 											<ul class="p-about-skill__barometer">
 												<li class="p-about-skill__barometerItem">
-													進行管理・開発ディレクション
+													開発ディレクション
 													<div class="c-barometer c-barometer--100"></div>
 												</li>
 												<li class="p-about-skill__barometerItem">
-													外注先管理・外注先評価
+													進行管理
+													<div class="c-barometer c-barometer--100"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													外注先管理・評価
 													<div class="c-barometer c-barometer--90"></div>
 												</li>
 												<li class="p-about-skill__barometerItem">
@@ -99,12 +103,12 @@ get_header();
 													<div class="c-barometer c-barometer--70"></div>
 												</li>
 												<li class="p-about-skill__barometerItem">
-													開発スキームの再定義
+													開発スキームの定義
 													<div class="c-barometer c-barometer--80"></div>
 												</li>
 												<li class="p-about-skill__barometerItem">
-													部署間連携
-													<div class="c-barometer c-barometer--80"></div>
+													部署間連携・合意形成
+													<div class="c-barometer c-barometer--70"></div>
 												</li>
 												<li class="p-about-skill__barometerItem p-about-skill__barometerItem--inexperienced">
 													経験のないもの
