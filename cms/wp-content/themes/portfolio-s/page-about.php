@@ -287,8 +287,8 @@ get_header();
 												</li>
 												<li class="p-about-skill__barometerItem">
 													Movable Type
-													<span>既存サイトの更新であれば可能</span>
-													<div class="c-barometer c-barometer--30"></div>
+													<span>新規の設計構築は未経験。既存の更新や横展開なら可能</span>
+													<div class="c-barometer c-barometer--20"></div>
 												</li>
 												<li class="p-about-skill__barometerItem">
 													microCMS
