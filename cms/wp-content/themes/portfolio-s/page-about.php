@@ -214,14 +214,14 @@ get_header();
 													<span
 													>既存の横展開・小規模なコンポーネント開発なら可能</span
 													>
-													<div class="c-barometer c-barometer--40"></div>
+													<div class="c-barometer c-barometer--20"></div>
 												</li>
 												<li class="p-about-skill__barometerItem">
 													TypeScript
 													<span
 													>基礎的なコーディングなら可能</span
 													>
-													<div class="c-barometer c-barometer--40"></div>
+													<div class="c-barometer c-barometer--20"></div>
 												</li>
 
 												<li class="p-about-skill__barometerItem">
