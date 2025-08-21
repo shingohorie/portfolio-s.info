@@ -76,11 +76,11 @@ get_header();
 											<p class="p-about-skill__title">Project Managements</p>
 										</div>
 										<div class="p-about-skill__body">
-											<p>
+											<!-- <p>
 											PL（Project
 											Leader）として、要件定義・進行管理・品質管理・開発ディレクション・部署間の合意形成・開発スキームの再定義など
-											</p>
-											<hr class="p-about-skill__separator" />
+											</p> -->
+											<!-- <hr class="p-about-skill__separator" /> -->
 											<ul class="p-about-skill__barometer">
 												<li class="p-about-skill__barometerItem">
 													開発ディレクション
@@ -91,16 +91,12 @@ get_header();
 													<div class="c-barometer c-barometer--100"></div>
 												</li>
 												<li class="p-about-skill__barometerItem">
-													外注先管理・評価
-													<div class="c-barometer c-barometer--90"></div>
-												</li>
-												<li class="p-about-skill__barometerItem">
 													品質管理
 													<div class="c-barometer c-barometer--90"></div>
 												</li>
 												<li class="p-about-skill__barometerItem">
 													要件定義
-													<div class="c-barometer c-barometer--70"></div>
+													<div class="c-barometer c-barometer--80"></div>
 												</li>
 												<li class="p-about-skill__barometerItem">
 													開発スキームの定義
@@ -109,6 +105,10 @@ get_header();
 												<li class="p-about-skill__barometerItem">
 													部署間連携・合意形成
 													<div class="c-barometer c-barometer--70"></div>
+												</li>
+												<li class="p-about-skill__barometerItem">
+													外注先管理・評価
+													<div class="c-barometer c-barometer--90"></div>
 												</li>
 												<li class="p-about-skill__barometerItem p-about-skill__barometerItem--inexperienced">
 													経験のないもの
