@@ -22,7 +22,7 @@
 <link rel="shortcut icon" href="<?=get_template_directory_uri()?>/resources/icon/favicon.png" type="image/vnd.microsoft.icon">
 </head>
 <body>
-	<header class="l-header">
+	<header class="l-header <?php if( is_front_page() ): ?>l-header--front<?php endif; ?>">
 		<div class="l-header__inner">
 			<div class="l-header__siteroot">
 				<?php if( is_front_page() ): ?>
