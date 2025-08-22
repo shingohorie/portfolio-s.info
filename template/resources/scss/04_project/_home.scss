@@ -21,11 +21,12 @@
 ---------------------------------*/
 .p-home-mainvisual {
   padding: 80px 40px;
-  border-bottom: 1px solid $color-gray-extraLight;
+  // border-bottom: 1px solid $color-gray-extraLight;
+  background: #f6f6f6;
 
   &__inner {
     position: relative;
-    max-width: 800px;
+    max-width: 700px;
     margin: auto;
 
     &::before {
@@ -33,7 +34,6 @@
       position: absolute;
       top: 0;
       left: 0;
-      // background: #f72323;
       background: $color-gray-dark;
       color: $color-white;
       padding: 4px 10px;

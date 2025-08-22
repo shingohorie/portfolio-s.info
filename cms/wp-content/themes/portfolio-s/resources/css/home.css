@@ -19,11 +19,11 @@
 ---------------------------------*/
 .p-home-mainvisual {
   padding: 80px 40px;
-  border-bottom: 1px solid #e8e7e7;
+  background: #f6f6f6;
 }
 .p-home-mainvisual__inner {
   position: relative;
-  max-width: 800px;
+  max-width: 700px;
   margin: auto;
 }
 .p-home-mainvisual__inner::before {

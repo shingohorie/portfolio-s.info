@@ -10,6 +10,10 @@
   padding: 0 40px;
   border-bottom: 1px solid $color-gray-extraLight;
 
+  &#{&}--front {
+    border: none;
+  }
+
   &__inner {
     position: relative;
     display: flex;
