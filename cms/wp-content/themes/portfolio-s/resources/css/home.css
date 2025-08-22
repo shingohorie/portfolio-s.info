@@ -18,12 +18,30 @@
   メインビジュアル（最新または固定表示の実績）
 ---------------------------------*/
 .p-home-mainvisual {
-  padding: 80px 0;
+  padding: 80px 40px;
   border-bottom: 1px solid #e8e7e7;
 }
 .p-home-mainvisual__inner {
-  max-width: 1050px;
+  position: relative;
+  max-width: 800px;
   margin: auto;
+}
+.p-home-mainvisual__inner::before {
+  content: "Pickup";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #555;
+  color: #fff;
+  padding: 4px 10px;
+  min-width: 80px;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: 100px;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
 }
 .p-home-mainvisual__header {
   display: flex;

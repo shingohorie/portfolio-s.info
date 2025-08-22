@@ -20,12 +20,30 @@
   メインビジュアル（最新または固定表示の実績）
 ---------------------------------*/
 .p-home-mainvisual {
-  padding: 80px 0;
+  padding: 80px 40px;
   border-bottom: 1px solid $color-gray-extraLight;
 
   &__inner {
-    max-width: 1050px;
+    position: relative;
+    max-width: 800px;
     margin: auto;
+
+    &::before {
+      content: 'Pickup';
+      position: absolute;
+      top: 0;
+      left: 0;
+      // background: #f72323;
+      background: $color-gray-dark;
+      color: $color-white;
+      padding: 4px 10px;
+      min-width: 80px;
+      @include fts(12, 18);
+      border-radius: 100px;
+      line-height: 1;
+      font-weight: bold;
+      text-align: center;
+    }
   }
 
   &__header {
