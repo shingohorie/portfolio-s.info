@@ -1,5 +1,5 @@
 /*!*********************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./template/resources/scss/works.scss ***!
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./template/resources/scss/works.scss ***!
   \*********************************************************************************************************************************************************/
 @charset "UTF-8";
 /*---------------------------------
@@ -99,10 +99,15 @@
 .p-entry-overview > *:last-child {
   margin-bottom: 0 !important;
 }
-.p-entry-overview code {
+.p-entry-overview pre code.hljs {
   display: block;
   margin: 1em auto 1em;
-  padding: 10px;
+  padding: 16px 24px;
+  font-weight: bold;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: 4px;
 }
 .p-entry-overview p {
   margin: 0 auto 1em;

@@ -1,6 +1,8 @@
 import { ua, normalizeURL } from './util';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import PhotoSwipe from 'photoswipe';
+import hljs from 'highlight.js';
+import 'highlight.js/styles/monokai.css';
 
 // override viewport for mobile
 const viewportfix = function () {
@@ -66,7 +68,17 @@ const setPhotoSwipe = function () {
   lightbox.init();
 };
 
+// highlight.js setup
+const setHighlight = function () {
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((el) => {
+      hljs.highlightElement(el);
+    });
+  });
+};
+
 viewportfix();
 scrollerfix();
 activateGnav();
 setPhotoSwipe();
+setHighlight();

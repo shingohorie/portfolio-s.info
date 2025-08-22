@@ -99,10 +99,15 @@
     margin-bottom: 0 !important;
   }
 
-  code {
-    display: block;
-    margin: 1em auto 1em;
-    padding: 10px;
+  pre {
+    code.hljs {
+      display: block;
+      margin: 1em auto 1em;
+      padding: 16px 24px;
+      font-weight: bold;
+      @include fts(12, 18);
+      border-radius: 4px;
+    }
   }
 
   p {
