@@ -360,17 +360,22 @@ get_header();
 					<h2 class="c-primaryHeader c-primaryHeader--md" data-text-en="Certification"><span>資格</span></h2>
 
 					<ul class="p-about-certs">
-						<li>Microsoft Office Specialist (MOS)　[Word, Excel]</li>
+						<li>Microsoft Office Specialist (MOS)　[2002, Word/Excel]</li>
 						<li>基本情報技術者試験</li>
-						<li>Oracle Master [Bronze]</li>
+						<li>Oracle Master [11g, Bronze]</li>
 						<li>Oracle Certified Professional Java SE6 Programmer</li>
-						<li>Linux Professional Institute Certification (LPIC)　[Level 1]</li>
+						<li>
+							Linux Professional Institute Certification (LPIC)　[Level 1]
+						</li>
 						<li>XMLマスター [BASIC]</li>
-						<li>VBAエキスパート　[Excel, Access]</li>
+						<li>VBAエキスパート　[Standard, Excel/Access]</li>
 						<li>CIW JavaScript Specialist</li>
 						<li>CIW Perl Specialist</li>
 						<li>PHP5技術者認定初級試験</li>
-						<li>Microsoft Certified Prifessional (MCP)　[70-480 (Programming in HTML5 with JavaScript and CSS3)]</li>
+						<li>
+							Microsoft Certified Prifessional (MCP)　[70-480 (Programming in
+							HTML5 with JavaScript and CSS3)]
+						</li>
 					</ul>
 				</div>
 
