@@ -230,7 +230,13 @@ get_header();
 													>
 													<div class="c-barometer c-barometer--20"></div>
 												</li>
-
+												<li class="p-about-skill__barometerItem">
+													スタイリングライブラリ
+													<span
+													>CSS(SCSS) Modules, Tailwind CSS での実装経験あり</span
+													>
+													<div class="c-barometer c-barometer--50"></div>
+												</li>
 												<li class="p-about-skill__barometerItem">
 													単体テスト
 													<span
