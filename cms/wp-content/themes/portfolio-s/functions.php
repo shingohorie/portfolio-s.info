@@ -297,8 +297,9 @@ add_filter( 'graphql_post_object_connection_query_args', function( $query_args, 
 * GraphQLエンドポイントに対するOPTIONSリクエストに対応
 *****************************************************************************************/
 add_action('init', function () {
+    // GraphQLのプリフライト（OPTIONS）に対応
     if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS' && strpos($_SERVER['REQUEST_URI'], '/graphql') !== false) {
-        header("Access-Control-Allow-Origin: *"); // ←開発中は * でもOK（本番は制限推奨）
+        header("Access-Control-Allow-Origin: http://localhost:3000");
         header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
         header("Access-Control-Allow-Headers: Authorization, Content-Type");
         exit;
@@ -306,7 +307,7 @@ add_action('init', function () {
 });
 
 add_action('graphql_response_headers', function($headers) {
-    $headers['Access-Control-Allow-Origin'] = '*'; // ←本番ではオリジンを指定する方が安全
+    $headers['Access-Control-Allow-Origin'] = 'http://localhost:3000';
     $headers['Access-Control-Allow-Headers'] = 'Authorization, Content-Type';
     return $headers;
 });
