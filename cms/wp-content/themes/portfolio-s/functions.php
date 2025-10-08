@@ -250,7 +250,7 @@ function add_article_post_rewrite_rules( $post_rewrite ) {
 add_filter( 'post_rewrite_rules', 'add_article_post_rewrite_rules' );
 
 /*****************************************************************************************
-* WP GraphQLでisStickyフィルターを使えるようにする
+* WP GraphQLでisStickyを除外するフィルターを追加
 *****************************************************************************************/
 add_action( 'graphql_register_types', function () {
     register_graphql_field( 'RootQueryToPostConnectionWhereArgs', 'excludeSticky', [
@@ -266,6 +266,29 @@ add_filter( 'graphql_post_object_connection_query_args', function( $query_args, 
     if ( isset( $args['where']['excludeSticky'] ) && true === $args['where']['excludeSticky'] ) {
         $sticky = get_option( 'sticky_posts' );
         $query_args['post__not_in'] = $sticky;
+    }
+    return $query_args;
+}, 10, 3 );
+
+
+/*****************************************************************************************
+* WP GraphQLでisStickyのみを抽出するフィルターを追加
+*****************************************************************************************/
+add_action( 'graphql_register_types', function () {
+    register_graphql_field( 'RootQueryToPostConnectionWhereArgs', 'onlySticky', [
+        'type'        => 'Boolean',
+        'description' => 'Return only sticky posts if true',
+        'resolve'     => function () {
+            return null;
+        }
+    ] );
+});
+
+add_filter( 'graphql_post_object_connection_query_args', function( $query_args, $source, $args ) {
+    if ( isset( $args['where']['onlySticky'] ) && true === $args['where']['onlySticky'] ) {
+        $sticky = get_option( 'sticky_posts' );
+        $query_args['post__in'] = $sticky;
+        $query_args['orderby'] = 'post__in';
     }
     return $query_args;
 }, 10, 3 );
