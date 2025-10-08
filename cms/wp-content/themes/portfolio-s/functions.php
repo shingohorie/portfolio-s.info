@@ -249,4 +249,24 @@ function add_article_post_rewrite_rules( $post_rewrite ) {
 }
 add_filter( 'post_rewrite_rules', 'add_article_post_rewrite_rules' );
 
+/*****************************************************************************************
+* WP GraphQLでisStickyフィルターを使えるようにする
+*****************************************************************************************/
+add_action( 'graphql_register_types', function () {
+    register_graphql_field( 'RootQueryToPostConnectionWhereArgs', 'excludeSticky', [
+        'type'        => 'Boolean',
+        'description' => 'Exclude sticky posts if true',
+        'resolve'     => function () {
+            return null;
+        }
+    ] );
+} );
+
+add_filter( 'graphql_post_object_connection_query_args', function( $query_args, $source, $args ) {
+    if ( isset( $args['where']['excludeSticky'] ) && true === $args['where']['excludeSticky'] ) {
+        $sticky = get_option( 'sticky_posts' );
+        $query_args['post__not_in'] = $sticky;
+    }
+    return $query_args;
+}, 10, 3 );
 ?>
