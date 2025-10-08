@@ -292,23 +292,4 @@ add_filter( 'graphql_post_object_connection_query_args', function( $query_args, 
     }
     return $query_args;
 }, 10, 3 );
-
-/*****************************************************************************************
-* GraphQLエンドポイントに対するOPTIONSリクエストに対応
-*****************************************************************************************/
-add_action('init', function () {
-    // GraphQLのプリフライト（OPTIONS）に対応
-    if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS' && strpos($_SERVER['REQUEST_URI'], '/graphql') !== false) {
-        header("Access-Control-Allow-Origin: http://localhost:3000");
-        header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
-        header("Access-Control-Allow-Headers: Authorization, Content-Type");
-        exit;
-    }
-});
-
-add_action('graphql_response_headers', function($headers) {
-    $headers['Access-Control-Allow-Origin'] = 'http://localhost:3000';
-    $headers['Access-Control-Allow-Headers'] = 'Authorization, Content-Type';
-    return $headers;
-});
 ?>
