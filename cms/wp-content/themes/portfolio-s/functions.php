@@ -292,4 +292,20 @@ add_filter( 'graphql_post_object_connection_query_args', function( $query_args, 
     }
     return $query_args;
 }, 10, 3 );
+
+/*****************************************************************************************
+* WP GraphQLでカスタムタクソノミーによる絞り込みを追加
+*****************************************************************************************/
+add_action( 'graphql_register_types', function () {
+    // taxQuery用にEnumを登録
+    register_graphql_enum_type( 'TaxonomyEnum', [
+        'description' => 'カスタムタクソノミーEnum',
+        'values' => [
+            'TECHNOLOGY' => [
+                'value' => 'technology',
+                'description' => 'ジャンルタクソノミー',
+            ],
+        ],
+    ]);
+});
 ?>
