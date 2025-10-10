@@ -307,5 +307,46 @@ add_action( 'graphql_register_types', function () {
             ],
         ],
     ]);
+
+    // taxArray用 Input type
+    register_graphql_input_type('TaxQueryInput', [
+        'description' => 'taxQuery input',
+        'fields' => [
+            'taxonomy' => [
+                'type' => 'TaxonomyEnum',
+                'description' => '使用するタクソノミー',
+            ],
+            'terms' => [
+                'type' => ['list_of' => 'String'],
+                'description' => 'スラッグやIDなどの値',
+            ],
+            'field' => [
+                'type' => 'TaxQueryField',
+                'defaultValue' => 'term_id',
+                'description' => '比較対象のフィールド',
+            ],
+        ],
+    ]);
+
+    // taxQuery全体の Input type
+    register_graphql_input_type('TaxQueryRelationInput', [
+        'description' => 'タクソノミークエリ',
+        'fields' => [
+            'relation' => [
+                'type' => 'String',
+                'description' => 'AND または OR',
+            ],
+            'taxArray' => [
+                'type' => ['list_of' => 'TaxQueryInput'],
+                'description' => 'タクソノミークエリの配列',
+            ],
+        ],
+    ]);
+
+    // 最後に post クエリの引数に taxQuery を追加！
+    register_graphql_field('RootQueryToPostConnectionWhereArgs', 'taxQuery', [
+        'type' => 'TaxQueryRelationInput',
+        'description' => 'カスタムタクソノミーでフィルタする',
+    ]);
 });
 ?>
